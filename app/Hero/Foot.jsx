@@ -20,7 +20,7 @@ function Foot() {
         </p>
       </div>
       <div className="flex justify-between items-center w-full  ">
-        <p>MY AHA MOMENT</p>
+        <p className="text-[#747474] text-base ">MY AHA MOMENT</p>
         <div className="flex gap-4 ">
           {[
             { title: "INSTAGRAM", link: "link" },
