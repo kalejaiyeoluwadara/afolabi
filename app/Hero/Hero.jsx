@@ -9,7 +9,7 @@ function Hero() {
           NIGERIA.
         </h1>
         <div className="w-[265px] mb-8 mt-4 h-[80px] border-black rounded-full border-[1.5px] flex-center border-dashed ">
-          <div className=" font-medium w-[242px] border rounded-full h-[60px] flex-center ">
+          <div className=" font-medium w-[242px] text-2xl border rounded-full h-[60px] flex-center ">
             MY COLLECTIONS
           </div>
         </div>
