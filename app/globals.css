@@ -5,8 +5,14 @@
 body{
   @apply bg-foreground w-[100vw] overflow-x-hidden
 }
+.font {
+  font-family: 'Stratos', 'Stratos Medium';
+  font-weight: 500; /* or the correct weight for Stratos Medium */
+  font-style: normal; /* Ensures it doesn't use italic */
+}
+
 *{
-  @apply transition-all
+  @apply transition-all 
 }
 .flex-center{
   @apply flex items-center justify-center

@@ -4,7 +4,7 @@ function Hero() {
   return (
     <main className="flex-center w-screen overflow-x-hidden ">
       <div className="flex-center mt-16 flex-col ">
-        <h1 className="uppercase w-[952px] leading-[80px] text-center text-black ">
+        <h1 className="uppercase font w-[952px] leading-[80px] text-center text-black ">
           product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED IN
           NIGERIA.
         </h1>
