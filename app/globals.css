@@ -6,13 +6,28 @@ body{
   @apply bg-foreground w-[100vw] overflow-x-hidden
 }
 .font {
-  font-family: 'Stratos', 'Stratos Medium';
-  font-weight: 500; /* or the correct weight for Stratos Medium */
+  font-family: 'StratosBold',sans-serif;
+  font-weight: 900; /* or the correct weight for Stratos Medium */
   font-style: normal; /* Ensures it doesn't use italic */
+}
+@font-face {
+  font-family: 'Stratos';
+  src: url('/fonts/stratos-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StratosBold';
+  src: url('/fonts/stratos-bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 *{
   @apply transition-all 
+}
+*{
+  font-family: 'Stratos',sans-serif;
 }
 .flex-center{
   @apply flex items-center justify-center
