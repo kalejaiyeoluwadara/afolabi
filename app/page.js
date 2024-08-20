@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./Hero/Hero";
 import Collections from "./Hero/Collections";
 import Projects from "./Hero/Projects";
+import Foot from "./Hero/Foot";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Collections />
       <Projects />
+      <Foot />
     </main>
   );
 }
