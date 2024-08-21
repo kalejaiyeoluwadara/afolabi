@@ -6,7 +6,7 @@ import Foot from "./Hero/Foot";
 import Nav from "./components/Nav";
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="">
       <Nav />
       <Hero />
       <Collections />
