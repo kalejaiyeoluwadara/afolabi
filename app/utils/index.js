@@ -1,2 +1,3 @@
 import icons from "./icons";
-module.exports = { icons };
+import images from "./images";
+module.exports = { icons, images };
