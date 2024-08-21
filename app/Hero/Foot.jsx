@@ -3,7 +3,9 @@ import React from "react";
 
 function Foot() {
   return (
-    <footer className="h-[488px] rounded-[20px] text-white mt-[58px] w-full bg-black px-7 py-4 flex flex-col justify-between  ">
+    <footer
+      className={`h-[488px] rounded-[20px] text-white mt-[58px] w-full bg-black px-7 py-4 flex  flex-col justify-between  `}
+    >
       <div className="flex text-base font-normal flex-col mt-4 ">
         <p className=" uppercase ">OYEFESO Selected Work</p>
         <p>‘22 - ‘24</p>

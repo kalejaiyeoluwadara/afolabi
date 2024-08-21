@@ -6,11 +6,10 @@ import Foot from "./Hero/Foot";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden px-8 mb-8">
+    <main className="overflow-x-hidden">
       <Hero />
       <Collections />
       <Projects />
-      <Foot />
     </main>
   );
 }
