@@ -20,18 +20,22 @@ export default function Home() {
         {
           opacity: 0,
           y: 50,
+          rotation: -10, // Add slight rotation for effect
+          scale: 0.9, // Add scale effect to start smaller
         },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          ease: "power2.out",
+          rotation: 0, // End with no rotation
+          scale: 1, // End at normal size
+          duration: 1.2, // Increase duration for more gradual effect
+          ease: "power3.out",
           scrollTrigger: {
             trigger: section,
-            start: "top 80%", // Trigger animation when the top of the section reaches 80% of the viewport height
-            end: "top 20%", // End when the top of the section reaches 20% of the viewport height
-            scrub: true, // Smooth scroll effect
-            toggleActions: "play none none reverse", // Control how animations behave on scroll
+            start: "top 80%",
+            end: "top 20%",
+            scrub: 0.6, // Smooth and continuous scrolling effect
+            toggleActions: "play none none reverse",
           },
         }
       );
