@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-foreground w-[100vw] overflow-x-hidden
+  @apply bg-foreground w-full overflow-x-hidden
 }
 .font {
   font-family: 'StratosBold',sans-serif;
