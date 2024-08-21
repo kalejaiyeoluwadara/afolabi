@@ -1,3 +1,5 @@
+import Modal from "./components/Modal";
+import AppProvider from "./context";
 import "./globals.css";
 export const metadata = {
   title: "Afolabi",
@@ -6,7 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="px-8 mb-8">{children}</body>
+      <AppProvider>
+        <body className="px-8 mb-8">{children}</body>
+        <Modal />
+      </AppProvider>
     </html>
   );
 }

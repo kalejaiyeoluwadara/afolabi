@@ -42,7 +42,7 @@ body{
   @apply flex items-center justify-center
 }
 .border{
-  @apply border-2 border-dashed border-black  
+  @apply border-2 border-dashed rounded-[20px] border-black  
 }
 h1{
   @apply text-6xl font-bold
