@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-
+import { icons } from "@/app/utils";
+import Image from "next/image";
 function Foot() {
   return (
     <footer
@@ -37,7 +38,9 @@ function Foot() {
             );
           })}
         </div>
-        <div className="h-[60px] w-[60px] rounded-full bg-gray-300  "></div>
+        <div className="h-[60px] w-[60px] flex-center rounded-full bg-[#D9D9D9]  ">
+          <Image src={icons.arrowup} height={20} width={20} alt="arrow-up" />
+        </div>
       </div>
     </footer>
   );
