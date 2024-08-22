@@ -30,7 +30,7 @@ body{
 }
 
 *{
-  @apply transition-all 
+  /* @apply transition-all  */
 }
 *{
   font-family: 'Stratos',sans-serif;

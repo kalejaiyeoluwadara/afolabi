@@ -1,13 +1,15 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+import { images } from "@/app/utils";
+import Image from "next/image";
+import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
   const sectionsRef = useRef([]);
-
+  const [show, setShow] = useState(false);
   useEffect(() => {
     sectionsRef.current.forEach((section, index) => {
       gsap.fromTo(
@@ -28,7 +30,7 @@ function Projects() {
           scrollTrigger: {
             trigger: section,
             start: "top 80%",
-            end: "top 30%",
+            end: "top 20%",
             scrub: 0.6,
             toggleActions: "play none none reverse",
           },
@@ -38,16 +40,43 @@ function Projects() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center gap-[32px]">
+    <main className="flex flex-col mt-10 items-center gap-[32px]">
       {/* Time warp */}
       <section
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="w-full flex items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-primary"
+        className="w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
       >
-        <div>
+        <div className="relative z-40">
           <h2>TIMEWARP</h2>
           <h4>PRODUCT DESIGN</h4>
         </div>
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full"
+          whileHover={{
+            scale: 1.5,
+            transition: {
+              type: "spring",
+              stiffness: 200,
+              damping: 100,
+            },
+          }}
+          whileTap={{
+            scale: 1.5, // Maintain the same scale while tapping
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 100, // Same damping and stiffness for smooth return
+          }}
+        >
+          <Image
+            className="w-full h-full object-cover"
+            alt="warp image"
+            src={images.warp}
+          />
+        </motion.div>
       </section>
 
       {/* Unito and Log */}

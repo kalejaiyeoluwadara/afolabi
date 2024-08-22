@@ -14,7 +14,7 @@ const Container = ({ name, link }) => {
 
     hoverAnimation.to(imageContainerRef.current, {
       top: "0px",
-      duration: 0.15, // Faster duration for snappier movement
+      duration: 0.5,
       ease: "power2.inOut", // Smooth, yet fast ease
     });
 
