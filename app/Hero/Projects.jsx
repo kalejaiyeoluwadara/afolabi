@@ -43,10 +43,10 @@ const Topic = ({ title, sub, color }) => {
       style={{
         color: color,
       }}
-      className="mt-10 w-full"
+      className="mt-10"
     >
       <h2>{title}</h2>
-      <h4 className="flex-center ">
+      <h4 className="flex items-center ">
         {sub}{" "}
         <MdOutlineArrowOutward
           className="ml-2 opacity-0  transition-opacity duration-300 group-hover:opacity-100"
@@ -202,7 +202,7 @@ function Projects() {
           ref={(el) => (sectionsRef.current[5] = el)}
           className="project_card group flex items-end"
         >
-          <div className=" flex  bg-red-300 r40  sm:w-[300px]">
+          <div className=" flex   r40  sm:w-[300px]">
             <Topic
               title={"NEXGEN"}
               sub={"BRANDING & WEB DESIGN"}
@@ -218,8 +218,22 @@ function Projects() {
         </div>
         <div
           ref={(el) => (sectionsRef.current[6] = el)}
-          className="project_card group col-span-2 "
-        ></div>
+          className="project_card group  col-span-2 "
+        >
+          <div className=" r40  mt-40 w-full ">
+            <Topic
+              title={"MYHOMEETAL"}
+              sub={"PRODUCT DESIGN"}
+              color={"white"}
+            />
+          </div>
+          <div className="w-full flex-center ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center bg-[#E33536] text-white  rounded-[15px] group-hover:bottom-[-10px] left-[24px] -bottom-[230px]  transition-all ">
+              <h2>CHECK ME OUT</h2>
+            </div>
+          </div>
+          <Img image_name={images.myhomeetal} />
+        </div>
         <div
           ref={(el) => (sectionsRef.current[7] = el)}
           className="h-[559px] row-span-2 project_card group"
