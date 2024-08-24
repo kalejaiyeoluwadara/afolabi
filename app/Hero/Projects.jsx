@@ -46,13 +46,13 @@ const Topic = ({ title, sub, color }) => {
       className="mt-10"
     >
       <h2>{title}</h2>
-      <h4 className="flex items-center ">
+      <p className="flex font-extralight items-center ">
         {sub}{" "}
         <MdOutlineArrowOutward
           className="ml-2 opacity-0  transition-opacity duration-300 group-hover:opacity-100"
           size={20}
         />
-      </h4>
+      </p>
     </div>
   );
 };
@@ -237,11 +237,31 @@ function Projects() {
         <div
           ref={(el) => (sectionsRef.current[7] = el)}
           className="h-[559px] row-span-2 project_card group"
-        ></div>
+        >
+          <div className=" r40  w-full ">
+            <Topic title={"OYEFESO"} sub={"A STORY"} color={"white"} />
+          </div>
+          <div className="w-full flex-center ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:bottom-[-10px] left-[14px] -bottom-[230px]  transition-all ">
+              <h2>CHECK ME OUT</h2>
+            </div>
+          </div>
+          <Img image_name={images.afolabi} />
+        </div>
         <div
           ref={(el) => (sectionsRef.current[8] = el)}
-          className="h-[404px] w-auto col-span-3 bg-primary rounded-[20px]"
-        ></div>
+          className="project_card group flex items-end col-span-3"
+        >
+          <div className=" r40 mb-4 w-full ">
+            <Topic title={"SWAPY"} sub={"CASE STUFY"} color={"white"} />
+          </div>
+          <div className="w-full flex-center ">
+            <div className="absolute z-20 rotate-180 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:top-[-10px] right-[24px] -top-[230px]  transition-all ">
+              <h2>CHECK ME OUT</h2>
+            </div>
+          </div>
+          <Img image_name={images.swapy} />
+        </div>
         <div
           ref={(el) => (sectionsRef.current[9] = el)}
           className="h-[250px] absolute bottom-0 right-0 w-[290px] bg-black rounded-[20px]"
