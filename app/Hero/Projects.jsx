@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { images, icons } from "@/app/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { MdOutlineArrowOutward } from "react-icons/md";
 gsap.registerPlugin(ScrollTrigger);
 
 const Img = ({ image_name }) => {
@@ -77,15 +78,12 @@ function Projects() {
       >
         <div className="relative z-40">
           <h2>TIMEWARP</h2>
-          <h4 className="flex">
+          <h4 className="flex-center ">
             PRODUCT DESIGN{" "}
-            <Image
-              className="ml-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-              src={icons.arrowright}
-              height={20}
-              width={20}
-              alt="short arrow"
-            />{" "}
+            <MdOutlineArrowOutward
+              className="ml-2 opacity-0  text-black transition-opacity duration-300 group-hover:opacity-100"
+              size={20}
+            />
           </h4>
         </div>
         <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 transition-all ">
@@ -98,20 +96,17 @@ function Projects() {
       <section className="grid grid-cols-2 gap-[31px] justify-between w-full">
         <div
           ref={(el) => (sectionsRef.current[1] = el)}
-          className="h-[404px] group relative border overflow-hidden  rounded-[20px] w-auto px-6"
+          className="project_card group"
         >
           <div className="h-[404px]  flex items-end justify-start w-full">
             <div className="mb-10 relative text-white z-40  ">
               <h2>CHAMPIONS LOGISTICS</h2>
-              <h4 className="flex">
+              <h4 className="flex items-center jc ">
                 BRANDING & WEB DESIGN
-                <Image
-                  className="ml-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  src={icons.arrowright}
-                  height={20}
-                  width={20}
-                  alt="short arrow"
-                />{" "}
+                <MdOutlineArrowOutward
+                  className="ml-3 opacity-0 mb-2 text-white transition-opacity duration-300 group-hover:opacity-100"
+                  size={20}
+                />
               </h4>
             </div>
           </div>
@@ -122,14 +117,24 @@ function Projects() {
         </div>
         <div
           ref={(el) => (sectionsRef.current[2] = el)}
-          className="h-[404px] bg-primary rounded-[20px] w-auto px-6"
+          className="project_card group"
         >
-          <div className="h-[404px] flex items-start justify-start w-full">
-            <div className="mt-10">
+          <div className=" flex items-start justify-start w-full">
+            <div className="mt-10 relative z-40 ">
               <h2>UNITO</h2>
-              <h4>CASE STUDY</h4>
+              <h4 className="flex-center">
+                CASE STUDY
+                <MdOutlineArrowOutward
+                  className="ml-2 opacity-0  text-black transition-opacity duration-300 group-hover:opacity-100"
+                  size={20}
+                />
+              </h4>
             </div>
           </div>
+          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+            <h2>CHECK ME OUT</h2>
+          </div>
+          <Img image_name={images.unito} />
         </div>
       </section>
 
@@ -137,25 +142,39 @@ function Projects() {
       <section className="grid grid-cols-3 w-full gap-[31px]">
         <div
           ref={(el) => (sectionsRef.current[3] = el)}
-          className="h-[404px] col-span-2 bg-primary rounded-[20px] w-auto px-6"
+          className="project_card group col-span-2"
         >
-          <div className="h-full flex items-end justify-end w-[692px]">
-            <div className="mb-10">
-              <h2>TIMEWARP</h2>
-              <h4>PRODUCT DESIGN</h4>
+          <div className="w-full h-full flex items-end justify-end">
+            <div className="mb-4 r40  text-white ">
+              <h2>PEWTON TECHNOLOGIES</h2>
+              <h4 className="flex-center">
+                BRANDING & WEB DESIGN
+                <MdOutlineArrowOutward
+                  className="ml-2 opacity-0  text-black transition-opacity duration-300 group-hover:opacity-100"
+                  size={20}
+                />
+              </h4>
             </div>
           </div>
+          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+            <h2>CHECK ME OUT</h2>
+          </div>
+          <Img image_name={images.unito} />
         </div>
         <div
           ref={(el) => (sectionsRef.current[4] = el)}
-          className="h-[404px] bg-primary rounded-[20px] w-auto px-6"
+          className="project_card group"
         >
-          <div className="flex h-full items-start justify-end w-full">
-            <div className="mt-10">
-              <h2>TIMEWARP</h2>
-              <h4>PRODUCT DESIGN</h4>
+          <div className="flex h-full  items-start justify-end w-full">
+            <div className="mt-10 r40">
+              <h2>TIM</h2>
+              <h4>BRANDING</h4>
             </div>
           </div>
+          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+            <h2>CHECK ME OUT</h2>
+          </div>
+          <Img image_name={images.unito} />
         </div>
       </section>
 
