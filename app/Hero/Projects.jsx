@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { images } from "@/app/utils";
+import { images, icons } from "@/app/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
@@ -43,14 +43,24 @@ function Projects() {
     <main className="flex flex-col mt-10 items-center gap-[32px]">
       {/* Time warp */}
       <section
-        onMouseEnter={() => setShow(true)}
-        onMouseLeave={() => setShow(false)}
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
+        className="group w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
       >
         <div className="relative z-40">
           <h2>TIMEWARP</h2>
-          <h4>PRODUCT DESIGN</h4>
+          <h4 className="flex">
+            PRODUCT DESIGN{" "}
+            <Image
+              className="ml-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              src={icons.arrowright}
+              height={20}
+              width={20}
+              alt="short arrow"
+            />{" "}
+          </h4>
+        </div>
+        <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 transition-all ">
+          <h2>CHECK ME OUT</h2>
         </div>
         <motion.div
           className="absolute top-0 left-0 w-full h-full"
@@ -88,7 +98,7 @@ function Projects() {
           <div className="h-[404px] flex items-end justify-start w-full">
             <div className="mb-10">
               <h2>TIMEWARP</h2>
-              <h4>PRODUCT DESIGN</h4>
+              <h4>PRODUCT DESIGN </h4>
             </div>
           </div>
         </div>
