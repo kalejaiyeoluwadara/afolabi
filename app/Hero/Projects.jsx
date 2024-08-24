@@ -7,6 +7,35 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
+const Img = ({ image_name }) => {
+  return (
+    <motion.div
+      className="absolute top-0 left-0 w-full h-full"
+      whileHover={{
+        scale: 1.5,
+        transition: {
+          type: "spring",
+          stiffness: 200,
+          damping: 100,
+        },
+      }}
+      whileTap={{
+        scale: 1.5, // Maintain the same scale while tapping
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 200,
+        damping: 100, // Same damping and stiffness for smooth return
+      }}
+    >
+      <Image
+        className="w-full h-full object-cover"
+        alt="warp image"
+        src={image_name}
+      />
+    </motion.div>
+  );
+};
 function Projects() {
   const sectionsRef = useRef([]);
   const [show, setShow] = useState(false);
@@ -62,45 +91,34 @@ function Projects() {
         <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 transition-all ">
           <h2>CHECK ME OUT</h2>
         </div>
-        <motion.div
-          className="absolute top-0 left-0 w-full h-full"
-          whileHover={{
-            scale: 1.5,
-            transition: {
-              type: "spring",
-              stiffness: 200,
-              damping: 100,
-            },
-          }}
-          whileTap={{
-            scale: 1.5, // Maintain the same scale while tapping
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 200,
-            damping: 100, // Same damping and stiffness for smooth return
-          }}
-        >
-          <Image
-            className="w-full h-full object-cover"
-            alt="warp image"
-            src={images.warp}
-          />
-        </motion.div>
+        <Img image_name={images.warp} />
       </section>
 
       {/* Unito and Log */}
       <section className="grid grid-cols-2 gap-[31px] justify-between w-full">
         <div
           ref={(el) => (sectionsRef.current[1] = el)}
-          className="h-[404px] bg-primary rounded-[20px] w-auto px-6"
+          className="h-[404px] group relative border overflow-hidden  rounded-[20px] w-auto px-6"
         >
-          <div className="h-[404px] flex items-end justify-start w-full">
-            <div className="mb-10">
-              <h2>TIMEWARP</h2>
-              <h4>PRODUCT DESIGN </h4>
+          <div className="h-[404px]  flex items-end justify-start w-full">
+            <div className="mb-10 relative text-white z-40  ">
+              <h2>CHAMPIONS LOGISTICS</h2>
+              <h4 className="flex">
+                BRANDING & WEB DESIGN
+                <Image
+                  className="ml-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  src={icons.arrowright}
+                  height={20}
+                  width={20}
+                  alt="short arrow"
+                />{" "}
+              </h4>
             </div>
           </div>
+          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-white text-black rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+            <h2>CHECK ME OUT</h2>
+          </div>
+          <Img image_name={images.champ} />
         </div>
         <div
           ref={(el) => (sectionsRef.current[2] = el)}
@@ -108,8 +126,8 @@ function Projects() {
         >
           <div className="h-[404px] flex items-start justify-start w-full">
             <div className="mt-10">
-              <h2>TIMEWARP</h2>
-              <h4>PRODUCT DESIGN</h4>
+              <h2>UNITO</h2>
+              <h4>CASE STUDY</h4>
             </div>
           </div>
         </div>
