@@ -62,3 +62,9 @@ h4{
 .r40{
   @apply relative z-40
 }
+.bw{
+  @apply bg-black text-white
+}
+.wb{
+  @apply bg-white text-black
+}

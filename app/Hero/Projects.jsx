@@ -37,6 +37,25 @@ const Img = ({ image_name }) => {
     </motion.div>
   );
 };
+const Topic = ({ title, sub, color }) => {
+  return (
+    <div
+      style={{
+        color: color,
+      }}
+      className="mt-10 w-full"
+    >
+      <h2>{title}</h2>
+      <h4 className="flex-center ">
+        {sub}{" "}
+        <MdOutlineArrowOutward
+          className="ml-2 opacity-0  transition-opacity duration-300 group-hover:opacity-100"
+          size={20}
+        />
+      </h4>
+    </div>
+  );
+};
 function Projects() {
   const sectionsRef = useRef([]);
   const [show, setShow] = useState(false);
@@ -131,8 +150,10 @@ function Projects() {
               </h4>
             </div>
           </div>
-          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
-            <h2>CHECK ME OUT</h2>
+          <div className="w-full flex-center ">
+            <div className="absolute z-20 h-[115px]  w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px]  transition-all ">
+              <h2>CHECK ME OUT</h2>
+            </div>
           </div>
           <Img image_name={images.unito} />
         </div>
@@ -147,34 +168,31 @@ function Projects() {
           <div className="w-full h-full flex items-end justify-end">
             <div className="mb-4 r40  text-white ">
               <h2>PEWTON TECHNOLOGIES</h2>
-              <h4 className="flex-center">
+              <h4 className="flex items-center">
                 BRANDING & WEB DESIGN
                 <MdOutlineArrowOutward
-                  className="ml-2 opacity-0  text-black transition-opacity duration-300 group-hover:opacity-100"
+                  className="ml-2 opacity-0  text-white transition-opacity duration-300 group-hover:opacity-100"
                   size={20}
                 />
               </h4>
             </div>
           </div>
-          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+          <div className="absolute z-20 h-[115px] rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[200px] -left-20 transition-all ">
             <h2>CHECK ME OUT</h2>
           </div>
-          <Img image_name={images.unito} />
+          <Img image_name={images.pewton} />
         </div>
         <div
           ref={(el) => (sectionsRef.current[4] = el)}
           className="project_card group"
         >
-          <div className="flex h-full  items-start justify-end w-full">
-            <div className="mt-10 r40">
-              <h2>TIM</h2>
-              <h4>BRANDING</h4>
-            </div>
+          <div className="flex h-full r40 items-start justify-end w-full">
+            <Topic title={"TIM"} sub={"BRANDING"} color={"white"} />
           </div>
-          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+          <div className="absolute z-20 h-[115px]  w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -top-[130px] right-20 transition-all ">
             <h2>CHECK ME OUT</h2>
           </div>
-          <Img image_name={images.unito} />
+          <Img image_name={images.tim} />
         </div>
       </section>
 
@@ -182,15 +200,29 @@ function Projects() {
       <section className="grid grid-cols-4 relative grid-rows-2 w-full h-auto gap-[31px]">
         <div
           ref={(el) => (sectionsRef.current[5] = el)}
-          className="h-[404px] w-auto bg-primary rounded-[20px]"
-        ></div>
+          className="project_card group flex items-end"
+        >
+          <div className=" flex  bg-red-300 r40  sm:w-[300px]">
+            <Topic
+              title={"NEXGEN"}
+              sub={"BRANDING & WEB DESIGN"}
+              color={"black"}
+            />
+          </div>
+          <div className="w-full flex-center ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb -rotate-90 rounded-[15px] group-hover:top-[90px] -right-[84px] -top-[230px]  transition-all ">
+              <h2>CHECK ME OUT</h2>
+            </div>
+          </div>
+          <Img image_name={images.nexgen} />
+        </div>
         <div
           ref={(el) => (sectionsRef.current[6] = el)}
-          className="h-[404px] col-span-2 w-auto bg-primary rounded-[20px]"
+          className="project_card group col-span-2 "
         ></div>
         <div
           ref={(el) => (sectionsRef.current[7] = el)}
-          className="h-[559px] w-auto row-span-2 bg-primary rounded-[20px]"
+          className="h-[559px] row-span-2 project_card group"
         ></div>
         <div
           ref={(el) => (sectionsRef.current[8] = el)}
