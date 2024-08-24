@@ -264,8 +264,20 @@ function Projects() {
         </div>
         <div
           ref={(el) => (sectionsRef.current[9] = el)}
-          className="h-[250px] absolute bottom-0 right-0 w-[290px] bg-black rounded-[20px]"
-        ></div>
+          className="h-[250px] absolute bottom-0 right-0  flex flex-col flex-center w-[290px] bw rounded-[20px]"
+        >
+          <Image
+            src={icons.wave}
+            className="rotate-[60deg] hover:animate-bounce "
+            height={50}
+            width={50}
+            alt=""
+          />
+          <p className="text-[48px] font-bold">SAY HELLO!</p>
+          <p className="text-[24px] leading-[27px] w-[194px] text-center ">
+            READY TO CREATE GREATNESS?{" "}
+          </p>
+        </div>
       </section>
     </main>
   );
