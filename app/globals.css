@@ -30,9 +30,6 @@ body{
 }
 
 *{
-  /* @apply transition-all  */
-}
-*{
   font-family: 'Stratos',sans-serif;
 }
 .stratosLight{

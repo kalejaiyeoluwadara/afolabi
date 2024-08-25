@@ -38,7 +38,7 @@ function Nav() {
             className=" h-[54px] w-[60px] flex-center rounded-[10px] bg-black  "
           >
             <Image
-              className=""
+              className="cursor-pointer"
               src={icons.sep}
               alt="alt"
               height={32}
