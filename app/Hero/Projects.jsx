@@ -46,7 +46,7 @@ const Topic = ({ title, sub, color }) => {
       className="mt-10"
     >
       <h2>{title}</h2>
-      <p className="flex font-extralight items-center ">
+      <p className="flex font-extralight text-[24px] items-center ">
         {sub}{" "}
         <MdOutlineArrowOutward
           className="ml-2 opacity-0  transition-opacity duration-300 group-hover:opacity-100"
@@ -160,7 +160,7 @@ function Projects() {
           <div className="flex h-full r40 items-start justify-end w-full">
             <Topic title={"TIM"} sub={"BRANDING"} color={"white"} />
           </div>
-          <div className="absolute z-20 h-[115px]  w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -top-[130px] right-20 transition-all ">
+          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[250px] -right-20 transition-all ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.tim} />
@@ -171,9 +171,9 @@ function Projects() {
       <section className="grid grid-cols-4 relative grid-rows-2 w-full h-auto gap-[31px]">
         <div
           ref={(el) => (sectionsRef.current[5] = el)}
-          className="project_card group flex items-end"
+          className="project_card  group "
         >
-          <div className=" flex   r40  sm:w-[300px]">
+          <div className=" flex absolute  z-40 bottom-8 left-3 w-[190px]">
             <Topic
               title={"NEXGEN"}
               sub={"BRANDING & WEB DESIGN"}
@@ -205,10 +205,7 @@ function Projects() {
           </div>
           <Img image_name={images.myhomeetal} />
         </div>
-        <div
-          ref={(el) => (sectionsRef.current[7] = el)}
-          className="h-[559px] row-span-2 project_card group"
-        >
+        <div className=" row-span-2 project_card group">
           <div className=" r40  w-full ">
             <Topic title={"OYEFESO"} sub={"A STORY"} color={"white"} />
           </div>
