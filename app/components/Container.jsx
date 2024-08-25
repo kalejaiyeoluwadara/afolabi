@@ -1,11 +1,20 @@
 "use client";
 import Link from "next/link";
 import React, { useRef, useEffect } from "react";
-import { images } from "@/app/utils";
+import { images, icons } from "@/app/utils";
 import Image from "next/image";
 import { gsap } from "gsap";
 
-const Container = ({ name, link, icon }) => {
+const Container = ({ name, link }) => {
+  const icontype =
+    name === "CASE STUDIES"
+      ? images.flower
+      : name === "STRATEGIES"
+      ? icons.globe
+      : name === "BRANDING"
+      ? icons.spring
+      : icons.flowerr;
+
   return (
     <Link className="group" href={"/"}>
       <section className="w-auto border-2 border-dashed  border-black group-hover:border-none relative flex justify-between transition-all  delay-[200] items-center rounded-[20px] flex-col h-[218px] overflow-hidden">
@@ -15,11 +24,11 @@ const Container = ({ name, link, icon }) => {
           </p>
           <div className="h-[218px] absolute top-[80px] flex-center cursor-pointer overflow-hidden bg-black w-full rounded-[10px]">
             <Image
-              src={images.flower}
+              src={icontype}
               alt=""
               height={70}
               width={70}
-              className=" opacity-0 group-hover:opacity-[1] group-hover:rotate-180 transition-all " // Start image as hidden
+              className=" opacity-0 group-hover:opacity-[1]  transition-all " // Start image as hidden
             />
           </div>
         </div>
