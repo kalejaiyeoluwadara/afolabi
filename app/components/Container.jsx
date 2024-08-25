@@ -16,7 +16,7 @@ const Container = ({ name, link }) => {
       : icons.flowerr;
 
   return (
-    <Link className="group" href={"/"}>
+    <Link className="group" href={link}>
       <section className="w-auto border-2 border-dashed  border-black group-hover:border-none relative flex justify-between transition-all  delay-[200] items-center rounded-[20px] flex-col h-[218px] overflow-hidden">
         <div className="relative w-full group-hover:-translate-y-[80px] transition-all ">
           <p className="uppercase text-[32px]  font-semibold w-full text-center mt-6">
