@@ -157,10 +157,10 @@ function Projects() {
           ref={(el) => (sectionsRef.current[4] = el)}
           className="project_card group"
         >
-          <div className="flex h-full r40 items-start justify-end w-full">
+          <div className="flex   r40 items-start justify-end w-full">
             <Topic title={"TIM"} sub={"BRANDING"} color={"white"} />
           </div>
-          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[250px] -right-20 transition-all ">
+          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[190px] -right-20 transition-all ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.tim} />
