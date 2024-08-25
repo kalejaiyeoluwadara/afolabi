@@ -59,35 +59,6 @@ const Topic = ({ title, sub, color }) => {
 function Projects() {
   const sectionsRef = useRef([]);
   const [show, setShow] = useState(false);
-  useEffect(() => {
-    sectionsRef.current.forEach((section, index) => {
-      gsap.fromTo(
-        section,
-        {
-          opacity: 0,
-          y: 50,
-          scale: 0.9,
-          rotate: -5,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-          duration: 1.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 80%",
-            end: "top 20%",
-            scrub: 0.6,
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
-
   return (
     <main className="flex flex-col mt-10 items-center gap-[32px]">
       {/* Time warp */}
