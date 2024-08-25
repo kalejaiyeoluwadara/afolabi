@@ -48,7 +48,7 @@ export default function Home() {
       <section ref={(el) => (sectionsRef.current[0] = el)}>
         <Hero />
       </section>
-      <section ref={(el) => (sectionsRef.current[1] = el)}>
+      <section>
         <Collections />
       </section>
       <section ref={(el) => (sectionsRef.current[2] = el)}>
