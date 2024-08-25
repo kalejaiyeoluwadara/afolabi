@@ -9,7 +9,7 @@ function Page() {
           <h3 className="text-[64px] sm:w-auto font-bold bg-black text-white px-4 py-6">
             WORK
           </h3>
-          <h3 className="text-[64px] mt-3 mb-9 sm:w-auto font-bold bg-black text-primary px-2 py-6        ">
+          <h3 className="text-[64px] mt-3 mb-9 sm:w-auto font-bold bg-black text-primary px-2 py-6 ">
             CASE STUDIES
           </h3>
         </div>
@@ -31,10 +31,13 @@ function Page() {
         </div>
       </section>
       <section className="grid grid-cols-2 gap-10 ">
-        {[1, 2, 3, 4].map((d, id) => {
-          return (
-            <Container key={id} name={"Case Study"} link={"/case-study"} />
-          );
+        {[
+          { name: "MYHOMEETAL", link: "/works/case-studies" },
+          { name: "NEXGEN", link: "/works/case-studies" },
+          { name: "STRATEGIES", link: "/works/case-studies" },
+          { name: "MYHOMEETAL", link: "/works/case-studies" },
+        ].map((d, id) => {
+          return <Container key={id} name={d.name} link={d.link} />;
         })}
       </section>
     </main>

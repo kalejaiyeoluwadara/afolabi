@@ -10,31 +10,31 @@ function Page() {
             WORK
           </h3>
           <h3 className="text-[64px] mt-3 mb-9 sm:w-auto font-bold bg-black text-primary px-2 py-6        ">
-            CASE STUDIES
+            STRATEGIES
           </h3>
         </div>
         <div className="text-3xl sm:w-[90%]  stratosLight font-light  space-y-6 ">
           <p>
             <span className="uppercase font-semibold">
-              In my work as a product designer and UI/UX specialist,{" "}
+              In every project, {""}
             </span>
             <span className="stratosLight font-light">
-              I’ve tackled complex challenges by blending creativity with
-              strategic problem-solving.
+              strategy drives my design decisions.
             </span>
           </p>
           <p className="stratosLight font-light">
-            Through detailed case studies, I’ve demonstrated the journey from
-            concept to completion, focusing on how user-centered design
-            translates into measurable results.
+            As an interactive designer, I dive deep into understanding user
+            behaviour, market trends, and business goals to craft solutions that
+            are not only visually compelling but also strategically sound.
           </p>
         </div>
       </section>
       <section className="grid grid-cols-2 gap-10 ">
-        {[1, 2, 3, 4].map((d, id) => {
-          return (
-            <Container key={id} name={"Case Study"} link={"/case-study"} />
-          );
+        {[
+          { name: "MYHOMEETAL", link: "/works/case-studies" },
+          { name: "BRANDING", link: "/works/branding" },
+        ].map((d, id) => {
+          return <Container key={id} name={d.name} link={d.link} />;
         })}
       </section>
     </main>
