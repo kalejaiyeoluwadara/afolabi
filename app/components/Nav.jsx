@@ -98,10 +98,15 @@ function Nav() {
           </div>
         </motion.div>
         {!modal && (
-          <div className="h-[80px] px-[41px] rounded-[15px] bg-primary border-2 border-dashed border-black flex-center">
-            <p className="text-3xl font-semibold">MY EUREKA MOMENT</p>
+          <div className="h-[80px] px-[41px] relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
+            <p className="text-3xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
+              MY EUREKA MOMENT
+            </p>
+            <div className="absolute w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
+            <div className="absolute w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
           </div>
         )}
+
         <div
           className={`h-[80px] px-[34px] rounded-[15px] ${
             modal ? "wb" : "bw"
