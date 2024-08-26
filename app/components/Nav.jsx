@@ -19,7 +19,7 @@ function Nav() {
       opacity: 1,
       y: 0,
       delay: 0.5,
-      ease: "bounce",
+      ease: "power1.inOut",
     });
   }, []);
 
@@ -67,9 +67,9 @@ function Nav() {
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -100 }} // Adjust -100 to hide the navbar completely
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="my-8 w-full sticky opacity-0 translate-y-10 z-50 flex items-start justify-start"
+      className="my-8 w-full sticky gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
     >
-      <main className="w-[99vw] flex items-start justify-around">
+      <main className="w-[100vw] flex items-start justify-around">
         <motion.div
           animate={controls}
           className="h-[80px] px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center"
@@ -99,20 +99,22 @@ function Nav() {
         </motion.div>
         {!modal && (
           <div className="h-[80px] px-[41px] relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
-            <p className="text-3xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
+            <p className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
               MY EUREKA MOMENT
             </p>
-            <div className="absolute w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
-            <div className="absolute w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
+            <div className=" w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
+            <div className=" w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
           </div>
         )}
 
         <div
           className={`h-[80px] px-[34px] rounded-[15px] ${
-            modal ? "wb" : "bw"
+            modal
+              ? "bg-black border-2 border-gray-500 text-white border-dashed "
+              : "bw"
           } flex-center`}
         >
-          <p className="text-3xl font-semibold">HIRE ME FOR A PROJECT</p>
+          <p className="text-2xl font-semibold">HIRE ME FOR A PROJECT</p>
         </div>
       </main>
     </motion.nav>

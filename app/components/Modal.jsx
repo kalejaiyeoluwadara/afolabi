@@ -10,7 +10,7 @@ const Container = ({ name, link, setModal }) => {
   return (
     <motion.section
       onClick={() => setModal(false)}
-      className="w-auto text-white overflow-hidden border-2 border-dashed border-white flex justify-between items-center rounded-[20px] flex-col h-[200px]"
+      className="w-full text-white overflow-hidden border-2 border-dashed border-gray-500 flex justify-between items-center rounded-[20px] flex-col h-[170px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -21,7 +21,7 @@ const Container = ({ name, link, setModal }) => {
         </p>
       </Link>
       <motion.div
-        className="h-[119px] bg-primary w-full rounded-[10px]"
+        className="h-[100px] bg-primary w-full rounded-[10px]"
         initial={{ height: 0 }}
         animate={{ height: 119 }}
         exit={{ height: 0 }}
@@ -40,13 +40,13 @@ function Modal() {
     <AnimatePresence>
       {modal && (
         <motion.main
-          className="h-screen w-screen pb-10 overflow-y-scroll grid grid-cols-2 items-center justify-center px-[53px] bg-black z-40 gap-10 fixed top-0 left-0"
+          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[73px] bg-black z-40 gap-10 fixed top-0 left-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-white flex flex-col justify-center text-[80px] space-y-6">
+          <div className="text-gray-200 flex flex-col justify-center text-[80px] space-y-6">
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/" },

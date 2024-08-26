@@ -8,7 +8,7 @@ function NavBar() {
   const { setModal, modal } = useGlobal();
   return (
     <nav className=" my-8 w-screen relative z-50 flex items-start justify-start  ">
-      <main className="w-[95vw] gap-8 grid grid-cols-3 items-start justify-around  ">
+      <main className="w-[100vw] gap-8 grid grid-cols-3 items-start justify-around  ">
         <div className=" h-[80px] col-span-2 w-auto   px-4 rounded-[15px] bg-primary border-2 border-dashed border-black  flex justify-between items-center ">
           <Link
             onClick={() => {
