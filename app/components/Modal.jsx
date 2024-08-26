@@ -2,7 +2,6 @@
 import React from "react";
 import { useGlobal } from "../context";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Container Component
@@ -34,7 +33,6 @@ const Container = ({ name, link, setModal }) => {
 // Modal Component
 function Modal() {
   const { modal, setModal } = useGlobal();
-  const pathname = usePathname();
 
   return (
     <AnimatePresence>
@@ -56,20 +54,17 @@ function Modal() {
               <div
                 key={id}
                 onClick={() => setModal(false)}
-                className="relative"
+                className="relative group"
               >
                 <Link href={d.link}>
-                  <p className="text-7xl uppercase font-bold">{d.title}</p>
+                  <p className="text-7xl  uppercase font-bold">{d.title}</p>
                 </Link>
-                {pathname.includes(d.title.toLowerCase()) && (
-                  <motion.span
-                    className="h-2 w-[380px] bg-[#D3A068] absolute -left-12 top-8"
-                    initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    exit={{ width: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                  />
-                )}
+                <motion.span
+                  className="h-2 w-0 group-hover:w-[380px] transition-all duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8"
+                  // initial={{ width: 0 }}
+                  // whileHover={{ width: "100%" }}
+                  // transition={{ duration: 0.5, delay: 0.2 }}
+                />
               </div>
             ))}
           </div>
