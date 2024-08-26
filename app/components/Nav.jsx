@@ -2,15 +2,28 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useGlobal } from "../context";
 import { icons } from "@/app/utils";
+import gsap from "gsap";
 
 function Nav() {
-  const { setModal } = useGlobal();
+  const { setModal, modal } = useGlobal();
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [visible, setVisible] = useState(true);
+  const controls = useAnimation();
 
+  // GSAP Intro Animation
+  useEffect(() => {
+    gsap.to("#nav", {
+      opacity: 1,
+      y: 0,
+      delay: 0.5,
+      ease: "bounce",
+    });
+  }, []);
+
+  // Scroll Handling for Navbar visibility
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -31,16 +44,36 @@ function Nav() {
     };
   }, [lastScrollTop]);
 
+  // Handle Modal Effects
+  useEffect(() => {
+    if (modal) {
+      controls.start({
+        width: "65%",
+        transition: { duration: 0.5 },
+        color: "white",
+      });
+    } else {
+      controls.start({
+        width: "490px",
+        transition: { duration: 0.5 },
+        color: "black",
+      });
+    }
+  }, [modal, controls]);
+
   return (
     <motion.nav
       id="nav"
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -100 }} // Adjust -100 to hide the navbar completely
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="my-8 mt-2 sticky top-2 w-full z-50 flex items-start justify-start"
+      className="my-8 w-full sticky opacity-0 translate-y-10 z-50 flex items-start justify-start"
     >
-      <main className="w-[95vw] flex items-start justify-around">
-        <div className="h-[80px] w-[490px] col-span-2 px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center">
+      <main className="w-[99vw] flex items-start justify-around">
+        <motion.div
+          animate={controls}
+          className="h-[80px] px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center"
+        >
           <Link
             onClick={() => {
               setModal(false);
@@ -63,11 +96,17 @@ function Nav() {
               width={32}
             />
           </div>
-        </div>
-        <div className="h-[80px] px-[41px] rounded-[15px] bg-primary border-2 border-dashed border-black flex-center">
-          <p className="text-3xl font-semibold">MY EUREKA MOMENT</p>
-        </div>
-        <div className="h-[80px] px-[34px] rounded-[15px] bg-black text-white flex-center">
+        </motion.div>
+        {!modal && (
+          <div className="h-[80px] px-[41px] rounded-[15px] bg-primary border-2 border-dashed border-black flex-center">
+            <p className="text-3xl font-semibold">MY EUREKA MOMENT</p>
+          </div>
+        )}
+        <div
+          className={`h-[80px] px-[34px] rounded-[15px] ${
+            modal ? "wb" : "bw"
+          } flex-center`}
+        >
           <p className="text-3xl font-semibold">HIRE ME FOR A PROJECT</p>
         </div>
       </main>

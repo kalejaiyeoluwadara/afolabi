@@ -14,12 +14,10 @@ export default function Home() {
   return (
     <main className="">
       <Nav />
-      <SmoothScroll>
-        <Hero />
-        <Collections />
-        <Projects />
-        <Foot />
-      </SmoothScroll>
+      <Hero />
+      <Collections />
+      <Projects />
+      <Foot />
     </main>
   );
 }
