@@ -7,7 +7,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <body>
-      <main className="">
+      <main className="px-4">
         <NavBar />
         {children}
         <Foot />
