@@ -4,6 +4,7 @@ import { useGlobal } from "../context";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { icons, images } from "@/app/utils";
+import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
 // Container Component
 const Container = ({ name, link, setModal }) => {
@@ -64,7 +65,7 @@ function Modal() {
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-gray-200 flex flex-col justify-center text-[80px] space-y-6">
+          <div className=" duration-700 ease-in-out flex flex-col justify-center text-[80px] space-y-3">
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/" },
@@ -77,16 +78,22 @@ function Modal() {
                 className="relative group"
               >
                 <Link href={d.link}>
-                  <p className="text-7xl  uppercase font-bold">{d.title}</p>
+                  <p className="text-6xl text-gray-200 group-hover:text-white transition-all  uppercase font-bold">
+                    {d.title}
+                  </p>
                 </Link>
-                <motion.span
-                  className="h-2 w-0 group-hover:w-[380px] transition-all duration-700 ease-in-out duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8"
-                  // initial={{ width: 0 }}
-                  // whileHover={{ width: "100%" }}
-                  // transition={{ duration: 0.5, delay: 0.2 }}
-                />
+                <motion.span className="h-2 w-0 group-hover:w-[380px] transition-all  duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
               </div>
             ))}
+            <div className="text-white flex uppercase translate-y-[28px] items-center gap-2 text-[20px] ">
+              <Link href={"/"}>instagram</Link>
+              <GoDotFill size={10} />
+              <Link href={"/"}>behance</Link>
+              <GoDotFill size={10} />
+              <Link href={"/"}>linkedin</Link>
+              <GoDotFill size={10} />
+              <Link href={"/"}>figma</Link>
+            </div>
           </div>
           <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-4">
             {[
