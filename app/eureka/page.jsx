@@ -73,8 +73,36 @@ function Page() {
             })}
           </div>
         </section>
-        <Foot />
       </main>
+      {/* Swapy */}
+      <section className="grid grid-cols-2 border-y-2 border-black border-dashed w-full mt-[131px] overflow-hidden h-[384px] ">
+        <div className="h-full w-auto flex px-[61px] justify-center flex-col ">
+          <h1>SWAPY</h1>
+          <p className="uppercase text-10 w-[373px] ">
+            This project showcases my creativity through thoughtful color
+            choices, cohesive{" "}
+          </p>
+        </div>
+        <div className="h-full w-auto overflow-hidden  scale-[1.2] ">
+          <Image src={images.unito} alt="" className="h-full w-full" />
+        </div>
+      </section>
+      {/* Swapy 2*/}
+      <section className="grid mb-8 grid-cols-2 border-2 border-t-0 border-black border-dashed w-full overflow-hidden h-[384px] ">
+        <div className="h-full w-auto overflow-hidden  scale-[1.2] ">
+          <Image src={images.unito} alt="" className="h-full w-full" />
+        </div>
+        <div className="h-full w-auto flex px-[61px] justify-center items-end flex-col ">
+          <h1>SWAPY</h1>
+          <p className="uppercase text-end text-10 w-[373px] ">
+            This project showcases my creativity through thoughtful color
+            choices, cohesive{" "}
+          </p>
+        </div>
+      </section>
+      <div className="px-5">
+        <Foot />
+      </div>
     </>
   );
 }
