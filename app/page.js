@@ -12,12 +12,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   return (
-    <main className="px-5">
+    <>
       <Nav />
-      <Hero />
-      <Collections />
-      <Projects />
-      <Foot />
-    </main>
+      <main className="px-5">
+        <Hero />
+        <Collections />
+        <Projects />
+        <Foot />
+      </main>
+    </>
   );
 }
