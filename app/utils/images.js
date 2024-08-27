@@ -7,8 +7,11 @@ import pewton from "@/public/images/pewton.png";
 import nexgen from "@/public/images/nexgen.png";
 import myhomeetal from "@/public/images/myhomeetal.png";
 import afolabi from "@/public/images/afolabi.png";
+import folabi from "@/public/images/folabi.png";
 import swapy from "@/public/images/swapy.png";
 import tim from "@/public/images/tim.png";
+import brilliance from "@/public/images/brilliance.png";
+import spawn from "@/public/images/spawn.png";
 
 module.exports = {
   slide,
@@ -22,4 +25,7 @@ module.exports = {
   afolabi,
   nexgen,
   tim,
+  folabi,
+  brilliance,
+  spawn,
 };

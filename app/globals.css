@@ -38,6 +38,9 @@ html{
 .stratosLight{
   font-family: 'StratosLight',sans-serif;
 }
+.stratosBold{
+  font-family: 'StratosBold',sans-serif;
+}
 .flex-center{
   @apply flex items-center justify-center
 }
