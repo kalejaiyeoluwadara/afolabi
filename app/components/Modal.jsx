@@ -39,9 +39,9 @@ function Modal() {
       {modal && (
         <motion.main
           className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[73px] bg-black z-40 gap-10 fixed top-0 left-0"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
           <div className="text-gray-200 flex flex-col justify-center text-[80px] space-y-6">

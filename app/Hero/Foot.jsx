@@ -38,9 +38,11 @@ function Foot() {
             );
           })}
         </div>
-        <div className="h-[60px] w-[60px] flex-center rounded-full bg-[#D9D9D9]  ">
-          <Image src={icons.arrowup} height={20} width={20} alt="arrow-up" />
-        </div>
+        <Link href={"#nav"}>
+          <div className="h-[60px] w-[60px] flex-center rounded-full bg-[#D9D9D9]  ">
+            <Image src={icons.arrowup} height={20} width={20} alt="arrow-up" />
+          </div>
+        </Link>
       </div>
     </footer>
   );

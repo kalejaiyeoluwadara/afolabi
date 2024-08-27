@@ -71,8 +71,8 @@ function Nav() {
     >
       <main className="w-[100vw] flex items-start justify-around">
         <motion.div
-          animate={controls}
-          className="h-[80px] px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center"
+          // animate={controls}
+          className="h-[80px] w-[490px] px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center"
         >
           <Link
             onClick={() => {
@@ -84,7 +84,7 @@ function Nav() {
           </Link>
           <div
             onClick={() => {
-              setModal(true);
+              setModal(!modal);
             }}
             className="h-[54px] w-[60px] flex-center rounded-[10px] bg-black"
           >
@@ -97,24 +97,22 @@ function Nav() {
             />
           </div>
         </motion.div>
-        {!modal && (
-          <div className="h-[80px] px-[41px] relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
-            <p className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
-              MY EUREKA MOMENT
-            </p>
-            <div className=" w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
-            <div className=" w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
-          </div>
-        )}
+        <div className="h-[80px] px-[41px] relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
+          <p className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
+            MY EUREKA MOMENT
+          </p>
+          <div className=" w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
+          <div className=" w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
+        </div>
 
         <div
           className={`h-[80px] px-[34px] rounded-[15px] ${
             modal
-              ? "bg-black border-2 border-gray-500 text-white border-dashed "
+              ? "bg-black border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed "
               : "bw"
           } flex-center`}
         >
-          <p className="text-2xl font-semibold">HIRE ME FOR A PROJECT</p>
+          <p className="text-2xl font-semibold  ">HIRE ME FOR A PROJECT</p>
         </div>
       </main>
     </motion.nav>
