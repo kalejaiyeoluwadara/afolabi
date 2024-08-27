@@ -3,7 +3,10 @@ import React from "react";
 import Container from "../components/Container";
 function Collections() {
   return (
-    <main className=" w-full grid mt-[132px] mb-[41px] grid-cols-2 sm:grid-cols-4 gap-8 ">
+    <main
+      id="collections"
+      className=" w-full grid mt-[132px] mb-[41px] grid-cols-2 sm:grid-cols-4 gap-8 "
+    >
       {[
         { title: "CASE STUDIES", link: "/works/case-studies" },
         { title: "STRATEGIES", link: "/works/strategies" },

@@ -232,19 +232,21 @@ function Projects() {
         </div>
         <div
           ref={(el) => (sectionsRef.current[9] = el)}
-          className="h-[250px] absolute bottom-0 right-0  flex flex-col flex-center w-[290px] bw rounded-[20px]"
+          className="h-[404px] group overflow-hidden absolute bottom-0 right-0  flex flex-col flex-center w-[290px] bw rounded-[20px]"
         >
           <Image
             src={icons.wave}
-            className="rotate-[60deg] hover:animate-bounce "
-            height={50}
-            width={50}
+            className="rotate-[60deg] group-hover:scale-[1.5] group-hover:translate-y-[100px]  transition-all duration-700 ease-in-out "
+            height={130}
+            width={130}
             alt=""
           />
-          <p className="text-[48px] font-bold">SAY HELLO!</p>
-          <p className="text-[24px] leading-[27px] w-[194px] text-center ">
-            READY TO CREATE GREATNESS?{" "}
-          </p>
+          <div className=" group-hover:translate-y-[130px] transition-all duration-700 ease-in-outl ">
+            <p className="text-[48px] font-bold">SAY HELLO!</p>
+            <p className="text-[24px] leading-[27px] w-[194px] text-center ">
+              READY TO CREATE GREATNESS?{" "}
+            </p>
+          </div>
         </div>
       </section>
     </main>

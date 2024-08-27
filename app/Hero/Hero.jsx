@@ -4,6 +4,7 @@ import gsap from "gsap";
 import React from "react";
 import { icons } from "@/app/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   useGSAP(() => {
@@ -79,7 +80,7 @@ function Hero() {
   }, []);
 
   return (
-    <main className="flex-center pb-10 w-screen overflow-x-hidden ">
+    <main className="flex-center pb-10 w-screen overflow-hidden ">
       <div className="flex-center mt-16 flex-col relative ">
         <Image
           id="img1"
@@ -121,14 +122,16 @@ function Hero() {
           NIGERIA.
         </h1>
 
-        <div
-          id="foot"
-          className="w-[265px] opacity-0 mb-8 mt-4 h-[80px] border-black rounded-full border-[1.5px] flex-center border-dashed "
-        >
-          <div className=" font-medium w-[242px] text-2xl border rounded-full h-[60px] flex-center ">
-            MY COLLECTIONS
+        <Link href={"#collections"}>
+          <div
+            id="foot"
+            className="w-[265px] opacity-0 mb-8 mt-4 h-[80px] border-black rounded-full border-[1.5px] flex-center border-dashed "
+          >
+            <div className=" font-medium hover:font-semibold cursor-pointer transition-all w-[242px] text-2xl border rounded-full h-[60px] flex-center ">
+              MY COLLECTIONS
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </main>
   );

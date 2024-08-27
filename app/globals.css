@@ -5,6 +5,9 @@
 body{
   @apply bg-foreground w-full overflow-x-hidden
 }
+html{
+  scroll-behavior: smooth;
+}
 .font {
   font-family: 'StratosBold',sans-serif;
   font-weight: 900; /* or the correct weight for Stratos Medium */
