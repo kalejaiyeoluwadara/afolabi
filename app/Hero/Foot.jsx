@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { icons } from "@/app/utils";
+import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
 function Foot() {
   return (
@@ -24,19 +25,14 @@ function Foot() {
       </div>
       <div className="flex justify-between items-center w-full  ">
         <p className="text-[#747474] text-base ">MY AHA MOMENT</p>
-        <div className="flex gap-4 ">
-          {[
-            { title: "INSTAGRAM", link: "link" },
-            { title: "BEHANCE", link: "link" },
-            { title: "LINKEDIN", link: "link" },
-            { title: "FIGMA", link: "link" },
-          ].map((d, id) => {
-            return (
-              <Link className="text-3xl font-semibold " href={d.link} key={id}>
-                {d.title}
-              </Link>
-            );
-          })}
+        <div className="flex uppercase items-center gap-4 ">
+          <Link href={"/"}>instagram</Link>
+          <GoDotFill size={10} />
+          <Link href={"/"}>behance</Link>
+          <GoDotFill size={10} />
+          <Link href={"/"}>linkedin</Link>
+          <GoDotFill size={10} />
+          <Link href={"/"}>figma</Link>
         </div>
         <Link href={"#nav"}>
           <div className="h-[60px] w-[60px] flex-center rounded-full bg-[#D9D9D9]  ">
