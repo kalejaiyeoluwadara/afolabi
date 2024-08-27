@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   return (
-    <main className="px-6">
+    <main className="">
       <Nav />
       <Hero />
       <Collections />
