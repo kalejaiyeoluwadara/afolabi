@@ -67,7 +67,7 @@ function Page() {
           <p className="text-[48px] flex-center mt-[100px] font-semibold mb-[89px] ">
             WORK EXPERIENCE
           </p>
-          <div className="flex overflow-x-scroll px-4 gap-8">
+          <div className="flex overflow-x-scroll no-scrollbar px-4 gap-8">
             {[1, 2, 3, 4].map((d, id) => {
               return <WorkCard key={id} />;
             })}
@@ -78,7 +78,7 @@ function Page() {
       <section className="grid grid-cols-2 border-y-2 border-black border-dashed w-full mt-[131px] overflow-hidden h-[384px] ">
         <div className="h-full w-auto flex px-[61px] justify-center flex-col ">
           <h1>SWAPY</h1>
-          <p className="uppercase text-10 w-[373px] ">
+          <p className="uppercase text-[28px] w-[433px] ">
             This project showcases my creativity through thoughtful color
             choices, cohesive{" "}
           </p>
@@ -88,13 +88,13 @@ function Page() {
         </div>
       </section>
       {/* Swapy 2*/}
-      <section className="grid mb-8 grid-cols-2 border-2 border-t-0 border-black border-dashed w-full overflow-hidden h-[384px] ">
+      <section className="grid mb-8 grid-cols-2 border-b-2  border-black border-dashed w-full overflow-hidden h-[384px] ">
         <div className="h-full w-auto overflow-hidden  scale-[1.2] ">
           <Image src={images.unito} alt="" className="h-full w-full" />
         </div>
         <div className="h-full w-auto flex px-[61px] justify-center items-end flex-col ">
           <h1>SWAPY</h1>
-          <p className="uppercase text-end text-10 w-[373px] ">
+          <p className="uppercase mt-3 text-end text-[28px] w-[433px] ">
             This project showcases my creativity through thoughtful color
             choices, cohesive{" "}
           </p>

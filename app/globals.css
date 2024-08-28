@@ -89,3 +89,7 @@ h4{
   background-color: #D3A068;
   border-radius: 5px;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
