@@ -127,7 +127,7 @@ function Hero() {
             id="foot"
             className="w-[265px] opacity-0 mb-8 mt-4 h-[90px] border-black rounded-full border-[1.5px] flex-center border-dashed "
           >
-            <div className=" font-medium hover:font-semibold cursor-pointer transition-all ease-in-out duration-700 w-[232px] text-2xl border rounded-[50%] h-[60px] flex-center ">
+            <div className=" font-medium hover:font-semibold cursor-pointer speed w-[232px] text-2xl border-[1.5px] border-black border-dashed rounded-[50px] h-[60px] flex-center ">
               MY COLLECTIONS
             </div>
           </div>

@@ -50,7 +50,7 @@ function Modal() {
     <AnimatePresence>
       {modal && (
         <motion.main
-          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[73px] bg-black z-40 gap-10 fixed top-0 left-0"
+          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[21px] bg-black z-40 gap-10 fixed top-0 left-0"
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
@@ -61,7 +61,7 @@ function Modal() {
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/eureka" },
               { title: "CONTACT", link: "/contact" },
-              { title: "MORE", link: "/" },
+              { title: "PLAYGROUND", link: "/" },
             ].map((d, id) => (
               <div
                 key={id}
@@ -69,7 +69,7 @@ function Modal() {
                 className="relative group"
               >
                 <Link href={d.link}>
-                  <p className="text-6xl text-gray-200 group-hover:text-white transition-all  uppercase font-bold">
+                  <p className="text-7xl text-gray-200 group-hover:text-white transition-all  uppercase font-bold">
                     {d.title}
                   </p>
                 </Link>

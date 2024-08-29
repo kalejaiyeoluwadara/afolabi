@@ -3,7 +3,7 @@ import Container from "../components/Container";
 
 function Page() {
   return (
-    <main className="mt-[158px] ">
+    <main className="mt-[70px] ">
       <section className="grid grid-cols-2 gap-4  ">
         <div className="space-y-4">
           <div className="border flex-center  px-4 py-2  text-[126px] font-bold  ">
@@ -15,7 +15,7 @@ function Page() {
         </div>
         <div className="border uppercase text-[27px]  px-[33px] py-10 ">
           <p className="flex">
-            <span className="px-2 py-2 bg-primary text-[40px] font-bold text-white text-center flex-center mr-2 ">
+            <span className="px-2 py-2 bg-primary text-[40px] font-extrabold text-white text-center flex-center mr-2 ">
               T
             </span>
             <span>
@@ -24,11 +24,11 @@ function Page() {
             </span>
           </p>
           <div className="  ">
-            <p className="mt-2  stratosLight  mb-6">
+            <p className="mt-2  stratosLight font-semibold  mb-6">
               {" "}
               and strategy come together to create memorable user experiences.
             </p>
-            <p className="stratosLight">
+            <p className="stratosLight font-semibold ">
               Each featured work represents a blend of creativity, innovation,
               and purposeful design, solving real-world problems while pushing
               the boundaries of what’s possible.

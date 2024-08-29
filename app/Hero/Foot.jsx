@@ -6,10 +6,10 @@ import Image from "next/image";
 function Foot() {
   return (
     <footer
-      className={`h-[488px] rounded-[20px] text-white mt-[58px] w-full bg-black px-7 py-4 flex  flex-col justify-between  `}
+      className={`min-h-[488px] rounded-[20px] text-white mt-[58px] mb-[39px] w-full bg-black px-7 py-9 flex  flex-col justify-between  `}
     >
       <div className="flex text-base font-normal flex-col mt-4 ">
-        <p className=" uppercase ">OYEFESO Selected Work</p>
+        <p className=" uppercase text-[24px] ">OYEFESO Selected Work</p>
         <p>‘22 - ‘24</p>
       </div>
       <div className="w-full flex-center ">
@@ -25,7 +25,7 @@ function Foot() {
       </div>
       <div className="flex justify-between items-center w-full  ">
         <p className="text-[#747474] text-base ">MY AHA MOMENT</p>
-        <div className="flex uppercase items-center gap-4 ">
+        <div className="flex uppercase text-[30px] items-center gap-4 ">
           <Link href={"/"}>instagram</Link>
           <GoDotFill size={10} />
           <Link href={"/"}>behance</Link>

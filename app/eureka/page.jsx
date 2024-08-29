@@ -13,8 +13,8 @@ function Page() {
         <p className=" text-[410px] font-extrabold ">EUREKA</p>
       </section>
       <main className="px-5">
-        <section className="py-6 h-[633px] flex justify-between items-start gap-8">
-          <div className="border w-[838px] h-full uppercase text-[27px]  px-[33px] py-10 ">
+        <section className="py-6 h-[560px]  flex justify-between items-start gap-9">
+          <div className="border-[4px] border-dashed border-black rounded-[20px] w-[838px] h-full uppercase text-[27px]  px-[33px] py-10 ">
             <h2 className="mb-6 stratosBold font-bold text-[64px] ">
               Creative odyssey
             </h2>
@@ -50,7 +50,7 @@ function Page() {
           </div>
         </section>
         {/* brilliance section */}
-        <section className="h-[371px]  grid grid-cols-3  gap-8">
+        <section className=" mb-[100px]  grid grid-cols-3  gap-8">
           <Image
             src={images.brilliance}
             alt="brilliance"
@@ -63,11 +63,11 @@ function Page() {
           />
         </section>
         {/* Work experience */}
-        <section className="flex pt-[100px] flex-col ">
-          <p className="text-[48px] flex-center mt-[100px] font-semibold mb-[89px] ">
+        <section className="flex  flex-col ">
+          <p className="text-[48px] flex-center  font-semibold mb-[89px] ">
             WORK EXPERIENCE
           </p>
-          <div className="flex overflow-x-scroll no-scrollbar px-4 gap-8">
+          <div className="flex overflow-x-scroll sm:flex-row flex-col no-scrollbar px-4 gap-8">
             {[1, 2, 3, 4].map((d, id) => {
               return <WorkCard key={id} />;
             })}

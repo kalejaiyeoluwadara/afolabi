@@ -4,8 +4,10 @@ import React from "react";
 import { icons } from "@/app/utils";
 import Link from "next/link";
 import { useGlobal } from "../context";
+import { useRouter } from "next/navigation";
 function NavBar() {
   const { setModal, modal } = useGlobal();
+  const router = useRouter();
   return (
     <nav className=" my-8 w-full px-[22px] relative z-50 flex items-start justify-start  ">
       <main className="w-[100vw] gap-8 grid grid-cols-3 items-start justify-around  ">
@@ -34,9 +36,14 @@ function NavBar() {
           </div>
         </div>
 
-        <Link onClick={() => setModal(false)} href="/">
+        <div
+          onClick={() => {
+            setModal(false);
+            router.back();
+          }}
+        >
           <div
-            className={`h-[80px]  rounded-[15px] ${
+            className={`h-[80px] cursor-pointer  rounded-[15px] ${
               modal ? "wb" : "border"
             } gap-4 flex-center  `}
           >
@@ -49,7 +56,7 @@ function NavBar() {
             />
             <p className="text-3xl font-semibold ">RETURN</p>
           </div>
-        </Link>
+        </div>
       </main>
     </nav>
   );

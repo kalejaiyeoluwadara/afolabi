@@ -6,7 +6,9 @@ function Page() {
   return (
     <main>
       <Nav />
-      <Foot />
+      <div className="px-[21px]">
+        <Foot />
+      </div>
     </main>
   );
 }
