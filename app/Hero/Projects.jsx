@@ -168,11 +168,8 @@ function Projects() {
       </section>
 
       {/* Last Grid */}
-      <section className="grid grid-cols-4 relative grid-rows-2 w-full h-auto gap-[31px]">
-        <div
-          ref={(el) => (sectionsRef.current[5] = el)}
-          className="project_card  group "
-        >
+      <section className="grid grid-cols-4 relative  w-full h-auto gap-[31px]">
+        <div className="project_card  group ">
           <div className=" flex absolute  z-40 bottom-8 left-3 w-[190px]">
             <Topic
               title={"NEXGEN"}
@@ -187,10 +184,7 @@ function Projects() {
           </div>
           <Img image_name={images.nexgen} />
         </div>
-        <div
-          ref={(el) => (sectionsRef.current[6] = el)}
-          className="project_card group  col-span-2 "
-        >
+        <div className="project_card group  col-span-2 ">
           <div className=" r40  mt-40 w-full ">
             <Topic
               title={"MYHOMEETAL"}
@@ -216,10 +210,10 @@ function Projects() {
           </div>
           <Img image_name={images.afolabi} />
         </div>
-        <div
-          ref={(el) => (sectionsRef.current[8] = el)}
-          className="project_card group flex items-end col-span-3"
-        >
+      </section>
+      <section className=" grid grid-cols-3 relative sm:-translate-y-8 w-full h-auto gap-[31px]">
+        {/* swapy */}
+        <div className="project_card group flex items-end w-auto col-span-2">
           <div className=" r40 mb-4 w-full ">
             <Topic title={"SWAPY"} sub={"CASE STUFY"} color={"white"} />
           </div>
@@ -230,10 +224,8 @@ function Projects() {
           </div>
           <Img image_name={images.swapy} />
         </div>
-        <div
-          ref={(el) => (sectionsRef.current[9] = el)}
-          className="h-[404px] group overflow-hidden absolute bottom-0 right-0  flex flex-col flex-center w-[290px] bw rounded-[20px]"
-        >
+        {/* last div */}
+        <div className="h-[404px] group overflow-hidden col-span-1 flex flex-col flex-center w-auto bw rounded-[20px]">
           <Image
             src={icons.wave}
             className="rotate-[60deg] group-hover:scale-[1.5] group-hover:translate-y-[100px]  transition-all duration-700 ease-in-out "
