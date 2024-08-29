@@ -118,8 +118,16 @@ function Hero() {
           id="h1text"
           className="uppercase opacity-0 mt-[60px] font w-[952px] leading-[80px]  text-center text-black "
         >
-          product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED IN
-          NIGERIA.
+          product designer,{" "}
+          <span className="relative group ">
+            <span className="relative z-40">CREATIVE </span>
+            <span className="absolute w-[250px] h-[12px] group-hover:h-[20px] transition-all duration-[400ms] ease-in-out bg-primary z-10 -left-4 top-[33px] "></span>{" "}
+          </span>{" "}
+          DIRECTOR, INTERACTIVE DESIGNER BASED IN{" "}
+          <span className="relative group ">
+            <span className="relative z-40">NIGERIA.</span>
+            <span className="absolute w-[220px] h-[12px] group-hover:h-[20px] transition-all duration-[400ms] ease-in-out bg-primary z-10 -left-2 top-[33px] "></span>{" "}
+          </span>{" "}
         </h1>
 
         <Link href={"#collections"}>
