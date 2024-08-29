@@ -93,3 +93,6 @@ h4{
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+.speed{
+  @apply transition-all duration-700 ease-in-out 
+}

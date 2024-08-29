@@ -76,7 +76,7 @@ function Projects() {
             />
           </h4>
         </div>
-        <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 transition-all ">
+        <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 speed ">
           <h2>CHECK ME OUT</h2>
         </div>
         <Img image_name={images.warp} />
@@ -100,7 +100,7 @@ function Projects() {
               </h4>
             </div>
           </div>
-          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-white text-black rounded-[15px] group-hover:-top-3 -top-[130px] right-20 transition-all ">
+          <div className="absolute z-20 h-[115px] rotate-180 w-auto px-[15px] flex-center bg-white text-black rounded-[15px] group-hover:-top-3 -top-[130px] right-20 speed ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.champ} />
@@ -122,7 +122,7 @@ function Projects() {
             </div>
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 h-[115px]  w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px]  transition-all ">
+            <div className="absolute z-20 h-[115px]  w-auto px-[15px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
@@ -148,7 +148,7 @@ function Projects() {
               </h4>
             </div>
           </div>
-          <div className="absolute z-20 h-[115px] rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[200px] -left-20 transition-all ">
+          <div className="absolute z-20 h-[115px] rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] top-[190px]  group-hover:-left-20 -left-[300px] speed ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.pewton} />
@@ -160,7 +160,7 @@ function Projects() {
           <div className="flex   r40 items-start justify-end w-full">
             <Topic title={"TIM"} sub={"BRANDING"} color={"white"} />
           </div>
-          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] group-hover:top-[190px] -top-[190px] -right-20 transition-all ">
+          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px]  top-[190px] group-hover:-right-20 -right-[300px] speed ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.tim} />
@@ -181,7 +181,7 @@ function Projects() {
             />
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb -rotate-90 rounded-[15px] group-hover:top-[90px] -right-[84px] -top-[230px]  transition-all ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb -rotate-90 rounded-[15px] top-[90px] group-hover:-right-[84px]  -right-[200px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
@@ -199,7 +199,7 @@ function Projects() {
             />
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center bg-[#E33536] text-white  rounded-[15px] group-hover:bottom-[-10px] left-[24px] -bottom-[230px]  transition-all ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center bg-[#E33536] text-white  rounded-[15px] group-hover:bottom-[-10px] left-[24px] -bottom-[230px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
@@ -210,7 +210,7 @@ function Projects() {
             <Topic title={"OYEFESO"} sub={"A STORY"} color={"white"} />
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:bottom-[-10px] left-[14px] -bottom-[230px]  transition-all ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:bottom-[-10px] left-[14px] -bottom-[230px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
@@ -224,7 +224,7 @@ function Projects() {
             <Topic title={"SWAPY"} sub={"CASE STUFY"} color={"white"} />
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 rotate-180 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:top-[-10px] right-[24px] -top-[230px]  transition-all ">
+            <div className="absolute z-20 rotate-180 h-[95px]  w-auto px-[15px] flex-center wb  rounded-[15px] group-hover:top-[-10px] right-[24px] -top-[230px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
