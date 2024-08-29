@@ -12,6 +12,7 @@ import swapy from "@/public/images/swapy.png";
 import tim from "@/public/images/tim.png";
 import brilliance from "@/public/images/brilliance.png";
 import spawn from "@/public/images/spawn.png";
+import nex from "@/public/images/nex.png";
 
 module.exports = {
   slide,
@@ -28,4 +29,5 @@ module.exports = {
   folabi,
   brilliance,
   spawn,
+  nex,
 };
