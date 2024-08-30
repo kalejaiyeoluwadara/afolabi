@@ -89,9 +89,9 @@ function Modal() {
           <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-4">
             {[
               { name: "CASE STUDIES", link: "/works/case-studies" },
-              { name: "BRANDING", link: "/works/case-studies" },
+              { name: "BRANDING", link: "/works/branding" },
               { name: "WEB & APP DESIGN", link: "/works/case-studies" },
-              { name: "PRODUCT DESIGN", link: "/works/case-studies" },
+              { name: "PRODUCT DESIGN", link: "/works/product-design" },
             ].map((d, id) => {
               return (
                 <Container
