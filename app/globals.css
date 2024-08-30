@@ -34,6 +34,7 @@ html{
 
 *{
   font-family: 'Stratos',sans-serif;
+  user-select: none;
 }
 .stratosLight{
   font-family: 'StratosLight',sans-serif;

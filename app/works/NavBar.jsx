@@ -5,11 +5,11 @@ import { icons } from "@/app/utils";
 import Link from "next/link";
 import { useGlobal } from "../context";
 import { useRouter } from "next/navigation";
-function NavBar() {
+function NavBar({ white }) {
   const { setModal, modal } = useGlobal();
   const router = useRouter();
   return (
-    <nav className=" my-8 w-full px-[22px] relative z-40 flex items-start justify-start  ">
+    <nav className=" my-8 w-full px-[22px] relative z-50 flex items-start justify-start  ">
       <main className="w-[100vw] gap-8 grid grid-cols-3 items-start justify-around  ">
         <div className=" h-[80px] col-span-2 w-auto px-4 rounded-[15px] bg-primary border-2 border-dashed border-black  flex justify-between items-center ">
           <Link
@@ -44,7 +44,7 @@ function NavBar() {
         >
           <div
             className={`h-[80px] cursor-pointer  rounded-[15px] ${
-              modal ? "wb" : "border"
+              modal ? "wb" : white ? "wb" : "border"
             } gap-4 flex-center  `}
           >
             <Image
