@@ -49,7 +49,7 @@ html{
   @apply border-2 border-dashed rounded-[20px] border-black  
 }
 h1{
-  @apply text-6xl font-bold
+  @apply text-3xl sm:leading-normal  sm:text-6xl font-bold
 }
 h2{
   @apply  text-4xl font-semibold
@@ -72,7 +72,9 @@ h4{
 .wb{
   @apply bg-white text-black
 }
-
+.desktop{
+  @apply  sm:flex hidden
+}
 
 
 ::-webkit-scrollbar {

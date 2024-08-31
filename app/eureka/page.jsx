@@ -64,7 +64,7 @@ function Page() {
           />
         </section>
         {/* Work experience */}
-        <section className="flex  flex-colmb-[131px] ">
+        <section className="flex  flex-col mb-[131px] ">
           <p className="text-[48px] flex-center  font-semibold mb-[89px] ">
             WORK EXPERIENCE
           </p>

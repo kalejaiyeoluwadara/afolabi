@@ -69,8 +69,8 @@ function Nav() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="my-8 w-full  sticky gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
     >
-      <main className="w-full  grid grid-cols-4 px-5 items-center justify-center gap-8 ">
-        <div className="h-[80px]  w-full col-span-2 px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center">
+      <main className="w-full  grid sm:grid-cols-4 px-5 items-center justify-center gap-8 ">
+        <div className="h-[80px]  w-[300px] sm:w-full col-span-2 px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center">
           <Link
             onClick={() => {
               setModal(false);
@@ -96,7 +96,7 @@ function Nav() {
             />
           </div>
         </div>
-        <div className="h-[80px]  relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
+        <div className=" desktop h-[80px]  relative overflow-hidden group rounded-[15px] bg-primary border-2 border-dashed cursor-pointer border-black flex-center">
           <p className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
             MY EUREKA MOMENT
           </p>
@@ -105,7 +105,7 @@ function Nav() {
         </div>
 
         <div
-          className={`h-[80px] rounded-[15px] ${
+          className={`desktop h-[80px] rounded-[15px] ${
             modal
               ? "bg-black border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed "
               : "bw"

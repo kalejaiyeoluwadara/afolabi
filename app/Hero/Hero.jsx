@@ -116,7 +116,7 @@ function Hero() {
         />
         <h1
           id="h1text"
-          className="uppercase opacity-0 mt-[60px] font w-[952px] leading-[80px]  text-center text-black "
+          className="uppercase opacity-0 mt-[60px] font w-full sm:w-[952px] leading-[80px]  text-center text-black "
         >
           product designer,{" "}
           <span className="relative group ">
