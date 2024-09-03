@@ -31,7 +31,9 @@ html{
   font-weight: 400;
   font-style: normal;
 }
-
+.boldText{
+  @apply text-5xl stratosBold
+}
 *{
   font-family: 'Stratos',sans-serif;
   user-select: none;

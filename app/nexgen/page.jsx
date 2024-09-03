@@ -8,6 +8,7 @@ import Swapy from "../components/Swapy";
 import Foot from "../Hero/Foot";
 import Role from "./Role";
 import Overview from "./Overview";
+import Details from "./Details";
 function Page() {
   return (
     <main className=" min-h-[100vh] bg-foreground w-full ">
@@ -34,10 +35,13 @@ function Page() {
           </div>
         </section>
       </div>
-      {/* second section */}
-      <Role />
-      {/* Third section */}
-      <Overview />
+      <section className="px-[21px]">
+        {/* second section */}
+        <Role />
+        {/* Third section */}
+        <Overview />
+        <Details />
+      </section>
       <section className="w-full bg-foreground pt-[116px] ">
         <Swapy />
       </section>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Role() {
   return (
-    <section className="py-10 px-5">
+    <section className="py-10 ">
       <div className=" grid sm:grid-cols-2 sm:gap-12  border-[4px] border-dashed border-black rounded-[20px] w-full h-auto uppercase   px-[33px] py-10 ">
         <article>
           <h2 className="text-5xl stratosBold mb-5 ">ROLE:</h2>
