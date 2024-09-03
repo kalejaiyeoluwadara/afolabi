@@ -10,9 +10,6 @@ function Page() {
   return (
     <>
       <NavBar />
-      <section className="h-[452px] flex-center w-full bg-black text-primary">
-        <p className=" text-[410px] font-extrabold ">EUREKA</p>
-      </section>
       <main className="px-5">
         <section className="py-6 h-[560px]  flex justify-between items-start gap-9">
           <div className="border-[4px] border-dashed border-black rounded-[20px] w-[838px] h-full uppercase text-[27px]  px-[33px] py-10 ">
@@ -46,7 +43,7 @@ function Page() {
             <Image
               src={images.folabi}
               alt=""
-              className="h-full w-full absolute hover:scale-[1.5] scale-[1.1] duration-700 ease-in-out top-0 rounded-[15px] left-0 z-40 object-cover "
+              className="h-full w-full absolute hover:scale-[1.5] scale-[1.01] duration-700 ease-in-out top-0 rounded-[15px] left-0 z-40 object-cover "
             />
           </div>
         </section>
@@ -62,17 +59,6 @@ function Page() {
             className="w-auto col-span-2 h-full "
             alt=""
           />
-        </section>
-        {/* Work experience */}
-        <section className="flex  flex-col mb-[131px] ">
-          <p className="text-[48px] flex-center  font-semibold mb-[89px] ">
-            WORK EXPERIENCE
-          </p>
-          <div className="flex overflow-x-scroll sm:flex-row flex-col no-scrollbar px-4 gap-8">
-            {[1, 2, 3, 4].map((d, id) => {
-              return <WorkCard key={id} />;
-            })}
-          </div>
         </section>
       </main>
       <Swapy />
