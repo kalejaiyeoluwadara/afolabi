@@ -13,6 +13,7 @@ import tim from "@/public/images/tim.png";
 import brilliance from "@/public/images/brilliance.png";
 import spawn from "@/public/images/spawn.png";
 import nex from "@/public/images/nex.png";
+import border from "@/public/images/border.png";
 
 module.exports = {
   slide,
@@ -30,4 +31,5 @@ module.exports = {
   brilliance,
   spawn,
   nex,
+  border,
 };

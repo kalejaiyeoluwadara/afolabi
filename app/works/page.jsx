@@ -38,9 +38,7 @@ function Page() {
       </section>
       <section className="grid grid-cols-3 mt-8 gap-10  ">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((d, id) => {
-          return (
-            <Container name="case study" key={id} link={"/works/case-study"} />
-          );
+          return <Container name="case study" key={id} link={"/nexgen"} />;
         })}
       </section>
     </main>
