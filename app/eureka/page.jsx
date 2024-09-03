@@ -6,6 +6,7 @@ import { images } from "@/app/utils";
 import Image from "next/image";
 import WorkCard from "./WorkCard";
 import Swapy from "../components/Swapy";
+import Story from "./Story";
 function Page() {
   return (
     <>
@@ -47,6 +48,7 @@ function Page() {
             />
           </div>
         </section>
+
         {/* brilliance section */}
         <section className=" mb-[100px]  grid grid-cols-3  gap-8">
           <Image
@@ -60,6 +62,8 @@ function Page() {
             alt=""
           />
         </section>
+        {/* Story */}
+        <Story />
       </main>
       <Swapy />
       <div className="px-5">
