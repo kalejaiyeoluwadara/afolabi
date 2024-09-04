@@ -23,13 +23,16 @@ const Container = ({ name, link }) => {
             {name}
           </p>
           <div className="h-[218px] absolute top-[80px] flex-center cursor-pointer overflow-hidden bg-black w-full rounded-[10px]">
-            <Image
+            {/* <Image
               src={icontype}
               alt=""
               height={70}
               width={70}
               className=" opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out " // Start image as hidden
-            />
+            /> */}
+            <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
+              CHECK ME OUT
+            </p>
           </div>
         </div>
       </section>

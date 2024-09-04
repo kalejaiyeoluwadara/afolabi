@@ -20,21 +20,24 @@ const Container = ({ name, link, setModal }) => {
   return (
     <motion.section
       onClick={() => setModal(false)}
-      className="w-full text-white overflow-hidden border-2 border-dashed border-gray-500 flex justify-between items-center rounded-[20px] flex-col h-[170px] group group-hover:border-none transition-all duration-700 ease-in-out relative"
+      className="w-full text-white overflow-hidden border-2 border-dashed border-white flex justify-between items-center rounded-[20px] flex-col h-[180px] group group-hover:border-none transition-all duration-700 ease-in-out relative"
     >
       <Link href={"/"} className="w-full">
         <div className="relative w-full group-hover:-translate-y-[80px] transition-all duration-[400ms] ease-in-out">
           <p className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
             {name}
           </p>
-          <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[180px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
-            <Image
+          <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[190px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
+            {/* <Image
               src={icontype}
               alt=""
               height={70}
               width={70}
               className="opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
-            />
+            /> */}
+            <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
+              CHECK ME OUT
+            </p>
           </div>
         </div>
       </Link>
@@ -73,10 +76,10 @@ function Modal() {
                     {d.title}
                   </p>
                 </Link>
-                <motion.span className="h-2 w-0 group-hover:w-[380px] transition-all  duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
+                <motion.span className="h-2 w-0 group-hover:w-[440px] transition-all  duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
               </div>
             ))}
-            <div className="text-white flex uppercase translate-y-[28px] items-center gap-2 text-[20px] ">
+            <div className="text-white flex uppercase translate-y-[28px] items-center gap-2 text-[24px] ">
               <Link href={"/"}>instagram</Link>
               <GoDotFill size={10} />
               <Link href={"/"}>behance</Link>
@@ -86,7 +89,7 @@ function Modal() {
               <Link href={"/"}>figma</Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-4">
+          <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-[32px]">
             {[
               { name: "CASE STUDIES", link: "/works/case-studies" },
               { name: "BRANDING", link: "/works/branding" },
