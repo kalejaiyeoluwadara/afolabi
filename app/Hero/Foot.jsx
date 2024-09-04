@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { icons } from "@/app/utils";
 import { GoDotFill } from "react-icons/go";
+import { GrLinkUp } from "react-icons/gr";
 import Image from "next/image";
 function Foot() {
   return (
@@ -35,8 +36,12 @@ function Foot() {
           <Link href={"/"}>figma</Link>
         </div>
         <Link href={"#nav"}>
-          <div className="h-[60px] w-[60px] flex-center rounded-full bg-[#D9D9D9]  ">
-            <Image src={icons.arrowup} height={20} width={20} alt="arrow-up" />
+          <div className="h-[60px] w-[60px] flex-center rounded-full group relative overflow-hidden bg-[#D9D9D9]  ">
+            <div className="h-[85px] w-[85px] absolute  rounded-full top-20  group-hover:top-[-4px] group-hover:left-[-10px] bg-black speed " />
+            <GrLinkUp
+              size={20}
+              className="z-20 group-hover:text-white text-black speed group-hover:translate-y-[-12px] "
+            />
           </div>
         </Link>
       </div>
