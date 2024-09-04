@@ -8,6 +8,9 @@ body{
 html{
   scroll-behavior: smooth;
 }
+.cover{
+  @apply absolute top-0 left-0 object-cover 
+}
 .font {
   font-family: 'StratosBold',sans-serif;
   font-weight: 900; /* or the correct weight for Stratos Medium */

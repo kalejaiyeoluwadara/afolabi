@@ -1,9 +1,16 @@
+import Image from "next/image";
 import React from "react";
-
+import { images } from "@/app/utils";
 function Details() {
   return (
     <main className="border-4 border-dashed rounded-[20px] border-black py-[70px] px-[60px] flex flex-col items-center   ">
-      <div className="w-full h-[519px] rounded-xl border-black border-2 border-dashed"></div>
+      <div className="w-full h-[519px] rounded-[46px] overflow-hidden relative ">
+        <Image
+          src={images.branding}
+          alt="branding"
+          className="cover   scale-[1.1] h-full w-full z-20"
+        />
+      </div>
 
       <section className="mt-[180px]">
         <div>
@@ -36,6 +43,13 @@ function Details() {
               eligibility and remains memorable.
             </p>
           </div>
+          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.logo}
+              alt="branding"
+              className="cover h-full w-full z-20"
+            />
+          </div>
         </div>
         {/* logo iteration */}
         <div className="mt-[180px]">
@@ -54,43 +68,79 @@ function Details() {
               embody what other academies strive for in a logo.
             </p>
           </div>
+          <div className="w-full mt-[160px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.iteration}
+              alt="iteration"
+              className="cover h-full w-full z-20"
+            />
+          </div>
+
+          <p className="my-[180px]">
+            So, I decided to go back to the drawing board. After a long day of
+            sketching and testing multiple logo ideas, i came up with a logo
+            mark i was sure would survive the test of time.
+          </p>
+
+          <div className="w-full h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.iteration2}
+              alt="iteration"
+              className="cover h-full w-full z-20"
+            />
+          </div>
         </div>
         {/* Challenge */}
         <div className="mt-[180px]">
           <h1 className="boldText uppercase ">Challenge</h1>
-          <div className="mt-6 uppercas ">
+          <div className="mt-6 ">
             <p className="">
               Finally, now we have a logo let’s address the problem nexgen aim’s
               to solve. The goal at nexgen is to create a seamless online
               education process were students can join communities, share
               resources, and learn, all from the comfort of their home.
             </p>
-            <p className="mt-7 ">
+            <p className="my-7 ">
               Here is where i come in, i was tasked with designing a website
               that ensures the onboarding process for student is simple and
-              informative. How did i go about it?
+              informative.
             </p>
+            <p>How did i go about it?</p>
           </div>
         </div>
         {/* Simplified user flow */}
         <div className="mt-[180px]">
           <h1 className="boldText uppercase ">Simplified user flow</h1>
-          <div className="mt-6 uppercas ">
+          <div className="mt-6 ">
             <p className="">
               A simple flow highlighting the user’s onboarding journey, from
               opening the website to enrolling for one of the 6 courses Nexgen
               offers their students.
             </p>
+            <div className="w-full mt-[160px] h-[519px] rounded-[46px] overflow-hidden relative ">
+              <Image
+                src={images.userflow}
+                alt="iteration"
+                className="cover   h-full w-full z-20"
+              />
+            </div>
           </div>
         </div>
         {/* landing page */}
         <div className="mt-[180px]">
           <h1 className="boldText uppercase ">landing PAGE</h1>
-          <div className="mt-6 uppercas ">
+          <div className="mt-6  ">
             <p className="">
               The home page was meticulously crafted to ensure students have the
               best onboarding experience.
             </p>
+          </div>
+          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.landingpage}
+              alt="iteration"
+              className="cover h-full w-full z-20"
+            />
           </div>
         </div>
         {/* course page */}
@@ -102,6 +152,13 @@ function Details() {
               instructor details the page embodies my guiding principles.
             </p>
           </div>
+          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.coursepage}
+              alt="iteration"
+              className="cover    h-full w-full z-20"
+            />
+          </div>
         </div>
         {/* PAYMENT & INVOICING  */}
         <div className="mt-[180px]">
@@ -111,6 +168,20 @@ function Details() {
               Payment to invoice uses a straight and direct payment method to
               ensure students have the best payment experience.
             </p>
+          </div>
+          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.payment}
+              alt="iteration"
+              className="cover    h-full w-full z-20"
+            />
+          </div>
+          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <Image
+              src={images.plan}
+              alt="iteration"
+              className="cover    h-full w-full z-20"
+            />
           </div>
         </div>
       </section>
