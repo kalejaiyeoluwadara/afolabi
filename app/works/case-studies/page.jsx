@@ -13,24 +13,24 @@ function Page() {
             CASE STUDIES
           </h3>
         </div>
-        <div className="text-3xl sm:w-[90%]  stratosLight font-light  space-y-6 ">
+        <div className="text-3xl sm:w-[90%] space-y-6 ">
           <p>
-            <span className="uppercase font-semibold">
+            <span className="clash font-semibold">
               In my work as a product designer and UI/UX specialist,{" "}
             </span>
-            <span className="stratosLight font-light">
+            <span className="clash">
               I’ve tackled complex challenges by blending creativity with
               strategic problem-solving.
             </span>
           </p>
-          <p className="stratosLight font-light">
+          <p className="clash">
             Through detailed case studies, I’ve demonstrated the journey from
             concept to completion, focusing on how user-centered design
             translates into measurable results.
           </p>
         </div>
       </section>
-      <section className="grid grid-cols-2 gap-10 ">
+      <section className="grid grid-cols-2 gap-[32px] ">
         {[
           { name: "MYHOMEETAL", link: "/works/case-studies" },
           { name: "NEXGEN", link: "/works/case-studies" },

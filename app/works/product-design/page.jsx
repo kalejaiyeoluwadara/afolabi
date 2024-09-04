@@ -13,24 +13,24 @@ function Page() {
             PRODUCT DESIGN
           </h3>
         </div>
-        <div className="text-3xl sm:w-[90%]  stratosLight font-light  space-y-6 ">
+        <div className="text-3xl sm:w-[90%]  space-y-6 ">
           <p>
-            <span className="uppercase font-semibold">
+            <span className="clash font-semibold">
               Over the past two years,{" "}
             </span>
-            <span className="stratosLight font-light">
+            <span className="clash">
               I’ve collaborated with companies and start-ups to shape products
               that seamlessly integrate into people's lives
             </span>
           </p>
-          <p className="stratosLight font-light">
+          <p className="clash">
             I focus on balancing functionality with aesthetics, ensuring every
             product I touch is both beautiful and efficient, making a lasting
             difference in how people interact with technology.
           </p>
         </div>
       </section>
-      <section className="grid grid-cols-2 gap-10 ">
+      <section className="grid grid-cols-2 gap-[32px] ">
         {[
           { name: "MYHOMEETAL", link: "/works/case-studies" },
           { name: "NEXGEN", link: "/works/case-studies" },

@@ -83,7 +83,7 @@ function Projects() {
       </section>
 
       {/* Unito and Log */}
-      <section className="grid sm:grid-cols-2 gap-[31px] justify-between w-full">
+      <section className="grid sm:grid-cols-2 gap-8 justify-between w-full">
         <div
           ref={(el) => (sectionsRef.current[1] = el)}
           className="project_card group"
@@ -131,7 +131,7 @@ function Projects() {
       </section>
 
       {/* Pewton and Tim */}
-      <section className="grid sm:grid-cols-3 w-full gap-[31px]">
+      <section className="grid sm:grid-cols-3 w-full gap-8">
         <div
           ref={(el) => (sectionsRef.current[3] = el)}
           className="project_card group sm:col-span-2"
@@ -168,7 +168,7 @@ function Projects() {
       </section>
 
       {/* Last Grid */}
-      <section className="grid sm:grid-cols-4 relative  w-full h-auto gap-[31px]">
+      <section className="grid sm:grid-cols-4 relative  w-full h-auto gap-8">
         <div className="project_card  group ">
           <div className=" flex absolute  z-40 bottom-8 left-3 w-[190px]">
             <Topic
@@ -211,7 +211,7 @@ function Projects() {
           <Img image_name={images.afolabi} />
         </div>
       </section>
-      <section className=" grid sm:grid-cols-3 relative sm:-translate-y-8 w-full h-auto gap-[31px]">
+      <section className=" grid sm:grid-cols-3 relative sm:-translate-y-8 w-full h-auto gap-8">
         {/* swapy */}
         <div className="project_card group flex items-end w-auto sm:col-span-2">
           <div className=" r40 mb-4 w-full ">

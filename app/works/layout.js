@@ -1,5 +1,6 @@
 import Foot from "../Hero/Foot";
 import NavBar from "./NavBar";
+import "./works.css";
 export const metadata = {
   title: "Afolabi Works",
   description: "Afolabi Works",

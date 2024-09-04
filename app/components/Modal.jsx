@@ -8,33 +8,17 @@ import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
 // Container Component
 const Container = ({ name, link, setModal }) => {
-  const icontype =
-    name === "CASE STUDIES"
-      ? images.flower
-      : name === "STRATEGIES"
-      ? icons.globe
-      : name === "BRANDING"
-      ? icons.spring
-      : icons.flowerr;
-
   return (
     <motion.section
       onClick={() => setModal(false)}
       className="w-full text-white overflow-hidden border-2 border-dashed border-white flex justify-between items-center rounded-[20px] flex-col h-[180px] group group-hover:border-none transition-all duration-700 ease-in-out relative"
     >
-      <Link href={"/"} className="w-full">
+      <Link href={link} className="w-full">
         <div className="relative w-full group-hover:-translate-y-[80px] transition-all duration-[400ms] ease-in-out">
           <p className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
             {name}
           </p>
           <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[190px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
-            {/* <Image
-              src={icontype}
-              alt=""
-              height={70}
-              width={70}
-              className="opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
-            /> */}
             <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
               CHECK ME OUT
             </p>
@@ -47,7 +31,7 @@ const Container = ({ name, link, setModal }) => {
 
 // Modal Component
 function Modal() {
-  const { modal, setModal } = useGlobal();
+  const { modal, setModal, navContent } = useGlobal();
 
   return (
     <AnimatePresence>
@@ -90,16 +74,11 @@ function Modal() {
             </div>
           </div>
           <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-[32px]">
-            {[
-              { name: "CASE STUDIES", link: "/works/case-studies" },
-              { name: "BRANDING", link: "/works/branding" },
-              { name: "WEB & APP DESIGN", link: "/works/case-studies" },
-              { name: "PRODUCT DESIGN", link: "/works/product-design" },
-            ].map((d, id) => {
+            {navContent.map((d, id) => {
               return (
                 <Container
                   key={id}
-                  name={d.name}
+                  name={d.title}
                   setModal={setModal}
                   link={d.link}
                 />

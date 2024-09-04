@@ -13,21 +13,21 @@ function Page() {
             BRANDING
           </h3>
         </div>
-        <div className="text-3xl sm:w-[90%]  stratosLight font-light  space-y-6 ">
+        <div className="text-3xl sm:w-[90%] space-y-6 ">
           <p>
-            <span className="uppercase font-semibold">As a creative lead,</span>
-            <span className="stratosLight font-light">
+            <span className="clash font-semibold">As a creative lead, </span>
+            <span className="clash">
               I’ve partnered with brands to craft identities that resonate with
               their audience and stand the test of time.
             </span>
           </p>
-          <p className="stratosLight font-light">
+          <p className="clash">
             My approach to branding goes beyond aesthetics; it’s about creating
             a cohesive story that reflects a brand’s values and mission.
           </p>
         </div>
       </section>
-      <section className="grid grid-cols-2 gap-10 ">
+      <section className="grid grid-cols-2 gap-[32px] ">
         {[
           { name: "MYHOMEETAL", link: "/works/case-studies" },
           { name: "NEXGEN", link: "/works/case-studies" },

@@ -13,23 +13,19 @@ function Page() {
             STRATEGIES
           </h3>
         </div>
-        <div className="text-3xl sm:w-[90%]  stratosLight font-light  space-y-6 ">
+        <div className="text-3xl sm:w-[90%] space-y-6 ">
           <p>
-            <span className="uppercase font-semibold">
-              In every project, {""}
-            </span>
-            <span className="stratosLight font-light">
-              strategy drives my design decisions.
-            </span>
+            <span className="clash font-semibold">In every project, {""}</span>
+            <span className="clash">strategy drives my design decisions.</span>
           </p>
-          <p className="stratosLight font-light">
+          <p className="clash">
             As an interactive designer, I dive deep into understanding user
             behaviour, market trends, and business goals to craft solutions that
             are not only visually compelling but also strategically sound.
           </p>
         </div>
       </section>
-      <section className="grid grid-cols-2 gap-10 ">
+      <section className="grid grid-cols-2 gap-[32px] ">
         {[
           { name: "MYHOMEETAL", link: "/works/case-studies" },
           { name: "BRANDING", link: "/works/branding" },
