@@ -17,7 +17,7 @@ function Page() {
           <NavBar white={true} />
         </div>
         <Image
-          src={images.nex}
+          src={images.nexbac}
           alt="background image"
           className="h-full w-[100vw] object-cover z-10 absolute top-0  "
         />

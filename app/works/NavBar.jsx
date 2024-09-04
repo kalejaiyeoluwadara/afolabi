@@ -28,10 +28,10 @@ function NavBar({ white }) {
           </Link>
           <div
             onClick={() => setModal(!modal)}
-            className=" h-[54px] w-[60px] cursor-pointer flex-center rounded-[10px] bg-black  "
+            className=" h-[54px] group w-[60px] cursor-pointer flex-center rounded-[10px] bg-black  "
           >
             <Image
-              className=""
+              className=" group-hover:scale-[1.3] speed"
               src={icons.zero2}
               alt="alt"
               height={32}
@@ -47,7 +47,7 @@ function NavBar({ white }) {
           }}
         >
           <div
-            className={`h-[80px] cursor-pointer  rounded-[15px] ${
+            className={`h-[80px] group cursor-pointer  rounded-[15px] ${
               modal
                 ? "wb"
                 : white
@@ -56,7 +56,7 @@ function NavBar({ white }) {
             } gap-4 flex-center  `}
           >
             <Image
-              className=""
+              className=" group-hover:translate-x-[-15px] group-hover:scale-[1.5] speed"
               src={icons.returnImg}
               alt="alt"
               height={32}

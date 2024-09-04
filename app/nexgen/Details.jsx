@@ -3,8 +3,8 @@ import React from "react";
 import { images } from "@/app/utils";
 function Details() {
   return (
-    <main className="border-4 border-dashed rounded-[20px] border-black py-[70px] px-[60px] flex flex-col items-center   ">
-      <div className="w-full h-[519px] rounded-[46px] overflow-hidden relative ">
+    <main className="border-4 border-dashed rounded-[20px] border-black py-[70px] px-[50px] flex flex-col items-center   ">
+      <div className="w-full h-[819px] rounded-[46px] overflow-hidden relative ">
         <Image
           src={images.branding}
           alt="branding"
@@ -117,7 +117,7 @@ function Details() {
               opening the website to enrolling for one of the 6 courses Nexgen
               offers their students.
             </p>
-            <div className="w-full mt-[160px] h-[519px] rounded-[46px] overflow-hidden relative ">
+            <div className="w-full mt-[160px] h-[533px] rounded-[46px] overflow-hidden relative ">
               <Image
                 src={images.userflow}
                 alt="iteration"
@@ -135,7 +135,7 @@ function Details() {
               best onboarding experience.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[833px] rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.landingpage}
               alt="iteration"
@@ -152,7 +152,7 @@ function Details() {
               instructor details the page embodies my guiding principles.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[797px] rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.coursepage}
               alt="iteration"
@@ -163,24 +163,24 @@ function Details() {
         {/* PAYMENT & INVOICING  */}
         <div className="mt-[180px]">
           <h1 className="boldText uppercase ">course PAGE</h1>
-          <div className="mt-6 uppercas ">
+          <div className="mt-6 ">
             <p className="">
               Payment to invoice uses a straight and direct payment method to
               ensure students have the best payment experience.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[1020px] rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.payment}
               alt="iteration"
               className="cover    h-full w-full z-20"
             />
           </div>
-          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[712px] rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.plan}
               alt="iteration"
-              className="cover    h-full w-full z-20"
+              className="cover h-full w-full z-20"
             />
           </div>
         </div>

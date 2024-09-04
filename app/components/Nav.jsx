@@ -62,7 +62,7 @@ function Nav() {
             }}
             href={"/"}
           >
-            <h2 className="font-bold hover:text-white transition-all text-[40px]">
+            <h2 className="font-bold hover:text-white speed text-[40px]">
               OYEFESO.
             </h2>
           </Link>
@@ -70,10 +70,10 @@ function Nav() {
             onClick={() => {
               setModal(!modal);
             }}
-            className="h-[54px] cursor-pointer w-[60px] flex-center rounded-[10px] hover:shadow-xl transition-all bg-black"
+            className="h-[54px] cursor-pointer w-[60px] flex-center rounded-[10px] hover:shadow-xl transition-all bg-black group"
           >
             <Image
-              className=""
+              className=" group-hover:scale-[1.5] speed"
               src={icons.sep}
               alt="alt"
               height={32}
@@ -86,21 +86,26 @@ function Nav() {
             modal ? "hidden" : "flex-center desktop"
           }`}
         >
-          <p className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
+          <h4 className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
             MY EUREKA MOMENT
-          </p>
+          </h4>
           <div className=" w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
           <div className=" w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
         </div>
 
         <div
-          className={`desktop h-[80px] rounded-[15px] ${
+          className={`desktop cursor-pointer flex-center overflow-hidden group h-[80px] rounded-[15px] ${
             modal
-              ? "bg-black border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed "
-              : "bw"
+              ? "bg-black  border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed  "
+              : " bw"
           } flex-center`}
         >
-          <p className="text-2xl font-semibold  ">HIRE ME FOR A PROJECT</p>
+          <h4 className="text-2xl w-full text-center translate-x-[140px] flex-shrink-0 font-semibold group-hover:translate-x-[520px] speed">
+            HIRE ME FOR A PROJECT
+          </h4>
+          <h4 className="text-2xl w-full flex-shrink-0 translate-x-[-320px] group-hover:translate-x-[-120px] group-hover:opacity-100 opacity-0 speed font-semibold">
+            HIRE ME FOR A PROJECT
+          </h4>
         </div>
       </main>
     </motion.nav>
