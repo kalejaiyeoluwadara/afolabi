@@ -7,12 +7,10 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <body>
-      <main className="px-6">
-        <NavBar />
-        {children}
-        <Foot />
-      </main>
-    </body>
+    <main className="px-6">
+      <NavBar />
+      {children}
+      <Foot />
+    </main>
   );
 }

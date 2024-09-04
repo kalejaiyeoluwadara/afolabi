@@ -37,6 +37,9 @@ html{
 .font-clash{
   font-family: ClashDisplay-Regular,sans-serif;
 }
+.font-clashb{
+  font-family: ClashDisplay-Bold,sans-serif;
+}
 .fc{
   @apply font-clash
 }

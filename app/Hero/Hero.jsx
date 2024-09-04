@@ -11,7 +11,7 @@ function Hero() {
     gsap.to("#h1text", {
       opacity: 1,
       y: 0,
-      delay: 1,
+      delay: 0.7,
       duration: 1,
       ease: "power1.inOut",
     });
@@ -114,21 +114,13 @@ function Hero() {
           width={100}
           className="absolute opacity-0 bottom-[-3px] hover:animate-ping right-[100px] "
         />
-        <h1
+        <p
           id="h1text"
-          className="uppercase opacity-0 mt-[60px] font w-full sm:w-[952px] leading-[80px]  text-center text-black "
+          className="uppercase font-clashb  opacity-0  sm:text-[64px] mt-[60px] w-full sm:w-[952px] leading-[1.2]  text-center text-black "
         >
-          product designer,{" "}
-          <span className="relative group ">
-            <span className="relative z-40">CREATIVE </span>
-            <span className="absolute w-[250px] h-[12px] group-hover:h-[20px] transition-all duration-[400ms] ease-in-out bg-primary z-10 -left-4 top-[33px] "></span>{" "}
-          </span>{" "}
-          DIRECTOR, INTERACTIVE DESIGNER BASED IN{" "}
-          <span className="relative group ">
-            <span className="relative z-40">NIGERIA.</span>
-            <span className="absolute w-[220px] h-[12px] group-hover:h-[20px] transition-all duration-[400ms] ease-in-out bg-primary z-10 -left-2 top-[33px] "></span>{" "}
-          </span>{" "}
-        </h1>
+          product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED IN
+          NIGERIA.
+        </p>
 
         <Link href={"#collections"}>
           <div

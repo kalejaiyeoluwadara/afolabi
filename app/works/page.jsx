@@ -4,7 +4,7 @@ import Container from "../components/Container";
 function Page() {
   return (
     <main className="mt-[70px] ">
-      <section className="grid grid-cols-2 gap-4  ">
+      <section className="grid grid-cols-2 gap-8  ">
         <div className="space-y-4">
           <div className="border flex-center  px-4 py-2  text-[126px] font-bold  ">
             FEAURED
@@ -36,7 +36,7 @@ function Page() {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-3 mt-8 gap-10  ">
+      <section className="grid grid-cols-3 mt-8 gap-8  ">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((d, id) => {
           return <Container name="case study" key={id} link={"/nexgen"} />;
         })}

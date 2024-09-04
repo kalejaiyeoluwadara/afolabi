@@ -18,31 +18,12 @@ function Nav() {
     gsap.to("#nav", {
       opacity: 1,
       y: 0,
-      delay: 0.5,
+      delay: 0.2,
       ease: "power1.inOut",
     });
   }, []);
 
   // Scroll Handling for Navbar visibility
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        setVisible(false);
-      } else {
-        // Scrolling up
-        setVisible(true);
-      }
-      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollTop]);
 
   // Handle Modal Effects
   useEffect(() => {
