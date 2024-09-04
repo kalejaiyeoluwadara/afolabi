@@ -31,6 +31,12 @@ html{
   font-weight: 400;
   font-style: normal;
 }
+.font-clash{
+  font-family: ClashDisplay-Regular,sans-serif;
+}
+.fc{
+  @apply font-clash
+}
 .boldText{
   @apply text-5xl stratosBold
 }

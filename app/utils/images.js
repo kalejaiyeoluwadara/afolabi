@@ -14,9 +14,29 @@ import brilliance from "@/public/images/brilliance.png";
 import spawn from "@/public/images/spawn.png";
 import nex from "@/public/images/nex.png";
 import border from "@/public/images/border.png";
+import userflow from "@/public/images/userflow.png";
+import payment from "@/public/images/payment.png";
+import plan from "@/public/images/plan.png";
+import landingpage from "@/public/images/landingpage.png";
+import branding from "@/public/images/branding.png";
+import iteration from "@/public/images/iteration.svg";
+import iteration2 from "@/public/images/iteration2.png";
+import nexbac from "@/public/images/nexbac.png";
+import coursepage from "@/public/images/coursepage.png";
+import logo from "@/public/images/logo.png";
 
 module.exports = {
   slide,
+  userflow,
+  payment,
+  plan,
+  landingpage,
+  branding,
+  iteration,
+  iteration2,
+  nexbac,
+  coursepage,
+  logo,
   flower,
   warp,
   champ,

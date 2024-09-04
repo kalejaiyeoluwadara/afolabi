@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./nex.css";
 function Role() {
   return (
     <section className="py-10 ">
@@ -16,11 +16,11 @@ function Role() {
         <article>
           <div className="mb-10">
             <h2 className="text-5xl stratosBold mb-5 ">Length:</h2>
-            <p className="text-[32px]">3 Weeks</p>
+            <p className="">3 Weeks</p>
           </div>
           <div>
             <h2 className="text-5xl stratosBold mb-5 ">LIVE SITE:</h2>
-            <p className="text-[32px]">nexgenspace.org</p>{" "}
+            <p className="">nexgenspace.org</p>{" "}
           </div>
         </article>
       </div>
