@@ -24,8 +24,8 @@ function Sections3({ active, setActive, details, setDetails }) {
   };
 
   return (
-    <main className=" h-full flex pb-8 justify-between flex-col">
-      <div>
+    <main className=" h-full flex   justify-between flex-col">
+      <div className="flex flex-col items-start h-full justify-center ">
         <h2 className="uppercase mb-6 text-2xl">Tell me about the project</h2>
         <div className="flex gap-4 flex-col">
           {[

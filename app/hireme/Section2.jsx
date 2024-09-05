@@ -24,28 +24,34 @@ function Sections2({ active, setActive, details, setDetails }) {
   };
 
   return (
-    <main>
-      <h2 className="uppercase mb-6 text-2xl">LET ME GET TO KNOW YOU</h2>
-      <div className="flex gap-4 flex-col">
-        {[
-          { label: "Name", name: "name", placeholder: "Richard Hendricks" },
-          { label: "Email", name: "email", placeholder: "RICHARD@EXAMPLE.COM" },
-          {
-            label: "Company Name",
-            name: "companyName",
-            placeholder: "ADRESS 124",
-          },
-        ].map((field) => (
-          <InputField
-            key={field.name}
-            label={field.label}
-            name={field.name}
-            value={details[field.name]}
-            placeholder={field.placeholder}
-            onChange={handleChange}
-          />
-        ))}
-      </div>
+    <main className="h-full flex flex-col justify-between ">
+      <main>
+        <h2 className="uppercase mb-6 text-2xl">LET ME GET TO KNOW YOU</h2>
+        <div className="flex gap-4 flex-col">
+          {[
+            { label: "Name", name: "name", placeholder: "Richard Hendricks" },
+            {
+              label: "Email",
+              name: "email",
+              placeholder: "RICHARD@EXAMPLE.COM",
+            },
+            {
+              label: "Company Name",
+              name: "companyName",
+              placeholder: "ADRESS 124",
+            },
+          ].map((field) => (
+            <InputField
+              key={field.name}
+              label={field.label}
+              name={field.name}
+              value={details[field.name]}
+              placeholder={field.placeholder}
+              onChange={handleChange}
+            />
+          ))}
+        </div>
+      </main>
       <div className="grid grid-cols-3 h-[80px] mt-[32px] gap-[23px]  ">
         <button
           onClick={() => setActive(1)}

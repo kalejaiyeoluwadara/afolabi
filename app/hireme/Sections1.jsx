@@ -19,7 +19,7 @@ function Sections1({ setActive, details, setDetails }) {
   };
 
   return (
-    <div className="flex flex-col justify-between h-full pb-8">
+    <div className="flex flex-col justify-between h-full ">
       <div className="flex flex-col gap-4 ">
         <div className="text-[40px]">
           <h2 className="stratosBold font-bold">Bonjour,</h2>
