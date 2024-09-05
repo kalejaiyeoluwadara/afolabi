@@ -35,8 +35,10 @@ function Hire() {
       {hire && (
         <main className="h-screen fixed top-0 left-0 z-[60] w-screen bg-black bg-opacity-[0.4] flex-center ">
           <div className="w-[1000px] h-[98%] bg-white rounded-[25px] px-[31px] py-[31px] ">
-            <nav className="flex  w-full items-start justify-between">
-              <secion className="w-full flex gap-6 ">
+            <nav className={`flex   w-full items-start justify-between`}>
+              <secion
+                className={` ${active === 4 && "opacity-0"} w-full flex gap-6 `}
+              >
                 {[1, 2, 3].map((d, id) => (
                   <Stroke
                     active={active}
@@ -47,7 +49,8 @@ function Hire() {
                 ))}
               </secion>
               <Image
-                className="translate-y-[-15px]"
+                onClick={() => setHire(false)}
+                className="translate-y-[-15px] speed hover:scale-[1.3] cursor-pointer "
                 height={32}
                 width={32}
                 src={icons.zero}
