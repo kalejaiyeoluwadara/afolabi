@@ -7,6 +7,8 @@ import Sections1 from "./Sections1";
 import Sections2 from "./Section2";
 import Sections3 from "./Section3";
 import Finale from "./Finale";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Stroke = ({ count, active, setActive }) => {
   return (
     <div
@@ -31,9 +33,9 @@ function Hire() {
     summary: "",
   });
   return (
-    <>
+    <AnimatePresence>
       {hire && (
-        <main className="h-screen fixed top-0 left-0 z-[60] w-screen bg-black bg-opacity-[0.4] flex-center ">
+        <motion.main className="h-screen fixed top-0 left-0 z-[60] w-screen bg-black bg-opacity-[0.4] flex-center ">
           <div className="w-[1000px] h-[98%] bg-white rounded-[25px] px-[31px] py-[31px] ">
             <nav className={`flex   w-full items-start justify-between`}>
               <secion
@@ -81,9 +83,9 @@ function Hire() {
               <Finale />
             )}
           </div>
-        </main>
+        </motion.main>
       )}
-    </>
+    </AnimatePresence>
   );
 }
 
