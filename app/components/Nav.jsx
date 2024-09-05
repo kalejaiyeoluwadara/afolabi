@@ -8,7 +8,7 @@ import { icons } from "@/app/utils";
 import gsap from "gsap";
 
 function Nav() {
-  const { setModal, modal } = useGlobal();
+  const { setModal, modal, hire, setHire } = useGlobal();
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [visible, setVisible] = useState(true);
   const controls = useAnimation();
@@ -94,6 +94,9 @@ function Nav() {
         </div>
 
         <div
+          onClick={() => {
+            setHire(true);
+          }}
           className={`desktop cursor-pointer flex-center overflow-hidden group h-[80px] rounded-[15px] ${
             modal
               ? "bg-black  border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed  "

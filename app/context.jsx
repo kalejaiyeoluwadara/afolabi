@@ -4,6 +4,7 @@ const AppContext = React.createContext();
 
 function AppProvider({ children }) {
   const [modal, setModal] = useState(false);
+  const [hire, setHire] = useState(false);
   const [navContent, setNavContent] = useState([
     { title: "CASE STUDIES", link: "/works/case-studies" },
     { title: "STRATEGIES", link: "/works/strategies" },
@@ -17,6 +18,8 @@ function AppProvider({ children }) {
         navContent,
         setNavContent,
         setModal,
+        hire,
+        setHire,
       }}
     >
       {children}
