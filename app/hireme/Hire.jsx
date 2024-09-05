@@ -4,6 +4,9 @@ import { useGlobal } from "../context";
 import Image from "next/image";
 import { icons } from "@/app/utils";
 import Sections1 from "./Sections1";
+import Sections2 from "./Section2";
+import Sections3 from "./Section3";
+import Finale from "./Finale";
 const Stroke = ({ count, active, setActive }) => {
   return (
     <div
@@ -19,6 +22,14 @@ const Stroke = ({ count, active, setActive }) => {
 function Hire() {
   const { hire, setHire } = useGlobal();
   const [active, setActive] = useState(1);
+  const [details, setDetails] = useState({
+    projectType: "Branding",
+    name: "",
+    email: "",
+    companyName: "",
+    start: "",
+    summary: "",
+  });
   return (
     <>
       {hire && (
@@ -45,7 +56,27 @@ function Hire() {
             </nav>
 
             {/* content */}
-            <Sections1 />
+            {active === 1 ? (
+              <Sections1
+                details={details}
+                setDetails={setDetails}
+                setActive={setActive}
+              />
+            ) : active === 2 ? (
+              <Sections2
+                details={details}
+                setDetails={setDetails}
+                setActive={setActive}
+              />
+            ) : active === 3 ? (
+              <Sections3
+                details={details}
+                setDetails={setDetails}
+                setActive={setActive}
+              />
+            ) : (
+              <Finale />
+            )}
           </div>
         </main>
       )}
