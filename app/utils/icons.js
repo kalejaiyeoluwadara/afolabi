@@ -8,11 +8,13 @@ import two from "@/public/images/two.png";
 import sep from "@/public/images/sep.png";
 import returnImg from "@/public/images/return.png";
 import zero2 from "@/public/images/zero2.png";
+import right from "@/public/images/right.png";
 import arrowup from "@/public/images/arrow-up.svg";
 import arrowright from "@/public/images/arrow-right.svg";
 
 module.exports = {
   zero,
+  right,
   wave,
   two,
   sep,
