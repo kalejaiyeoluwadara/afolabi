@@ -1,5 +1,5 @@
 import React from "react";
-import { images } from "@/app/utils";
+import { images, icons } from "@/app/utils";
 import Image from "next/image";
 
 function Odyssey() {
@@ -32,12 +32,29 @@ function Odyssey() {
           </p>
         </div>
       </div>
-      <div className="h-full w-auto rounded-[15px] border-[3px] border-dashed border-black overflow-hidden relative  ">
+      <div className="h-full relative group w-auto rounded-[15px] border-[3px] border-dashed border-black overflow-hidden   ">
         <Image
           src={images.folabi}
           alt=""
-          className="h-full w-full absolute hover:scale-[1.5] scale-[1.01] duration-700 ease-in-out top-0 rounded-[15px] left-0 z-40 object-cover "
+          className="h-full w-full absolute  top-0 rounded-[15px] left-0 z-[10] object-cover "
         />
+        <Image
+          src={icons.arr1}
+          height={300}
+          alt=""
+          className=" absolute  rounded-[15px] left-0 bottom-12 opacity-0 group-hover:opacity-[1] speed z-[20] "
+        />
+        <Image
+          src={icons.arr2}
+          height={300}
+          alt=""
+          className=" absolute  rounded-[15px] right-4 top-[120px] opacity-0 group-hover:opacity-[1] speed z-[20] "
+        />
+        <div className="w-full flex-center ">
+          <div className="absolute z-20 h-[115px]  w-auto px-[48px] py-[38px] flex-center wb rounded-[15px] group-hover:-bottom-4 -bottom-[130px]  speed ">
+            <h2 className="text-[32px]">THE GENIUS</h2>
+          </div>
+        </div>
       </div>
     </section>
   );

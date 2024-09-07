@@ -11,6 +11,8 @@ import zero2 from "@/public/images/zero2.png";
 import right from "@/public/images/right.png";
 import arrowup from "@/public/images/arrow-up.svg";
 import arrowright from "@/public/images/arrow-right.svg";
+import arr1 from "@/public/images/arr1.png";
+import arr2 from "@/public/images/arr2.png";
 
 module.exports = {
   zero,
@@ -26,4 +28,6 @@ module.exports = {
   flower,
   flowerr,
   globe,
+  arr1,
+  arr2,
 };
