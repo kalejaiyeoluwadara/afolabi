@@ -98,6 +98,7 @@ function Nav() {
         <div
           onClick={() => {
             setHire(true);
+            setModal(false);
           }}
           className={`desktop group  cursor-pointer flex-center overflow-hidden group h-[80px] rounded-[15px] ${
             modal

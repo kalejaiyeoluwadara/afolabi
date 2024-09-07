@@ -1,13 +1,14 @@
 import React from "react";
 import { icons } from "@/app/utils";
 import Image from "next/image";
+
 function InputField({ label, name, value, placeholder, onChange }) {
   return (
     <section>
       <p className="text-2xl font-bold stratosBold">{label.toUpperCase()}</p>
       <input
         type="text"
-        className="w-full mt-[23px] text-2xl fs placeholder:text-2xl placeholder:font-bold placeholder:stratosBold border-none outline-none bg-none"
+        className="w-full mt-[23px] text-2xl placeholder:text-2xl font-clash placeholder:font-clash placeholder:uppercase border-none outline-none bg-none"
         placeholder={placeholder}
         name={name}
         value={value}
@@ -23,10 +24,14 @@ function Sections3({ active, setActive, details, setDetails }) {
     setDetails((prev) => ({ ...prev, [name]: value }));
   };
 
+  const allFieldsFilled = details.start && details.summary;
+
   return (
-    <main className=" h-full flex   justify-between flex-col">
+    <main className="h-full flex justify-between flex-col">
       <div className="flex flex-col items-start h-full justify-center ">
-        <h2 className="uppercase mb-6 text-2xl">Tell me about the project</h2>
+        <h2 className="uppercase mb-6 font-clash font-semibold text-2xl">
+          Tell me about the project
+        </h2>
         <div className="flex gap-4 flex-col">
           {[
             {
@@ -51,17 +56,22 @@ function Sections3({ active, setActive, details, setDetails }) {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-3 h-[80px] mt-[32px] gap-[23px]  ">
+      <div className="grid grid-cols-3 h-[80px] mt-[32px] gap-[23px]">
         <button
           onClick={() => setActive(2)}
-          className="h-full w-auto flex-center border-2 border-dashed  text-[32px] fs gap-2 border-black rounded-[15px] "
+          className="h-full w-auto flex-center border-2 border-dashed text-[32px] fs gap-2 border-black rounded-[15px] "
         >
           <Image height={32} width={32} src={icons.returnImg} alt="nav" />
           RETURN
         </button>
         <button
-          onClick={() => setActive(4)}
-          className="h-full col-span-2 bg-black text-white bg-opacity-[0.5] rounded-[15px] fs text-[32px]  w-auto  flex-center "
+          disabled={!allFieldsFilled}
+          onClick={() => allFieldsFilled && setActive(4)}
+          className={`h-full ${
+            !allFieldsFilled
+              ? "cursor-not-allowed bg-black bg-opacity-[0.5]"
+              : " bg-black"
+          } col-span-2  text-white  rounded-[15px] fs text-[32px]  w-auto flex-center `}
         >
           NEXT
           <Image height={32} width={32} src={icons.right} alt="nav" />

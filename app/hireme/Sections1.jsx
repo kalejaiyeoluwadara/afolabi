@@ -11,11 +11,29 @@ function Sections1({ setActive, details, setDetails }) {
     "App Development",
     "Consulting",
   ];
-  const [selectedProject, setSelectedProject] = useState(details.projectType);
+
+  const [selectedProjects, setSelectedProjects] = useState(
+    details.projectType ? [details.projectType] : []
+  );
 
   const handleProjectSelect = (project) => {
-    setSelectedProject(project);
-    setDetails((prev) => ({ ...prev, projectType: project }));
+    setSelectedProjects((prev) => {
+      if (prev.includes(project)) {
+        return prev.filter((item) => item !== project);
+      } else {
+        return [...prev, project];
+      }
+    });
+  };
+
+  const handleNextClick = () => {
+    setDetails((prev) => ({
+      ...prev,
+      projectType: selectedProjects.join(", "),
+    }));
+    console.log(details);
+
+    setActive(2);
   };
 
   return (
@@ -25,7 +43,9 @@ function Sections1({ setActive, details, setDetails }) {
           <h2 className="stratosBold font-bold">Bonjour,</h2>
           <h2 className="stratosBold font-bold">Got a Project?</h2>
         </div>
-        <p className="text-2xl uppercase mb-5">What would you like to do?</p>
+        <p className="text-2xl font-clash font-semibold uppercase mb-5">
+          What would you like to do?
+        </p>
       </div>
       <div className="grid grid-cols-2 gap-4">
         {projectTypes.map((project, id) => (
@@ -36,7 +56,7 @@ function Sections1({ setActive, details, setDetails }) {
           >
             <div
               className={`h-[20px] w-[20px] border-[1px] ${
-                selectedProject === project
+                selectedProjects.includes(project)
                   ? "bg-black border-white"
                   : "border-black"
               }`}
@@ -46,8 +66,13 @@ function Sections1({ setActive, details, setDetails }) {
         ))}
       </div>
       <button
-        onClick={() => setActive(2)}
-        className="mt-[27px] rounded-[15px] text-[32px] h-[70px] w-full text-white font-bold stratosBold flex gap-2 justify-center items-center uppercase bg-black bg-opacity-[0.5]"
+        disabled={selectedProjects.length == 0}
+        onClick={handleNextClick}
+        className={`mt-[27px] ${
+          selectedProjects.length == 0 && "cursor-not-allowed"
+        } rounded-[15px] text-[32px] h-[70px] w-full text-white font-bold stratosBold flex gap-2 justify-center items-center uppercase ${
+          selectedProjects.length > 0 ? "bg-black" : "bg-black bg-opacity-[0.5]"
+        }`}
       >
         Next
         <Image height={32} width={32} src={icons.right} alt="nav" />
