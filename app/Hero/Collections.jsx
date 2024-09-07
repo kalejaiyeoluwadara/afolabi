@@ -1,17 +1,23 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Container from "../components/Container";
 import { useGlobal } from "../context";
 function Collections() {
   const { navContent } = useGlobal();
+  const [data, setData] = useState([
+    { title: "CASE STUDIES" },
+    { title: "STRATEGIES" },
+    { title: "BRANDING" },
+    { title: "PRODUCT DESIGN" },
+  ]);
   return (
     <main
       id="collections"
       className=" w-full grid mt-[132px] mb-[41px] grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-8 "
     >
-      {navContent.map((d, id) => {
-        return <Container name={d.title} link={d.link} key={id} />;
+      {data.map((d, id) => {
+        return <Container name={d.title} link={"/"} key={id} />;
       })}
     </main>
   );
