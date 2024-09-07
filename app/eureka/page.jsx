@@ -8,6 +8,7 @@ import WorkCard from "./WorkCard";
 import Swapy from "../components/Swapy";
 import Story from "./Story";
 import Odyssey from "./Odyssey";
+import Brilliance from "./Brilliance";
 function Page() {
   return (
     <>
@@ -15,6 +16,8 @@ function Page() {
       <main className="px-5">
         {/* creative odyssey */}
         <Odyssey />
+        {/* brilliance */}
+        <Brilliance />
         {/* Story */}
         <Story />
       </main>

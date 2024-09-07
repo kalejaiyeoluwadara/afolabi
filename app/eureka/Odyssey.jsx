@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Odyssey() {
   return (
-    <section className="py-6 h-[733px] grid grid-cols-3 items-start gap-[30px]">
+    <section className="py-6 min-h-[733px] grid grid-cols-3 items-start gap-[30px]">
       <div className="border-[3px] border-dashed sm:col-span-2 border-black rounded-[20px] w-auto h-full  text-[27px]  px-[33px] pb-[108px] pt-[63px] ">
         <h2 className="mb-6 uppercase stratosBold font-bold text-[64px] ">
           Creative odyssey
@@ -18,8 +18,8 @@ function Odyssey() {
             IN NIGERIA.{" "}
           </span>
         </p>
-        <div className="  ">
-          <p className="mt-3  font-clash mb-6">
+        <div className=" text-[32px] ">
+          <p className="mt-5  font-clash mb-6">
             {" "}
             I specialize in designing websites and creating compelling branding
             packages for diverse clients. When I'm not immersed in the creative

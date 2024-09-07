@@ -8,6 +8,9 @@ body{
 html{
   scroll-behavior: smooth;
 }
+.thickb{
+  @apply border-[3px] border-dashed border-black rounded-[20px]
+}
 .cover{
   @apply absolute top-0 left-0 object-cover 
 }
