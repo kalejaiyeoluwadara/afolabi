@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AppProvider>
-        <body className=" mb-8">{children}</body>
+        <body className=" mb-4">{children}</body>
         <Hire />
         <Modal />
       </AppProvider>

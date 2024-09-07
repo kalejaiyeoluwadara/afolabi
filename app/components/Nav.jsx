@@ -86,9 +86,11 @@ function Nav() {
             modal ? "hidden" : "flex-center desktop"
           }`}
         >
-          <h4 className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
-            MY EUREKA MOMENT
-          </h4>
+          <Link href={"/eureka"}>
+            <h4 className="text-2xl relative group-hover:text-white transition-all duration-700 ease-in-out z-40 font-semibold">
+              MY EUREKA MOMENT
+            </h4>
+          </Link>
           <div className=" w-[190px] h-20 absolute z-20 group-hover:left-0 transition-[left] duration-700 ease-in-out -left-[190px] bg-black" />
           <div className=" w-[190px] h-20 absolute z-20 group-hover:right-0 transition-[right] duration-700 ease-in-out -right-[190px] bg-black" />
         </div>
@@ -97,18 +99,19 @@ function Nav() {
           onClick={() => {
             setHire(true);
           }}
-          className={`desktop cursor-pointer flex-center overflow-hidden group h-[80px] rounded-[15px] ${
+          className={`desktop group  cursor-pointer flex-center overflow-hidden group h-[80px] rounded-[15px] ${
             modal
               ? "bg-black  border-2 border-gray-500 hover:border-white transition-all cursor-pointer text-white border-dashed  "
               : " bw"
           } flex-center`}
         >
-          <h4 className="text-2xl w-full text-center translate-x-[140px] flex-shrink-0 font-semibold group-hover:translate-x-[520px] speed">
+          {/* <h4 className="text-2xl w-full text-center translate-x-[140px] flex-shrink-0 font-semibold group-hover:translate-x-[520px] speed">
             HIRE ME FOR A PROJECT
           </h4>
           <h4 className="text-2xl w-full flex-shrink-0 translate-x-[-320px] group-hover:translate-x-[-120px] group-hover:opacity-100 opacity-0 speed font-semibold">
             HIRE ME FOR A PROJECT
-          </h4>
+          </h4> */}
+          <h4 className="uppercase text-2xl ">Hire me for a project</h4>
         </div>
       </main>
     </motion.nav>

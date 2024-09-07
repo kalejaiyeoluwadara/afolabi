@@ -6,10 +6,10 @@ import { useGlobal } from "../context";
 function Collections() {
   const { navContent } = useGlobal();
   const [data, setData] = useState([
-    { title: "CASE STUDIES" },
-    { title: "STRATEGIES" },
+    { title: "UI DESIGN" },
+    { title: "PRODCUT DESIGN" },
     { title: "BRANDING" },
-    { title: "PRODUCT DESIGN" },
+    { title: "MICRO INTERACTIONS" },
   ]);
   return (
     <main

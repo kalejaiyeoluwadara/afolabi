@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Foot from "../Hero/Foot";
+import Foot from "./ContactFoot";
 
 function Page() {
   return (
