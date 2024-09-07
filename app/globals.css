@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-foreground w-full overflow-x-hidden p-0
+  @apply bg-foreground w-full overflow-x-hidden p-0 cursor-none
 }
 html{
   scroll-behavior: smooth;
@@ -118,4 +118,16 @@ h4{
 }
 .speed{
   @apply transition-all duration-700 ease-in-out 
+}
+/* In your global CSS file (e.g., styles/globals.css) */
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Example color, customize as needed */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent interaction with the cursor */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
 }
