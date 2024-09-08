@@ -20,11 +20,11 @@ function Foot() {
           Interested in worKING together?
         </h1>
       </div>
-      <div className=" group w-full flex-col flex-center  sm:mt-[49px] sm:mb-[71px] ">
+      <div className=" group w-full sm:px-0 px-4    flex-col flex-center  sm:mt-[49px] sm:mb-[71px] ">
         <p className="text-primary text-base group-hover:text-white  speed ">
           DROP AN EMAIL
         </p>
-        <p className="sm:text-2xl text-base group-hover:text-primary cursor-pointer speed underline uppercase ">
+        <p className="sm:text-2xl text-base w-full sm:w-auto text-center group-hover:text-primary cursor-pointer speed underline uppercase ">
           Oyefesoafolabiteniola@gmail.com
         </p>
       </div>

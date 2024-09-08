@@ -1,3 +1,3 @@
 p{
-    @apply font-clash text-[30px]
+    @apply font-clash text-xl sm:text-3xl
 }

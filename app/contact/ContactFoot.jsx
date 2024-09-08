@@ -10,20 +10,20 @@ function Foot() {
       className={`min-h-[594px] rounded-[20px] text-white mt-[58px]  w-full bg-black px-7 pb-[71px] pt-[111px] flex  flex-col  `}
     >
       <div className="w-full flex-center ">
-        <h1 className="text-[59px] uppercase text-center leading-[80px] w-[507px] font-semibold">
+        <h1 className="sm:text-[59px] sm:my-0 my-[34px] text-5xl uppercase text-center sm:leading-[80px] sm:w-[507px] font-semibold">
           Interested in worKING together?
         </h1>
       </div>
-      <div className=" group w-full flex-col flex-center  mt-[49px] mb-[71px] ">
+      <div className=" group w-full flex-col flex-center  sm:mt-[49px] sm:mb-[71px] ">
         <p className="text-primary text-base group-hover:text-white  speed ">
           DROP AN EMAIL
         </p>
-        <p className="text-2xl group-hover:text-primary cursor-pointer speed underline uppercase ">
+        <p className="sm:text-2xl text-base group-hover:text-primary cursor-pointer speed underline uppercase ">
           Oyefesoafolabiteniola@gmail.com
         </p>
       </div>
-      <div className="flex-center w-full  ">
-        <div className="flex uppercase text-[30px] items-center gap-4 ">
+      <div className=" sm:mt-0 mt-10 flex-center w-full  ">
+        <div className="flex uppercase text-sm sm:text-[30px] items-center gap-2 sm:gap-4 ">
           <Link href={"/"} className="hover:text-primary speed ">
             instagram
           </Link>

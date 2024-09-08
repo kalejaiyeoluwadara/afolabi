@@ -14,8 +14,8 @@ function Page() {
   return (
     <PageWrapper>
       <main className=" min-h-[100vh] bg-foreground w-full ">
-        <div className=" w-full flex items-end bg-black justify-end pb-20 min-h-screen relative">
-          <div className="w-full top-0 bg-black left-0 absolute ">
+        <div className=" w-full flex items-end bg-black justify-end pb-8 sm:pb-20 min-h-screen relative">
+          <div className="w-full top-0 px-5 bg-black left-0 absolute ">
             <NavBar white={true} />
           </div>
           <Image
@@ -25,19 +25,23 @@ function Page() {
           />
           <section className="w-full relative z-40 px-[21px] ">
             {/* bottom */}
-            <div className="w-full  h-[109px] flex justify-between px-8 items-center text-white rounded-[15px] border-2 border-gray-400 border-dashed ">
+            <div className="w-full  h-auto sm:h-[109px] flex sm:gap-0 gap-5 sm:flex-row flex-col sm:justify-between px-4 sm:px-8 items-start sm:py-0 py-7 sm:items-center text-white rounded-[15px] border-2 border-gray-400 border-dashed ">
               <div>
-                <p>CLIENT: NEXGEN DIGITAL ACADEMY</p>
+                <p className="stratosBold font-bold text-xl sm:text-3xl">
+                  NEXGEN DIGITAL ACADEMY
+                </p>
               </div>
-              <div className="flex-center gap-[10px]">
-                <WhiteBox title={"BRANDING"} />
-                <WhiteBox title={"WEB DESIGN"} />
+              <div className=" w-full sm:w-auto flex-center justify-between gap-[10px]">
+                <div className="flex  gap-2 ">
+                  <WhiteBox title={"BRANDING"} />
+                  <WhiteBox title={"WEB DESIGN"} />
+                </div>
                 <p className="text-[24px] font-semibold ">‘24</p>
               </div>
             </div>
           </section>
         </div>
-        <section className="px-[21px]">
+        <section className=" px-4 sm:px-[21px]">
           {/* second section */}
           <Role />
           {/* Third section */}

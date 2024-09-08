@@ -4,8 +4,8 @@ import { images } from "@/app/utils";
 import Link from "next/link";
 function Details() {
   return (
-    <main className="border-4 border-dashed rounded-[20px] border-black py-[70px] px-[50px] flex flex-col items-center   ">
-      <div className="w-full h-[819px] rounded-[46px] overflow-hidden relative ">
+    <main className="border-[3px] border-dashed rounded-[20px] border-black py-8 sm:py-[70px] px-4 sm:px-[50px] flex flex-col items-center   ">
+      <div className="w-full h-[677px] sm:h-[819px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
         <Image
           src={images.branding}
           alt="branding"
@@ -13,10 +13,10 @@ function Details() {
         />
       </div>
 
-      <section className="mt-[180px]">
+      <section className="mt-[180px] w-full">
         <div>
           <h1 className="boldText">BRANDING AND WEB DESIGN</h1>
-          <div className="mt-6 uppercase ">
+          <div className="mt-6 ">
             <p className="">
               Oyefeso was hired to invoke his creative approach to cook up a
               brand from scratch. During this project he found insight, deeper
@@ -44,7 +44,7 @@ function Details() {
               eligibility and remains memorable.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[519px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.logo}
               alt="branding"
@@ -55,7 +55,7 @@ function Details() {
         {/* logo iteration */}
         <div className="mt-[180px]">
           <h1 className="boldText uppercase ">LOGO Iterations</h1>
-          <div className="mt-6 uppercas ">
+          <div className="mt-6 ">
             <p className="">
               Initially, i finalised on Logo A due to the fact that it embodied
               my guiding principle, simplicity, eligibility, story telling, and
@@ -69,7 +69,7 @@ function Details() {
               embody what other academies strive for in a logo.
             </p>
           </div>
-          <div className="w-full mt-[160px] h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[160px] h-[519px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.iteration}
               alt="iteration"
@@ -83,7 +83,7 @@ function Details() {
             mark i was sure would survive the test of time.
           </p>
 
-          <div className="w-full h-[519px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full h-[519px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.iteration2}
               alt="iteration"
@@ -118,7 +118,7 @@ function Details() {
               opening the website to enrolling for one of the 6 courses Nexgen
               offers their students.
             </p>
-            <div className="w-full mt-[160px] h-[533px] rounded-[46px] overflow-hidden relative ">
+            <div className="w-full mt-[160px] h-[533px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
               <Image
                 src={images.userflow}
                 alt="iteration"
@@ -136,7 +136,7 @@ function Details() {
               best onboarding experience.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[833px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[833px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.landingpage}
               alt="iteration"
@@ -164,7 +164,7 @@ function Details() {
               instructor details the page embodies my guiding principles.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[797px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[797px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.coursepage}
               alt="iteration"
@@ -181,14 +181,14 @@ function Details() {
               ensure students have the best payment experience.
             </p>
           </div>
-          <div className="w-full mt-[180px] h-[1020px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[1020px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.payment}
               alt="iteration"
               className="cover    h-full w-full z-20"
             />
           </div>
-          <div className="w-full mt-[180px] h-[712px] rounded-[46px] overflow-hidden relative ">
+          <div className="w-full mt-[180px] h-[712px] rounded-[15px] sm:rounded-[46px] overflow-hidden relative ">
             <Image
               src={images.plan}
               alt="iteration"

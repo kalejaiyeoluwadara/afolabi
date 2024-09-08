@@ -47,7 +47,7 @@ html{
   @apply font-clash
 }
 .boldText{
-  @apply text-5xl stratosBold
+  @apply  text-xl sm:text-5xl stratosBold
 }
 *{
   font-family: 'Stratos',sans-serif;

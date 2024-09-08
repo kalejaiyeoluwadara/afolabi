@@ -27,14 +27,7 @@ function Swapy() {
         </div>
       </section>
       {/* Swapy 2*/}
-      <section className="sm:grid sm:mt-0 mt-8 flex flex-col-reverse grid-cols-2 border-[3px] sm:border-y-[3px] border-black border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
-        <div className="h-full w-full sm:w-auto flex px-[17px] sm:px-[61px] justify-center flex-col ">
-          <h1>SWAPY</h1>
-          <p className=" text-xl sm:text-3xl font-clash sm:w-[99%] ">
-            This project showcases my creativity through thoughtful color
-            choices, cohesive{" "}
-          </p>
-        </div>
+      <section className="sm:grid sm:mt-0 mt-8 flex flex-col grid-cols-2 border-[3px] sm:border-y-[3px] sm:border-none border-black border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
         <div className="h-full w-auto overflow-hidden relative group scale-[1.2] ">
           <Image
             src={images.unito}
@@ -46,6 +39,13 @@ function Swapy() {
               <h2 className="text-[32px]">CHECK ME OUT</h2>
             </div>
           </div>
+        </div>
+        <div className="h-full w-full sm:w-auto flex px-[17px] sm:px-[61px] sm:justify-center sm:items-end justify-center flex-col ">
+          <h1>SWAPY</h1>
+          <p className=" text-xl sm:text-3xl font-clash sm:text-end sm:w-[99%] ">
+            This project showcases my creativity through thoughtful color
+            choices, cohesive{" "}
+          </p>
         </div>
       </section>
     </main>
