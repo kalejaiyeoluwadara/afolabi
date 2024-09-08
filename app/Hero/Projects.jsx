@@ -66,7 +66,7 @@ function Projects() {
         ref={(el) => (sectionsRef.current[0] = el)}
         className="group w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
       >
-        <div className="relative z-40">
+        <div className="relative z-10 sm:z-40">
           <h2>TIMEWARP</h2>
           <h4 className="flex-center ">
             PRODUCT DESIGN{" "}
@@ -148,7 +148,7 @@ function Projects() {
               </h4>
             </div>
           </div>
-          <div className="absolute z-20 h-[115px] rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] top-[190px]  group-hover:-left-20 -left-[300px] speed ">
+          <div className="absolute z-20 h-[115px] rotate-90 w-auto px-[15px] flex-center wb rounded-[15px] top-[190px]  sm:group-hover:-left-20 group-hover:-left-[50px] -left-[300px] speed ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.pewton} />
@@ -160,7 +160,7 @@ function Projects() {
           <div className="flex   r40 items-start justify-end w-full">
             <Topic title={"TIM"} sub={"BRANDING"} color={"white"} />
           </div>
-          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px]  top-[190px] group-hover:-right-20 -right-[300px] speed ">
+          <div className="absolute z-20 h-[115px] -rotate-90 w-auto px-[15px] flex-center wb rounded-[15px]  top-[190px] sm:group-hover:-right-20 group-hover:-right-[50px] -right-[300px] speed ">
             <h2>CHECK ME OUT</h2>
           </div>
           <Img image_name={images.tim} />
@@ -178,7 +178,7 @@ function Projects() {
             />
           </div>
           <div className="w-full flex-center ">
-            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb -rotate-90 rounded-[15px] top-[90px] group-hover:-right-[84px]  -right-[200px]  speed ">
+            <div className="absolute z-20 h-[95px]  w-auto px-[15px] flex-center wb -rotate-90 rounded-[15px] top-[90px] sm:group-hover:-right-[84px] group-hover:-right-[50px]  -right-[200px]  speed ">
               <h2>CHECK ME OUT</h2>
             </div>
           </div>
