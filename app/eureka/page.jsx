@@ -13,7 +13,9 @@ import PageWrapper from "../PageWrapper";
 function Page() {
   return (
     <PageWrapper>
-      <NavBar />
+      <div className="w-full px-5 ">
+        <NavBar />
+      </div>
       <main className="px-5">
         {/* creative odyssey */}
         <Odyssey />

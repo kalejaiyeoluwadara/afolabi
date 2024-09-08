@@ -6,34 +6,29 @@ function Page() {
   return (
     <PageWrapper>
       <main className="mt-[70px] ">
-        <section className="grid h-[473px] sm:grid-cols-3 gap-8  ">
+        <section className="grid h-auto sm:h-[493px]  sm:grid-cols-3 gap-8  ">
           <div className="w-auto flex flex-col justify-between h-full">
-            <div className="border flex-center h-[229px] px-4 py-2  text-[96px] stratosBold font-bold  ">
+            <div className="border flex-center h-[229px] px-4 py-2  text-6xl sm:text-[96px] stratosBold font-bold  ">
               FEAURED
             </div>
-            <div className="border flex-center h-[229px] px-4 py-2  text-[96px] stratosBold font-bold  ">
+            <div className="border flex-center sm:mt-0 mt-3 h-[229px] px-4 py-2  text-6xl sm:text-[96px] stratosBold font-bold  ">
               WORKS
             </div>
           </div>
-          <div className="border sm:col-span-2 text-[27px] h-full px-[33px] py-10 ">
-            <p className="">
+          <div className="border sm:col-span-2 text-lg sm:text-[32px] h-full px-4 sm:px-[33px] py-10 ">
+            <p className="font-clash">
               This collection highlights some of my most impactful projects,
-              where design{" "}
+              where design and strategy come together to create memorable user
+              experiences.
             </p>
-            <div className="  ">
-              <p className="mt-2    mb-6">
-                {" "}
-                and strategy come together to create memorable user experiences.
-              </p>
-              <p className=" ">
-                Each featured work represents a blend of creativity, innovation,
-                and purposeful design, solving real-world problems while pushing
-                the boundaries of what’s possible.
-              </p>
-            </div>
+            <p className="font-clash mt-8 ">
+              Each featured work represents a blend of creativity, innovation,
+              and purposeful design, solving real-world problems while pushing
+              the boundaries of what’s possible.
+            </p>
           </div>
         </section>
-        <section className="grid grid-cols-3 mt-8 gap-8  ">
+        <section className="grid sm:grid-cols-3 grid-cols-1 mt-8 gap-8  ">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((d, id) => {
             return <Container name="case study" key={id} link={"/nexgen"} />;
           })}

@@ -4,21 +4,21 @@ import Image from "next/image";
 
 function Odyssey() {
   return (
-    <section className="py-6 min-h-[733px] grid grid-cols-3 items-start gap-[30px]">
-      <div className="border-[3px] border-dashed sm:col-span-2 border-black rounded-[20px] w-auto h-full  text-[27px]  px-[33px] pb-[108px] pt-[63px] ">
-        <h2 className="mb-6 uppercase stratosBold font-bold text-[64px] ">
+    <section className="py-6 min-h-[733px] sm:grid flex flex-col-reverse sm:grid-cols-3 items-start gap-[30px]">
+      <div className="border-[3px] border-dashed sm:col-span-2 border-black rounded-[20px] w-auto h-full  text-[27px]  sm:px-[33px] px-4 py-[31px] sm:pb-[108px] sm:pt-[63px] ">
+        <h2 className="mb-6 uppercase stratosBold font-bold sm:w-auto w-full  text-4xl sm:text-[64px] ">
           Creative odyssey
         </h2>
         <p className="flex mt-5 ">
-          <span className="px-2 py-2 bg-black text-[40px] font-bold text-white text-center flex-center mr-2 ">
+          <span className="px-2 py-2 bg-black  text-[40px] font-bold text-white text-center flex-center mr-2 ">
             I
           </span>
-          <span className="font-bold uppercase">
+          <span className="font-bold text-2xl sm:text-[40px] uppercase">
             'm product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED
             IN NIGERIA.{" "}
           </span>
         </p>
-        <div className=" text-[32px] ">
+        <div className=" text-lg sm:text-[32px] ">
           <p className="mt-5  font-clash mb-6">
             {" "}
             I specialize in designing websites and creating compelling branding
@@ -32,7 +32,7 @@ function Odyssey() {
           </p>
         </div>
       </div>
-      <div className="h-full relative group w-auto rounded-[15px] border-[3px] border-dashed border-black overflow-hidden bg-primary  ">
+      <div className="sm:h-full h-[568px] relative group sm:w-auto w-full rounded-[15px] border-[3px] border-dashed border-black overflow-hidden bg-primary  ">
         <Image
           src={images.folabi}
           alt=""
