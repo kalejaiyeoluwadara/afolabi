@@ -9,7 +9,7 @@ function NavBar({ white }) {
   const { setModal, modal } = useGlobal();
   const router = useRouter();
   return (
-    <nav className=" my-8 w-full px-[22px] relative z-50 flex items-start justify-start  ">
+    <nav className=" my-8 w-full  relative z-50 flex items-start justify-start  ">
       <main className="w-[100vw] gap-8 grid grid-cols-3 items-start justify-around  ">
         <div
           className={`h-[80px] col-span-2 w-auto px-4 rounded-[15px] bg-primary border-2 border-dashed ${
@@ -62,7 +62,7 @@ function NavBar({ white }) {
               height={32}
               width={32}
             />
-            <p className="text-3xl font-semibold ">RETURN</p>
+            <h4 className="text-3xl font-semibold ">RETURN</h4>
           </div>
         </div>
       </main>

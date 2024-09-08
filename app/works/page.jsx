@@ -6,31 +6,26 @@ function Page() {
   return (
     <PageWrapper>
       <main className="mt-[70px] ">
-        <section className="grid grid-cols-2 gap-8  ">
-          <div className="space-y-4">
-            <div className="border flex-center  px-4 py-2  text-[126px] font-bold  ">
+        <section className="grid h-[473px] sm:grid-cols-3 gap-8  ">
+          <div className="w-auto flex flex-col justify-between h-full">
+            <div className="border flex-center h-[229px] px-4 py-2  text-[96px] stratosBold font-bold  ">
               FEAURED
             </div>
-            <div className="border flex-center px-4 py-2  text-[126px] font-bold  ">
+            <div className="border flex-center h-[229px] px-4 py-2  text-[96px] stratosBold font-bold  ">
               WORKS
             </div>
           </div>
-          <div className="border uppercase text-[27px]  px-[33px] py-10 ">
-            <p className="flex">
-              <span className="px-2 py-2 bg-primary text-[40px] font-extrabold text-white text-center flex-center mr-2 ">
-                T
-              </span>
-              <span>
-                This collection highlights some of my most impactful projects,
-                where design{" "}
-              </span>
+          <div className="border sm:col-span-2 text-[27px] h-full px-[33px] py-10 ">
+            <p className="">
+              This collection highlights some of my most impactful projects,
+              where design{" "}
             </p>
             <div className="  ">
-              <p className="mt-2  stratosLight font-semibold  mb-6">
+              <p className="mt-2    mb-6">
                 {" "}
                 and strategy come together to create memorable user experiences.
               </p>
-              <p className="stratosLight font-semibold ">
+              <p className=" ">
                 Each featured work represents a blend of creativity, innovation,
                 and purposeful design, solving real-world problems while pushing
                 the boundaries of what’s possible.

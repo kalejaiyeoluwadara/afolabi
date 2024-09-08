@@ -15,9 +15,9 @@ const Container = ({ name, link, setModal }) => {
     >
       <Link href={link} className="w-full">
         <div className="relative w-full group-hover:-translate-y-[80px] transition-all duration-[400ms] ease-in-out">
-          <p className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
+          <h4 className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
             {name}
-          </p>
+          </h4>
           <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[190px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
             <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
               CHECK ME OUT
@@ -56,9 +56,9 @@ function Modal() {
                 className="relative group"
               >
                 <Link href={d.link}>
-                  <p className="text-7xl text-gray-200 group-hover:text-white transition-all  uppercase font-bold">
+                  <h3 className="text-7xl text-gray-200 group-hover:text-white transition-all  uppercase  stratosBold font-bold">
                     {d.title}
-                  </p>
+                  </h3>
                 </Link>
                 <motion.span className="h-2 w-0 group-hover:w-[440px] transition-all  duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
               </div>
