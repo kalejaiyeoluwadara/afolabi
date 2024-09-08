@@ -2,13 +2,13 @@ import React from "react";
 
 function Story() {
   return (
-    <div className=" border-4 mb-[78px] border-dotted rounded-[20px] border-black w-full h-auto py-[61px] px-[41px]  ">
+    <div className=" border-4 mb-[78px] border-dotted rounded-[20px] border-black w-full h-auto py-[31px] sm:py-[61px] px-[17px] sm:px-[41px]  ">
       <section className="uppercase">
-        <h1 className="sm:w-[436px] stratosBold text-[64px] font-bold  leading-tight ">
+        <h1 className="sm:w-[436px] stratosBold   sm:text-6xl font-bold  leading-tight ">
           MY STORY & EXPERIENCE
         </h1>
       </section>
-      <section className="mt-6 text-[32px] w-full">
+      <section className="mt-6 text-xl sm:text-3xl w-full">
         <p className="font-clash">
           Currently, I work as a freelancer, and a creative lead at Zumbox
           Technologies.
