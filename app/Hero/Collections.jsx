@@ -14,7 +14,7 @@ function Collections() {
   return (
     <main
       id="collections"
-      className=" w-full grid  grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-8 "
+      className=" w-full grid sm:mt-[132px] mt-[41px] mb-[81px] grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-8 "
     >
       {data.map((d, id) => {
         return <Container name={d.title} link={"/"} key={id} />;
