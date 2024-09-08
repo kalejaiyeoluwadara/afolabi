@@ -9,9 +9,10 @@ import Swapy from "../components/Swapy";
 import Story from "./Story";
 import Odyssey from "./Odyssey";
 import Brilliance from "./Brilliance";
+import PageWrapper from "../PageWrapper";
 function Page() {
   return (
-    <>
+    <PageWrapper>
       <NavBar />
       <main className="px-5">
         {/* creative odyssey */}
@@ -25,7 +26,7 @@ function Page() {
       <div className="px-5">
         <Foot />
       </div>
-    </>
+    </PageWrapper>
   );
 }
 

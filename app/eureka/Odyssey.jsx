@@ -32,7 +32,7 @@ function Odyssey() {
           </p>
         </div>
       </div>
-      <div className="h-full relative group w-auto rounded-[15px] border-[3px] border-dashed border-black overflow-hidden   ">
+      <div className="h-full relative group w-auto rounded-[15px] border-[3px] border-dashed border-black overflow-hidden bg-primary  ">
         <Image
           src={images.folabi}
           alt=""

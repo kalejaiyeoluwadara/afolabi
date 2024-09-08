@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      cursor: {
-        pointer: "none", // Override cursor-pointer to be cursor-none
-      },
+      // cursor: {
+      //   pointer: "none", // Override cursor-pointer to be cursor-none
+      // },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -4,10 +4,11 @@ import Collections from "./Hero/Collections";
 import Projects from "./Hero/Projects";
 import Foot from "./Hero/Foot";
 import CustomCursor from "./components/CustomCursor";
+import PageWrapper from "./PageWrapper";
 export default function Home() {
   return (
-    <>
-      <CustomCursor />
+    <PageWrapper>
+      {/* <CustomCursor /> */}
       <Nav />
       <main className="px-5">
         <Hero />
@@ -15,6 +16,6 @@ export default function Home() {
         <Projects />
         <Foot />
       </main>
-    </>
+    </PageWrapper>
   );
 }
