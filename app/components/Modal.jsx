@@ -37,13 +37,13 @@ function Modal() {
     <AnimatePresence>
       {modal && (
         <motion.main
-          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[21px] bg-black z-40 gap-10 fixed top-0 left-0"
+          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[21px]  bg-primary sm:bg-black z-40 gap-10 fixed top-0 left-0"
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className=" duration-700 ease-in-out flex flex-col justify-center text-[80px] space-y-3">
+          <div className=" speed flex flex-col justify-center space-y-3">
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/eureka" },
@@ -56,7 +56,7 @@ function Modal() {
                 className="relative group"
               >
                 <Link href={d.link}>
-                  <h3 className="text-7xl text-gray-200 group-hover:text-white transition-all  uppercase  stratosBold font-bold">
+                  <h3 className="  text-6xl sm:text-7xl text-gray-200 group-hover:text-white transition-all  uppercase  stratosBold font-bold">
                     {d.title}
                   </h3>
                 </Link>
@@ -73,7 +73,7 @@ function Modal() {
               <Link href={"/"}>figma</Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 mb-20 w-full mt-[125px] gap-[32px]">
+          <div className=" hidden sm:grid grid-cols-2 mb-20 w-full mt-[125px] gap-[32px]">
             {navContent.map((d, id) => {
               return (
                 <Container
