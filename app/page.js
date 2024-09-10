@@ -10,8 +10,8 @@ export default function Home() {
     <PageWrapper>
       {/* <CustomCursor /> */}
       <Nav />
-      <main className="px-5">
-        <Hero />
+      <Hero />
+      <main className=" px-2 sm:px-5">
         <Collections />
         <Projects />
         <Foot />

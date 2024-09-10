@@ -10,15 +10,15 @@ function Odyssey() {
           Creative odyssey
         </h2>
         <p className="flex mt-5 ">
-          <span className="px-2 py-2 bg-black  text-[40px] font-bold text-white text-center flex-center mr-2 ">
+          <span className="px-2 py-2 bg-black  text-4xl font-bold text-white text-center flex-center mr-2 ">
             I
           </span>
-          <span className="font-bold text-2xl sm:text-[40px] uppercase">
+          <span className="font-bold text-2xl sm:text-4xl uppercase">
             'm product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED
             IN NIGERIA.{" "}
           </span>
         </p>
-        <div className=" text-lg sm:text-[32px] ">
+        <div className=" text-lg sm:text-3xl ">
           <p className="mt-5  font-clash mb-6">
             {" "}
             I specialize in designing websites and creating compelling branding
@@ -52,7 +52,7 @@ function Odyssey() {
         />
         <div className="w-full flex-center ">
           <div className="absolute z-20 h-[115px]  w-auto px-[48px] py-[38px] flex-center wb rounded-[15px] group-hover:-bottom-4 -bottom-[130px]  speed ">
-            <h2 className="text-[32px]">THE GENIUS</h2>
+            <h2 className="text-3xl">THE GENIUS</h2>
           </div>
         </div>
       </div>

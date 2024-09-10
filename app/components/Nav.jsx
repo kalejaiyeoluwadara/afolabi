@@ -23,36 +23,17 @@ function Nav() {
     });
   }, []);
 
-  // Scroll Handling for Navbar visibility
-
-  // Handle Modal Effects
-  useEffect(() => {
-    if (modal) {
-      controls.start({
-        width: "65%",
-        transition: { duration: 0.5 },
-        color: "white",
-      });
-    } else {
-      controls.start({
-        width: "490px",
-        transition: { duration: 0.5 },
-        color: "black",
-      });
-    }
-  }, [modal, controls]);
-
   return (
     <motion.nav
       id="nav"
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -100 }} // Adjust -100 to hide the navbar completely
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="my-8 w-full  sticky gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
+      className="sm:my-8  my-4 w-full gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
     >
-      <main className="w-full  grid sm:grid-cols-4 px-5 items-center justify-center gap-8 ">
+      <main className="w-full  sm:grid grid-cols-4 px-2 sm:px-5 items-center justify-center gap-8 ">
         <div
-          className={`h-[80px]  w-[300px] sm:w-full ${
+          className={`h-[80px]  w-full ${
             modal ? " col-span-3" : " col-span-2"
           } px-4 rounded-[15px] bg-primary border-2 border-dashed border-black flex justify-between items-center`}
         >

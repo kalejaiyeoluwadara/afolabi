@@ -21,7 +21,7 @@ function Brilliance() {
         <h1 className=" text-4xl sm:text-[64px] sm:translate-y-0 translate-y-[-14px] sm:leading-[3.1rem] stratosBold font-bold ">
           STOP <span className="text-primary">CREATIVITY.</span>
         </h1>
-        <p className="font-clash text-xl sm:translate-y-0 translate-y-[-20px] sm:text-[32px] ">
+        <p className="font-clash text-xl sm:translate-y-0 translate-y-[-20px] sm:text-3xl ">
           Oyefeso here, a maverick of imagination on an unstoppable mission to
           shatter innovation barriers and harness the unbridled might of
           self-expression.

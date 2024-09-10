@@ -15,7 +15,7 @@ function Page() {
               WORKS
             </div>
           </div>
-          <div className="border sm:col-span-2 text-lg sm:text-[32px] h-full px-4 sm:px-[33px] py-10 ">
+          <div className="border sm:col-span-2 text-lg sm:text-3xl h-full px-4 sm:px-[33px] py-10 ">
             <p className="font-clash">
               This collection highlights some of my most impactful projects,
               where design and strategy come together to create memorable user

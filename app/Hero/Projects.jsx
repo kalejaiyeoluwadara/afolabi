@@ -60,18 +60,18 @@ function Projects() {
   const sectionsRef = useRef([]);
   const [show, setShow] = useState(false);
   return (
-    <main className="flex flex-col mt-10 items-center gap-[32px]">
+    <main className="flex flex-col sm:mt-10 items-center gap-[32px]">
       {/* Time warp */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
         className="group w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
       >
-        <div className="relative z-10 sm:z-40">
+        <div className="relative text-white z-10 sm:z-40">
           <h2>TIMEWARP</h2>
           <h4 className="flex-center ">
             PRODUCT DESIGN{" "}
             <MdOutlineArrowOutward
-              className="ml-2 opacity-0  text-black transition-opacity duration-300 group-hover:opacity-100"
+              className="ml-2 opacity-0  text-white transition-opacity duration-300 group-hover:opacity-100"
               size={20}
             />
           </h4>

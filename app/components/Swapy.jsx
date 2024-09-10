@@ -21,7 +21,7 @@ function Swapy() {
           />
           <div className="w-full flex-center ">
             <div className="absolute z-20 h-[90px] sm:h-[115px]  w-auto px-4 sm:px-[74px] py-3 sm:py-[38px] flex-center wb rounded-[15px] sm:group-hover:bottom-4 group-hover:-bottom-3 -bottom-[130px]  speed ">
-              <h2 className="text-[32px]">CHECK ME OUT</h2>
+              <h2 className="text-3xl">CHECK ME OUT</h2>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ function Swapy() {
           />
           <div className="w-full flex-center ">
             <div className="absolute z-20 h-[90px] sm:h-[115px]  w-auto px-4 sm:px-[74px] py-3 sm:py-[38px] flex-center wb rounded-[15px] sm:group-hover:bottom-4 group-hover:-bottom-3 -bottom-[130px]  speed ">
-              <h2 className="text-[32px]">CHECK ME OUT</h2>
+              <h2 className="text-3xl">CHECK ME OUT</h2>
             </div>
           </div>
         </div>

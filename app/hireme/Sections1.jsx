@@ -70,7 +70,7 @@ function Sections1({ setActive, details, setDetails }) {
         onClick={handleNextClick}
         className={`mt-[27px] ${
           selectedProjects.length == 0 && "cursor-not-allowed"
-        } rounded-[15px] text-[32px] h-[70px] w-full text-white font-bold stratosBold flex gap-2 justify-center items-center uppercase ${
+        } rounded-[15px] text-3xl h-[70px] w-full text-white font-bold stratosBold flex gap-2 justify-center items-center uppercase ${
           selectedProjects.length > 0 ? "bg-black" : "bg-black bg-opacity-[0.5]"
         }`}
       >

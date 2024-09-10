@@ -18,7 +18,7 @@ function Finale() {
           onClick={() => {
             setHire(false);
           }}
-          className="px-[112px] text-[32px] mt-6 py-[15px] fs text-white bg-black rounded-[10px] "
+          className="px-[112px] text-3xl mt-6 py-[15px] fs text-white bg-black rounded-[10px] "
         >
           EXPLORE
         </button>

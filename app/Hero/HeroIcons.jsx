@@ -71,25 +71,25 @@ function HeroIcons() {
         id="img1"
         src={icons.zero}
         alt=""
-        className=" sm:h-[100px] w-[50px] sm:w-[100px]  h-[50px] absolute hover:animate-bounce opacity-0 top-[300px] left-[300px] "
+        className=" sm:h-[100px] w-[50px] sm:w-[100px]  h-[50px]  sm:block hidden absolute hover:animate-bounce opacity-0 top-[300px] left-[300px] "
       />
       <Image
         id="img2"
         src={icons.sep}
         alt=""
-        className=" sm:h-[100px]  sm:w-[100px] w-[30px] h-[50px] absolute opacity-0 -top-[4rem] hover:animate-pulse left-[400px] "
+        className=" sm:h-[100px]  sm:w-[100px] w-[30px] h-[50px]  sm:block hidden absolute opacity-0 -top-[4rem] hover:animate-pulse left-[400px] "
       />
       <Image
         id="img3"
         src={icons.wave}
         alt=""
-        className="absolute sm:h-[100px]  sm:w-[100px] w-[50px] h-[50px] opacity-0 -top-[1.5rem] hover:animate-pulse -right-2 "
+        className=" sm:block hidden absolute sm:h-[100px]  sm:w-[100px] w-[50px] h-[50px] opacity-0 -top-[1.5rem] hover:animate-pulse -right-2 "
       />
       <Image
         id="img4"
         src={icons.two}
         alt=""
-        className="absolute sm:h-[100px]  sm:w-[100px] w-[50px] h-[50px] opacity-0 sm:bottom-[-3px] bottom-[103px] hover:animate-ping sm:right-[100px]  left-[-40px] "
+        className=" sm:block hidden absolute sm:h-[100px]  sm:w-[100px] w-[50px] h-[50px] opacity-0 sm:bottom-[-3px] bottom-[103px] hover:animate-ping sm:right-[100px]  left-[-40px] "
       />
     </>
   );
