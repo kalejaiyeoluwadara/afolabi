@@ -48,7 +48,7 @@ function Nav() {
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -100 }} // Adjust -100 to hide the navbar completely
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="my-8 w-full  sticky gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
+      className="mt-8 mb-4 w-full  sticky gap-[10px] opacity-0 translate-y-10 z-50 flex items-start justify-start"
     >
       <main className="w-full  sm:grid sm:grid-cols-4 px-2 sm:px-5 items-center justify-center gap-8 ">
         <div
