@@ -5,10 +5,12 @@ import Image from "next/image";
 function InputField({ label, name, value, placeholder, onChange }) {
   return (
     <section>
-      <p className="text-2xl font-bold stratosBold">{label.toUpperCase()}</p>
+      <p className=" text-lg sm:text-2xl font-bold stratosBold">
+        {label.toUpperCase()}
+      </p>
       <input
         type="text"
-        className="w-full mt-[23px] text-2xl placeholder:text-2xl font-clash placeholder:font-clash placeholder:uppercase border-none outline-none bg-none"
+        className="w-full mt-[23px]  text-lg sm:text-2xl font-clash placeholder:font-clash placeholder:uppercase border-none outline-none bg-none"
         placeholder={placeholder}
         name={name}
         value={value}
@@ -29,8 +31,8 @@ function Sections3({ active, setActive, details, setDetails }) {
   return (
     <main className="h-full flex justify-between flex-col">
       <div className="flex flex-col items-start h-full justify-center ">
-        <h2 className="uppercase mb-6 font-clash font-semibold text-2xl">
-          Tell me about the project
+        <h2 className="uppercase mb-6 font-clash font-semibold text-lg sm:text-2xl">
+          What would you like to do?
         </h2>
         <div className="flex gap-4 flex-col">
           {[
@@ -56,10 +58,10 @@ function Sections3({ active, setActive, details, setDetails }) {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-3 h-[80px] mt-[32px] gap-[23px]">
+      <div className=" flex flex-col sm:grid grid-cols-3 sm:h-[80px] mt-[32px] gap-[23px]">
         <button
           onClick={() => setActive(2)}
-          className="h-full w-auto flex-center border-2 border-dashed text-3xl fs gap-2 border-black rounded-[15px] "
+          className=" h-20 sm:h-full w-auto flex-center border-2 border-dashed text-3xl fs gap-2 border-black rounded-[15px] "
         >
           <Image height={32} width={32} src={icons.returnImg} alt="nav" />
           RETURN
@@ -67,7 +69,7 @@ function Sections3({ active, setActive, details, setDetails }) {
         <button
           disabled={!allFieldsFilled}
           onClick={() => allFieldsFilled && setActive(4)}
-          className={`h-full ${
+          className={` h-20 sm:h-full ${
             !allFieldsFilled
               ? "cursor-not-allowed bg-black bg-opacity-[0.5]"
               : " bg-black"

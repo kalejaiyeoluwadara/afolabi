@@ -98,7 +98,7 @@ function Hire() {
               {active === 1 ? (
                 <motion.div
                   key="section1"
-                  className="h-full pb-8"
+                  className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -113,7 +113,7 @@ function Hire() {
               ) : active === 2 ? (
                 <motion.div
                   key="section2"
-                  className="h-full pb-8"
+                  className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -128,7 +128,7 @@ function Hire() {
               ) : active === 3 ? (
                 <motion.div
                   key="section3"
-                  className="h-full pb-8"
+                  className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -143,7 +143,7 @@ function Hire() {
               ) : (
                 <motion.div
                   key="finale"
-                  className="h-full pb-8"
+                  className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
                   exit="exit"

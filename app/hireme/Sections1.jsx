@@ -47,7 +47,7 @@ function Sections1({ setActive, details, setDetails }) {
           What would you like to do?
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="sm:grid flex flex-col grid-cols-2 gap-4">
         {projectTypes.map((project, id) => (
           <div
             key={id}
