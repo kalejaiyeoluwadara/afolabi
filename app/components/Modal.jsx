@@ -15,11 +15,10 @@ const Container = ({ name, link, setModal }) => {
       className="w-full text-white overflow-hidden border-2 border-dashed border-white flex justify-between items-center rounded-[20px] flex-col h-[180px] group group-hover:border-none transition-all duration-700 ease-in-out relative"
     >
       <Link href={link} className="w-full">
-        <div className="relative w-full group-hover:-translate-y-[80px] transition-all duration-[400ms] ease-in-out">
+        <div className="relative gap-2 w-full group-hover:-translate-y-[80px] transition-all duration-[400ms] ease-in-out">
           <h4 className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
             {name}
           </h4>
-          <BsArrowDownRight className="sm:hidden text-white " size={20} />
           <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[190px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
             <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
               CHECK ME OUT
@@ -39,7 +38,7 @@ function Modal() {
     <AnimatePresence>
       {modal && (
         <motion.main
-          className="h-screen w-screen pt-10 grid grid-cols-2 items-center justify-center px-[21px]  bg-primary sm:bg-black z-40 gap-10 fixed top-0 left-0"
+          className="h-screen w-screen pt-10 flex-center flex-col sm:grid grid-cols-2 items-center justify-center px-[21px]  bg-primary sm:bg-black z-40 gap-10 fixed top-0 left-0"
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
@@ -57,10 +56,17 @@ function Modal() {
                 onClick={() => setModal(false)}
                 className="relative group"
               >
-                <Link href={d.link}>
-                  <h3 className="  text-6xl sm:text-7xl text-gray-200 group-hover:text-white transition-all  uppercase  stratosBold font-bold">
+                <Link className="sm:block flex gap-2 items-end" href={d.link}>
+                  <h3 className="  text-6xl sm:text-7xl text-white group-hover:text-gray-100 transition-all  uppercase  stratosBold font-bold">
                     {d.title}
                   </h3>
+                  <Image
+                    src={icons.arr}
+                    height={20}
+                    width={20}
+                    className="mb-2"
+                    alt="arrow"
+                  />
                 </Link>
                 <motion.span className="h-2 w-0 group-hover:w-[440px] transition-all  duration-700 ease-in-out sm:bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
               </div>

@@ -13,6 +13,7 @@ import arrowup from "@/public/images/arrow-up.svg";
 import arrowright from "@/public/images/arrow-right.svg";
 import arr1 from "@/public/images/arr1.png";
 import arr2 from "@/public/images/arr2.png";
+import arr from "@/public/images/arr.svg";
 
 module.exports = {
   zero,
@@ -30,4 +31,5 @@ module.exports = {
   globe,
   arr1,
   arr2,
+  arr,
 };
