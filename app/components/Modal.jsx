@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { icons, images } from "@/app/utils";
 import { GoDotFill } from "react-icons/go";
+import { BsArrowDownRight } from "react-icons/bs";
 import Image from "next/image";
 // Container Component
 const Container = ({ name, link, setModal }) => {
@@ -18,6 +19,7 @@ const Container = ({ name, link, setModal }) => {
           <h4 className="uppercase text-[22px] font-semibold w-full text-center mt-6 mb-4 ">
             {name}
           </h4>
+          <BsArrowDownRight className="sm:hidden text-white " size={20} />
           <div className=" bg-primary w-full h-[120px] rounded-[10px] group-hover:h-[190px] transition-all duration-[400ms] absolute flex-center cursor-pointer overflow-hidden">
             <p className="text-white text-2xl font-bold opacity-0 group-hover:opacity-[1]  transition-all  duration-700 ease-in-out ">
               CHECK ME OUT
@@ -60,10 +62,11 @@ function Modal() {
                     {d.title}
                   </h3>
                 </Link>
-                <motion.span className="h-2 w-0 group-hover:w-[440px] transition-all  duration-700 ease-in-out bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
+                <motion.span className="h-2 w-0 group-hover:w-[440px] transition-all  duration-700 ease-in-out sm:bg-[#D3A068] absolute group-hover:-left-12 -left-[200px] top-8" />
               </div>
             ))}
-            <div className="text-white flex uppercase translate-y-[28px] items-center gap-2 text-[24px] ">
+            {/* desktop socials */}
+            <div className="text-white  hidden sm:flex uppercase translate-y-[28px] items-center gap-2 text-[24px] ">
               <Link href={"/"}>instagram</Link>
               <GoDotFill size={10} />
               <Link href={"/"}>behance</Link>
@@ -71,6 +74,24 @@ function Modal() {
               <Link href={"/"}>linkedin</Link>
               <GoDotFill size={10} />
               <Link href={"/"}>figma</Link>
+            </div>
+            {/* mobile socials */}
+            <div className="text-white absolute bottom-10 left-0 px-2 py-2  z-[60] w-screen border-y-[3px] border-solid border-white flex-center sm:hidden uppercase translate-y-[28px] items-center gap-2 text-[24px] ">
+              <Link className="text-6xl font-bold" href={"/"}>
+                IG
+              </Link>
+              <GoDotFill className="text-black" size={10} />
+              <Link className="text-6xl font-bold" href={"/"}>
+                BE
+              </Link>
+              <GoDotFill className="text-black" size={10} />
+              <Link className="text-6xl font-bold" href={"/"}>
+                LIN
+              </Link>
+              <GoDotFill className="text-black" size={10} />
+              <Link className="text-6xl font-bold" href={"/"}>
+                FIG
+              </Link>
             </div>
           </div>
           <div className=" hidden sm:grid grid-cols-2 mb-20 w-full mt-[125px] gap-[32px]">
