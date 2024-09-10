@@ -24,6 +24,7 @@ import iteration2 from "@/public/images/iteration2.png";
 import nexbac from "@/public/images/nexbac.png";
 import coursepage from "@/public/images/coursepage.png";
 import logo from "@/public/images/logo.png";
+import warp2 from "@/public/images/warp2.png";
 
 module.exports = {
   slide,
@@ -38,6 +39,7 @@ module.exports = {
   coursepage,
   logo,
   flower,
+  warp2,
   warp,
   champ,
   unito,

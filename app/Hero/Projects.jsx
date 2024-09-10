@@ -6,6 +6,7 @@ import { images, icons } from "@/app/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import CustomImage from "../components/CustomImage";
 gsap.registerPlugin(ScrollTrigger);
 
 const Img = ({ image_name }) => {
@@ -80,6 +81,11 @@ function Projects() {
           <h2>CHECK ME OUT</h2>
         </div>
         <Img image_name={images.warp} />
+        {/* <CustomImage
+          desk={images.warp}
+          style={"absolute top-0 left-0 w-full h-full"}
+          mobile={images.warp}
+        /> */}
       </section>
 
       {/* Unito and Log */}

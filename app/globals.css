@@ -74,6 +74,9 @@ h1{
 h2{
   @apply  sm:text-4xl  text-xl font-semibold
 }
+.image{
+  @apply sm:object-center object-left 
+}
 h3{
   @apply text-3xl font-semibold
 }
