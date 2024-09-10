@@ -20,12 +20,12 @@ function Hero() {
         <HeroIcons />
         <p
           id="h1text"
-          className="uppercase relative px-5 font-clashb font-bold opacity-1 sm:text-[64px]  leading-[2rem] text-[28px] sm:mt-[110px] w-full sm:w-[952px] sm:leading-[1.2] text-start sm:text-center text-black"
+          className="uppercase group relative px-5 font-clashb font-bold opacity-1 sm:text-[64px]  leading-[2rem] text-[28px] sm:mt-[110px] w-full sm:w-[952px] sm:leading-[1.2] text-start sm:text-center text-black"
         >
           product designer, CREATIVE DIRECTOR, INTERACTIVE DESIGNER BASED IN
           NIGERIA.
-          <span className="h-[10px] absolute sm:block hidden left-[130px] top-[70px] w-[320px] bg-primary " />
-          <span className="h-[10px] absolute sm:block hidden right-[90px] bottom-[70px] w-[320px] bg-primary " />
+          <span className="h-[10px] group-hover:h-[15px] transition-all absolute sm:block hidden left-[130px] top-[70px] w-[320px] bg-primary " />
+          <span className="h-[10px] group-hover:h-[15px] transition-all absolute sm:block hidden right-[90px] bottom-[70px] w-[320px] bg-primary " />
         </p>
         <Link href={"#collections"}>
           <div
