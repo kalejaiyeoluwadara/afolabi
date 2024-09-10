@@ -43,7 +43,7 @@ function Sections1({ setActive, details, setDetails }) {
           <h2 className="stratosBold font-bold">Bonjour,</h2>
           <h2 className="stratosBold font-bold">Got a Project?</h2>
         </div>
-        <p className="text-2xl font-clash font-semibold uppercase mb-5">
+        <p className=" text-lg sm:text-2xl font-clash font-semibold uppercase mb-5">
           What would you like to do?
         </p>
       </div>

@@ -17,7 +17,7 @@ const Stroke = ({ count, active, setActive }) => {
       }}
       className={`${
         count === active ? "bg-black" : "bg-[#D9D9D9]"
-      } w-[125px] h-[10px] rounded-full cursor-pointer speed hover:bg-black`}
+      }  w-[61px] sm:w-[125px] h-[5px] sm:h-[10px] rounded-full cursor-pointer speed hover:bg-black`}
     />
   );
 };
@@ -57,20 +57,22 @@ function Hire() {
           animate="visible"
           exit="exit"
           variants={modalVariants}
-          className="h-screen fixed top-0 left-0 z-[60] w-screen bg-black bg-opacity-[0.4] flex-center"
+          className="h-screen fixed top-0 left-0 z-[60] w-full sm:w-screen bg-black bg-opacity-[0.4] flex-center"
         >
           <motion.div
             initial="hidden"
             animate="visible"
             exit="exit"
             variants={contentVariants}
-            className={`w-[1000px] ${
+            className={` w-[80%] sm:w-[1000px] ${
               height <= 600 ? "sm:h-[98%]" : "sm:h-[78%]"
-            } bg-white rounded-[25px] px-[31px] py-[31px]`}
+            } bg-white rounded-[25px] px-4 sm:px-[31px] py-[31px]`}
           >
             <nav className={`flex w-full items-start justify-between`}>
               <motion.section
-                className={`${active === 4 && "opacity-0"} w-full flex gap-6`}
+                className={`${
+                  active === 4 && "opacity-0"
+                } w-full flex gap-3 sm:gap-6`}
               >
                 {[1, 2, 3].map((d, id) => (
                   <Stroke

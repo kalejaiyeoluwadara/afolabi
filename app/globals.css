@@ -81,7 +81,7 @@ h4{
   @apply text-2xl font-medium
 }
 .project_card{
-  @apply h-[404px] relative overflow-hidden border rounded-[20px] w-auto px-6
+  @apply h-[404px] relative overflow-hidden border rounded-[20px] w-full sm:w-auto px-6
 }
 .r40{
   @apply relative z-40

@@ -83,12 +83,12 @@ function Projects() {
       </section>
 
       {/* Unito and Log */}
-      <section className="grid sm:grid-cols-2 gap-8 justify-between w-full">
+      <section className="sm:grid flex flex-col grid-cols-2 gap-8 justify-between w-full">
         <div
           ref={(el) => (sectionsRef.current[1] = el)}
           className="project_card group"
         >
-          <div className="h-[404px]  flex items-end justify-start w-full">
+          <div className="h-[404px] flex items-end justify-start w-full">
             <div className="mb-10 relative text-white z-40  ">
               <h2>CHAMPIONS LOGISTICS</h2>
               <h4 className="flex items-center jc ">
@@ -225,7 +225,7 @@ function Projects() {
           <Img image_name={images.swapy} />
         </div>
         {/* last div */}
-        <div className="h-[404px] group overflow-hidden col-span-1 flex flex-col flex-center w-auto bw rounded-[20px]">
+        <div className="h-[404px] group overflow-hidden sm:col-span-1 flex flex-col flex-center w-auto bw rounded-[20px]">
           <Image
             src={icons.wave}
             className="rotate-[60deg] group-hover:scale-[1.5] group-hover:translate-y-[100px]  transition-all duration-700 ease-in-out "

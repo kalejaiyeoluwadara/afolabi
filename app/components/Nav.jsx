@@ -68,7 +68,8 @@ function Nav() {
           </Link>
           <div
             onClick={() => {
-              setModal(!modal);
+              // setModal(!modal);
+              setHire(true);
             }}
             className="h-[54px] cursor-pointer w-[60px] flex-center rounded-[10px] hover:shadow-xl transition-all bg-black group"
           >
