@@ -101,7 +101,7 @@ function Hire() {
                   className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
-                  exit="exit"
+                  // exit="exit"
                   variants={contentVariants}
                 >
                   <Sections1
@@ -116,7 +116,7 @@ function Hire() {
                   className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
-                  exit="exit"
+                  // exit="exit"
                   variants={contentVariants}
                 >
                   <Sections2
@@ -131,7 +131,7 @@ function Hire() {
                   className="h-full pb-0 sm:pb-8"
                   initial="hidden"
                   animate="visible"
-                  exit="exit"
+                  // exit="exit"
                   variants={contentVariants}
                 >
                   <Sections3
@@ -142,11 +142,11 @@ function Hire() {
                 </motion.div>
               ) : (
                 <motion.div
-                  key="finale"
-                  className="h-full pb-0 sm:pb-8"
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
+                  // key="finale"
+                  // className="h-full pb-0 sm:pb-8"
+                  // initial="hidden"
+                  // animate="visible"
+                  // exit="exit"
                   variants={contentVariants}
                 >
                   <Finale setActive={setActive} />
