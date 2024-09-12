@@ -77,15 +77,10 @@ function Projects() {
             />
           </h4>
         </div>
-        <div className="absolute z-20 h-[125px] sm:w-auto w-full px-[95px] flex-center sm:bw wb  rounded-[15px] sm:group-hover:-bottom-3 sm:-bottom-[130px] sm:right-0 speed sm:rotate-0  group-hover:-top-3 -top-[130px] right-0  ">
+        <div className="absolute z-20 h-[125px] sm:w-auto w-full px-[95px] flex-center sm:bg-black sm:text-white wb  rounded-[15px] sm:group-hover:-bottom-3 sm:-bottom-[130px] sm:right-8 speed sm:rotate-0  group-hover:-top-3 -top-[130px] right-0  ">
           <h2>CHECK ME OUT</h2>
         </div>
         <Img image_name={images.warp} />
-        {/* <CustomImage
-          desk={images.warp}
-          style={"absolute top-0 left-0 w-full h-full"}
-          mobile={images.warp}
-        /> */}
       </section>
 
       {/* Unito and Log */}

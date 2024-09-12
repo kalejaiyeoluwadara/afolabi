@@ -26,6 +26,8 @@ function Hero() {
           NIGERIA.
           <span className="h-[10px] group-hover:h-[15px] transition-all absolute sm:block hidden left-[130px] top-[70px] w-[320px] bg-primary " />
           <span className="h-[10px] group-hover:h-[15px] transition-all absolute sm:block hidden right-[90px] bottom-[70px] w-[320px] bg-primary " />
+          <span className="h-[7px] gro transition-all absolute block sm:hidden left-[20px] top-[28px] w-[145px] bg-primary " />
+          <span className="h-[7px] transition-all absolute block sm:hidden left-[20px] bottom-[30px] w-[145px] bg-primary " />
         </p>
         <Link href={"#collections"}>
           <div
