@@ -7,7 +7,7 @@ import Image from "next/image";
 function Foot() {
   return (
     <footer
-      className={`min-h-[594px] rounded-[20px] text-white mt-[58px]  w-full bg-black px-7 pb-[71px] pt-[111px] flex  flex-col  `}
+      className={`sm:min-h-[594px] h-[500px] rounded-[20px] text-white mt-[67px] sm:mt-[58px]  w-full bg-black px-7 pb-[71px] pt-10 sm:pt-[111px] flex  flex-col  `}
     >
       <div className="w-full flex-center ">
         <h1 className="sm:text-[59px] sm:my-0 my-[34px] text-5xl uppercase text-center sm:leading-[80px] sm:w-[507px] font-semibold">

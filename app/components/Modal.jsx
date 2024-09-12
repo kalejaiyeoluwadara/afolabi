@@ -48,8 +48,8 @@ function Modal() {
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/eureka" },
-              { title: "CONTACT", link: "/contact" },
               { title: "PLAYGROUND", link: "/" },
+              { title: "CONTACT", link: "/contact" },
             ].map((d, id) => (
               <div
                 key={id}
@@ -82,7 +82,7 @@ function Modal() {
               <Link href={"/"}>figma</Link>
             </div>
             {/* mobile socials */}
-            <div className="text-white absolute bottom-10 left-0 px-2 py-2  z-[60] w-screen border-y-[3px] border-solid border-white flex-center sm:hidden uppercase translate-y-[178px] items-center gap-2 text-[24px] ">
+            <div className="text-white absolute bottom-10 -left-4 px-2 py-2  z-[60] w-screen border-y-[3px] border-solid border-white flex-center sm:hidden uppercase translate-y-[178px] items-center gap-2 text-[24px] ">
               <Link className="text-6xl font-bold" href={"/"}>
                 IG
               </Link>
