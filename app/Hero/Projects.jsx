@@ -77,7 +77,7 @@ function Projects() {
             />
           </h4>
         </div>
-        <div className="absolute z-20 h-[125px] w-auto px-[95px] flex-center bg-black text-white rounded-[15px] group-hover:-bottom-3 -bottom-[130px] right-0 speed ">
+        <div className="absolute z-20 h-[125px] sm:w-auto w-full px-[95px] flex-center sm:bw wb  rounded-[15px] sm:group-hover:-bottom-3 sm:-bottom-[130px] sm:right-0 speed sm:rotate-0  group-hover:-top-3 -top-[130px] right-0  ">
           <h2>CHECK ME OUT</h2>
         </div>
         <Img image_name={images.warp} />

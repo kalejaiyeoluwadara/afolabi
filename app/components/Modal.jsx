@@ -44,7 +44,7 @@ function Modal() {
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className=" speed flex flex-col justify-center space-y-3">
+          <div className=" speed sm:translate-y-0 translate-y-[-40px] flex flex-col justify-center space-y-3">
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/eureka" },
@@ -57,14 +57,14 @@ function Modal() {
                 className="relative group"
               >
                 <Link className="sm:block flex gap-2 items-end" href={d.link}>
-                  <h3 className="  text-6xl sm:text-7xl text-white group-hover:text-gray-100 transition-all  uppercase  stratosBold font-bold">
+                  <h3 className="  text-6xl sm:text-7xl sm:text-gray-200 text-white group-hover:text-gray-100 transition-all  uppercase  stratosBold font-bold">
                     {d.title}
                   </h3>
                   <Image
                     src={icons.arr}
                     height={20}
                     width={20}
-                    className="mb-2"
+                    className="mb-2 sm:hidden block"
                     alt="arrow"
                   />
                 </Link>
@@ -82,7 +82,7 @@ function Modal() {
               <Link href={"/"}>figma</Link>
             </div>
             {/* mobile socials */}
-            <div className="text-white absolute bottom-10 left-0 px-2 py-2  z-[60] w-screen border-y-[3px] border-solid border-white flex-center sm:hidden uppercase translate-y-[28px] items-center gap-2 text-[24px] ">
+            <div className="text-white absolute bottom-10 left-0 px-2 py-2  z-[60] w-screen border-y-[3px] border-solid border-white flex-center sm:hidden uppercase translate-y-[178px] items-center gap-2 text-[24px] ">
               <Link className="text-6xl font-bold" href={"/"}>
                 IG
               </Link>
