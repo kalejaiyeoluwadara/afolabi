@@ -11,6 +11,7 @@ function AppProvider({ children }) {
     { title: "BRANDING", link: "/works/branding" },
     { title: "PRODUCT DESIGN", link: "/works/product-design" },
   ]);
+  // added comment
   return (
     <AppContext.Provider
       value={{
