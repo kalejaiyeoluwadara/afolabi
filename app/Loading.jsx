@@ -24,7 +24,7 @@ function Loading() {
   }, [setLoading]);
 
   return (
-    <div className="fixed h-screen w-screen bg-foreground flex flex-col items-start justify-end p-5">
+    <div className="fixed h-screen w-screen bg-foreground flex flex-col items-start pb-20 justify-end p-5">
       {/* Animate the loadCount text with bounce effect */}
       <motion.h1
         className="font-clashb"
