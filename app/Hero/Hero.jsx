@@ -4,6 +4,7 @@ import gsap from "gsap";
 import React from "react";
 import Link from "next/link";
 import HeroIcons from "./HeroIcons";
+import { useGlobal } from "../context";
 
 function Hero() {
   useGSAP(() => {
@@ -13,10 +14,10 @@ function Hero() {
       ease: "elastic",
     });
   }, []);
-
+  const { hire, setHire } = useGlobal();
   return (
     <main className="sm:flex-center w-screen overflow-hidden">
-      <div className="flex-center   flex-col relative">
+      <div className="flex-center   flex-col ">
         <HeroIcons />
         <p
           id="h1text"
@@ -29,16 +30,22 @@ function Hero() {
           <span className="h-[7px] gro transition-all absolute block sm:hidden left-[20px] top-[28px] w-[145px] bg-primary " />
           <span className="h-[7px] transition-all absolute block sm:hidden left-[20px] bottom-[30px] w-[145px] bg-primary " />
         </p>
-        <Link href={"#collections"}>
+        <Link className="sm:mt-0 mt-[70px]" href={"#collections"}>
           <div
             id="foot"
             className="sm:w-[265px] w-[242px] opacity-0 mb-8 mt-6 h-[73px] sm:h-[90px] border-black rounded-full border-[1.5px] flex-center"
           >
-            <div className="font-semibold cursor-pointer speed w-[217px] sm:w-[232px] text-xl sm:text-2xl border-[2px] border-black border-dashed rounded-full h-[55px] sm:h-[60px] flex-center">
+            <div className="font-semibold cursor-pointer speed w-[217px] sm:w-[232px] text-xl sm:text-2xl border-[2px] border-black border-dashed rounded-full  h-[55px] sm:h-[60px] flex-center">
               MY COLLECTIONS
             </div>
           </div>
         </Link>
+      </div>
+      <div
+        onClick={() => setHire(true)}
+        className="absolute -right-[120px] top-[300px] w-[200px] px-4 rounded-[15px] h-[70px] bg-black text-white sm:hidden flex items-center text-3xl stratosBold font-bold "
+      >
+        HIRE
       </div>
     </main>
   );
