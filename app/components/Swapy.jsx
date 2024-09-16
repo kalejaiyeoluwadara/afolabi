@@ -8,7 +8,7 @@ function Swapy() {
       <section className="sm:grid flex flex-col-reverse grid-cols-2 border-[3px]  sm:border-y-[3px] border-black sm:border-x-[0px] border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
         <div className="h-full w-full sm:w-auto flex px-[17px] sm:px-[61px] justify-center flex-col ">
           <h1>SWAPY</h1>
-          <p className=" text-xl sm:text-3xl font-clash sm:w-[99%] ">
+          <p className=" text-xl uppercase sm:text-3xl font-clash sm:w-[99%] ">
             This project showcases my creativity through thoughtful color
             choices, cohesive{" "}
           </p>
@@ -42,7 +42,7 @@ function Swapy() {
         </div>
         <div className="h-full w-full sm:w-auto flex px-[17px] sm:px-[61px] sm:justify-center sm:items-end justify-center flex-col ">
           <h1>SWAPY</h1>
-          <p className=" text-xl sm:text-3xl font-clash sm:text-end sm:w-[99%] ">
+          <p className=" text-xl sm:text-3xl sm:text-end sm:w-[99%] uppercase">
             This project showcases my creativity through thoughtful color
             choices, cohesive{" "}
           </p>

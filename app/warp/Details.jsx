@@ -13,9 +13,9 @@ function Details() {
         />
       </div>
       <div className="mt-[80px]  flex-center w-full ">
-        <div className="w-[542px] border-dashed flex-center h-[149px] border-2 border-black rounded-[25px] ">
+        <div className="sm:w-[542px] border-dashed flex-center sm:h-[149px] border-2 border-black py-2 px-2 rounded-[25px] ">
           <Link
-            className="w-[502px] flex-center border-dashed text-[40px] font-light text-center h-[105px] border-2 border-black rounded-[15px]"
+            className="sm:w-[502px] flex-center px-4 py-3 border-dashed text-[25px] sm:text-[40px] font-light text-center sm:h-[105px] border-2 border-black rounded-[15px]"
             href={"https://nexgen-academy-nu.vercel.app/"}
             target="_blank"
           >

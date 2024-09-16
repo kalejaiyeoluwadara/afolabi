@@ -69,7 +69,7 @@ html{
   @apply border-2 border-dashed rounded-[15px] sm:rounded-[20px] border-black  
 }
 h1{
-  @apply text-xl sm:leading-normal  sm:text-6xl font-bold
+  @apply text-3xl sm:leading-normal  sm:text-6xl font-bold
 }
 h2{
   @apply  sm:text-4xl  text-xl font-semibold

@@ -16,7 +16,7 @@ function Hero() {
   }, []);
   const { hire, setHire } = useGlobal();
   return (
-    <main className="sm:flex-center w-screen overflow-hidden">
+    <main className="sm:flex-center relative w-screen overflow-hidden">
       <div className="flex-center   flex-col ">
         <HeroIcons />
         <p
@@ -43,7 +43,7 @@ function Hero() {
       </div>
       <div
         onClick={() => setHire(true)}
-        className="absolute -right-[120px] top-[300px] w-[200px] px-4 rounded-[15px] h-[70px] bg-black text-white sm:hidden flex items-center text-3xl stratosBold font-bold "
+        className="absolute -right-[120px] bottom-[120px] w-[200px] px-4 rounded-[15px] h-[70px] bg-black text-white sm:hidden flex items-center text-3xl stratosBold font-bold "
       >
         HIRE
       </div>
