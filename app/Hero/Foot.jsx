@@ -37,7 +37,12 @@ function Foot() {
         </p>
       </div>
       <div className="flex sm:flex-row flex-col-reverse  justify-between items-center w-full  ">
-        <p className="text-[#747474] text-base ">MY AHA MOMENT</p>
+        <Link
+          href={"/eureka"}
+          className="text-[#747474] font-clash hover:text-white speed text-base "
+        >
+          MY AHA MOMENT
+        </Link>
         <div className=" hidden sm:flex uppercase text-[30px] items-center gap-4 ">
           <Link href={"/"} className="hover:text-primary speed ">
             instagram
