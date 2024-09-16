@@ -10,17 +10,16 @@ function Role() {
             <p>User Experience (UX) Designer</p>
             <p>User Interface (UI) Designer</p>
             <p>Interaction Designer</p>
-            <p>Brand Designer</p>
           </div>
         </article>
         <article>
           <div className="mb-10 sm:mt-0 mt-10">
-            <h2 className="text-5xl stratosBold mb-5 ">Length:</h2>
+            <h2 className="text-5xl uppercase stratosBold mb-5 ">Length:</h2>
             <p className="">3 Weeks</p>
           </div>
           <div>
-            <h2 className="text-5xl stratosBold mb-5 ">LIVE SITE:</h2>
-            <p className="">nexgenspace.org</p>{" "}
+            <h2 className="text-5xl uppercase stratosBold mb-5 ">FULL POST:</h2>
+            <p className="">Behance.net/</p>{" "}
           </div>
         </article>
       </div>

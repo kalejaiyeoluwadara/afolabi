@@ -9,6 +9,7 @@ import Foot from "../Hero/Foot";
 import Role from "./Role";
 import Overview from "./Overview";
 import PageWrapper from "../PageWrapper";
+import Details from "./Details";
 function Page() {
   return (
     <PageWrapper>
@@ -18,24 +19,23 @@ function Page() {
             <NavBar white={true} />
           </div>
           <Image
-            src={images.nexbac}
+            src={images.warp}
             alt="background image"
-            className="h-full w-[100vw] object-cover z-10 absolute top-0  "
+            className="h-full w-full object-cover z-10 absolute top-0  "
           />
           <section className="w-full relative z-40 px-[21px] ">
             {/* bottom */}
             <div className="w-full  h-auto sm:h-[109px] flex sm:gap-0 gap-5 sm:flex-row flex-col sm:justify-between px-4 sm:px-8 items-start sm:py-0 py-7 sm:items-center text-white rounded-[15px] border-2 border-gray-400 border-dashed ">
               <div>
                 <p className="stratosBold font-bold text-xl sm:text-3xl">
-                  NEXGEN DIGITAL ACADEMY
+                  WARP - VIRTUAL REALITY MOBILE APP DESIGN
                 </p>
               </div>
               <div className=" w-full sm:w-auto flex-center justify-between gap-[10px]">
                 <div className="flex  gap-2 ">
-                  <WhiteBox title={"BRANDING"} />
-                  <WhiteBox title={"WEB DESIGN"} />
+                  <WhiteBox title={"APP DESIGN"} />
                 </div>
-                <p className="text-[24px] font-semibold ">‘24</p>
+                <p className="text-[24px] font-semibold ">‘23</p>
               </div>
             </div>
           </section>
@@ -45,6 +45,7 @@ function Page() {
           <Role />
           {/* Third section */}
           <Overview />
+          <Details />
         </section>
         <section className="w-full bg-foreground pt-[116px] ">
           <Swapy />

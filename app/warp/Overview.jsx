@@ -6,10 +6,15 @@ function Overview() {
       <div className="   border-[3px] border-dashed border-black rounded-[20px] w-full h-auto  px-4 sm:px-[33px] py-10 ">
         <h1 className="text-5xl uppercase stratosBold ">Overview</h1>
         <p className="mt-6 ">
-          Nexgen ignites a learning revolution, empowering individuals and
-          organizations through cutting-edge technology. Bid farewell to
-          outdated methods and embrace dynamic online learning with personalized
-          paths and engaging activities.{" "}
+          Warp allows users to virtually travel back in time and experience
+          historical moments firsthand. Whether it’s ancient Rome, the moon
+          landing, or even personal memories from stored content, users can dive
+          into these experiences through VR.
+        </p>
+        <p className="mt-6 ">
+          The app integrates both entertainment and education, offering virtual
+          guides, peer experiences, and purchasable content like new historical
+          scenes, personalized tours, or premium headsets.
         </p>
       </div>
     </section>

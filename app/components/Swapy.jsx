@@ -3,9 +3,9 @@ import { images } from "@/app/utils";
 import Image from "next/image";
 function Swapy() {
   return (
-    <main className="sm:px-0 px-4">
+    <main className="sm:px-0 space-y-4 px-4">
       {/* Swapy 1 */}
-      <section className="sm:grid flex flex-col-reverse grid-cols-2 border-[3px] sm:border-y-[3px] border-black border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
+      <section className="sm:grid flex flex-col-reverse grid-cols-2 border-[3px]  sm:border-y-[3px] border-black sm:border-x-[0px] border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
         <div className="h-full w-full sm:w-auto flex px-[17px] sm:px-[61px] justify-center flex-col ">
           <h1>SWAPY</h1>
           <p className=" text-xl sm:text-3xl font-clash sm:w-[99%] ">
@@ -27,7 +27,7 @@ function Swapy() {
         </div>
       </section>
       {/* Swapy 2*/}
-      <section className="sm:grid sm:mt-0 mt-8 flex flex-col grid-cols-2 border-[3px] sm:border-y-[3px] sm:border-none border-black border-dashed w-full  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
+      <section className="sm:grid sm:mt-0 mt-8 flex flex-col grid-cols-2 border-[3px] sm:border-x-[0px] sm:border-y-[3px] border-black border-dashed w-full sm:border-b-2  overflow-hidden h-[430px] sm:rounded-none rounded-[20px] sm:h-[384px] ">
         <div className="h-full w-auto overflow-hidden relative group scale-[1.2] ">
           <Image
             src={images.unito}

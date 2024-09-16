@@ -7,7 +7,7 @@ import Image from "next/image";
 function Foot() {
   return (
     <footer
-      className={`sm:min-h-[488px]  rounded-[20px] text-white mt-[58px] mb-[39px] w-full bg-black px-7 py-9 flex sm:items-start flex-center flex-col justify-between  `}
+      className={`sm:min-h-[488px]  rounded-[20px] text-white mt-[38px] mb-[39px] w-full bg-black px-7 py-9 flex sm:items-start flex-center flex-col justify-between  `}
     >
       <div className="flex items-start justify-normal flex-center text-base font-normal flex-col mt-4 ">
         <p className=" uppercase text-base sm:text-[24px] ">
