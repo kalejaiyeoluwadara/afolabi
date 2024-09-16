@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import CustomImage from "../components/CustomImage";
+import { useRouter } from "next/navigation";
 gsap.registerPlugin(ScrollTrigger);
 
 const Img = ({ image_name }) => {
@@ -60,11 +61,12 @@ const Topic = ({ title, sub, color }) => {
 function Projects() {
   const sectionsRef = useRef([]);
   const [show, setShow] = useState(false);
+  const router = useRouter();
   return (
     <main className="flex flex-col sm:mt-10 items-center gap-[32px]">
       {/* Time warp */}
       <section
-        ref={(el) => (sectionsRef.current[0] = el)}
+        onClick={() => router.push("/warp")}
         className="group w-full flex cursor-pointer border relative overflow-hidden items-end justify-start px-[29px] py-[46px] h-[404px] rounded-[20px] bg-white"
       >
         <div className="relative text-white z-10 sm:z-40">
@@ -169,7 +171,10 @@ function Projects() {
       </section>
 
       {/* Last Grid */}
-      <section className="grid sm:grid-cols-4 relative  w-full h-auto gap-8">
+      <section
+        onClick={() => router.push("/nexgen")}
+        className="grid sm:grid-cols-4 relative  w-full h-auto gap-8"
+      >
         <div className="project_card  group ">
           <div className=" flex absolute  z-40 bottom-8 left-3 w-[190px]">
             <Topic
