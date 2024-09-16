@@ -9,16 +9,24 @@ function Foot() {
     <footer
       className={`sm:min-h-[488px]  rounded-[20px] text-white mt-[38px] mb-[39px] w-full bg-black px-7 py-9 flex sm:items-start flex-center flex-col justify-between  `}
     >
-      <div className="flex items-start justify-normal flex-center text-base font-normal flex-col mt-4 ">
+      <div className="flex items-start relative justify-normal flex-center text-base font-normal flex-col mt-4 ">
         <p className=" uppercase text-base sm:text-[24px] ">
           OYEFESO Selected Work
         </p>
+
         <p className="text-base sm:text-[24px]">‘22 - ‘24</p>
       </div>
-      <div className="w-full flex-center ">
+      <div className="w-full group relative flex-center ">
         <h1 className="sm:text-[59px] sm:my-0 my-[34px] text-5xl uppercase text-center sm:leading-[80px] sm:w-[507px] font-semibold">
           Interested in worKING together?
         </h1>
+        <div className="w-full absolute flex-center">
+          <Image
+            src={icons.wave}
+            className="h-[100px] group-hover:opacity-100 opacity-0 speed w-[100px] left-[100px] top-8"
+            alt=""
+          />
+        </div>
       </div>
       <div className=" group w-full sm:px-0 px-4    flex-col flex-center  sm:mt-[49px] sm:mb-[71px] ">
         <p className="text-primary text-base group-hover:text-white  speed ">
