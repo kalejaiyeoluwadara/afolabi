@@ -7,10 +7,8 @@ import Nav from "../components/Nav";
 import NavBar from "../works/NavBar";
 function Page() {
   return (
-    <main>
-      <nav className="px-5">
-        <NavBar />
-      </nav>
+    <main className="px-5">
+      <NavBar />
       <div className="flex flex-col-reverse sm:flex-col ">
         <Content />
         <Overview />

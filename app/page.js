@@ -6,6 +6,7 @@ import Foot from "./Hero/Foot";
 import CustomCursor from "./components/CustomCursor";
 import PageWrapper from "./PageWrapper";
 export default function Home() {
+  
   return (
     <PageWrapper>
       {/* <CustomCursor /> */}

@@ -48,7 +48,7 @@ function Modal() {
             {[
               { title: "Work", link: "/works" },
               { title: "EUREKA", link: "/eureka" },
-              { title: "PLAYGROUND", link: "/" },
+              { title: "PLAYGROUND", link: "/playground" },
               { title: "CONTACT", link: "/contact" },
             ].map((d, id) => (
               <div
