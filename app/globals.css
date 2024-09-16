@@ -5,6 +5,9 @@
 body{
   @apply bg-foreground w-full overflow-x-hidden p-0 
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 html{
   scroll-behavior: smooth;
 }
