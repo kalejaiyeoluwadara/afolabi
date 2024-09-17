@@ -30,7 +30,7 @@ function Sections3({ active, setActive, details, setDetails }) {
 
   return (
     <main className="h-full flex justify-between flex-col">
-      <div className="flex flex-col items-start h-full justify-center ">
+      <div className="flex flex-col items-start h-full justify-start sm:justify-center ">
         <h2 className="uppercase mb-6 font-clash font-semibold text-lg sm:text-2xl">
           What would you like to do?
         </h2>
@@ -58,10 +58,10 @@ function Sections3({ active, setActive, details, setDetails }) {
           ))}
         </div>
       </div>
-      <div className=" flex flex-col sm:grid grid-cols-3 sm:h-[80px] mt-[32px] gap-[23px]">
+      <div className=" flex flex-col sm:grid grid-cols-3 sm:h-[80px] mt-[32px] gap-4 sm:gap-[23px]">
         <button
           onClick={() => setActive(2)}
-          className=" h-20 sm:h-full w-auto flex-center border-2 border-dashed text-3xl fs gap-2 border-black rounded-[15px] "
+          className=" h-[60px] sm:h-full w-auto flex-center border-2 border-dashed text-3xl fs gap-2 border-black rounded-[15px] "
         >
           <Image height={32} width={32} src={icons.returnImg} alt="nav" />
           RETURN
@@ -69,11 +69,11 @@ function Sections3({ active, setActive, details, setDetails }) {
         <button
           disabled={!allFieldsFilled}
           onClick={() => allFieldsFilled && setActive(4)}
-          className={` h-20 sm:h-full ${
+          className={` h-[60px] sm:h-full ${
             !allFieldsFilled
               ? "cursor-not-allowed bg-black bg-opacity-[0.5]"
               : " bg-black"
-          } col-span-2  text-white  rounded-[15px] fs text-3xl  w-auto flex-center `}
+          } col-span-2  text-white sm:mb-0 mb-6 rounded-[15px] fs text-3xl  w-auto flex-center `}
         >
           NEXT
           <Image height={32} width={32} src={icons.right} alt="nav" />

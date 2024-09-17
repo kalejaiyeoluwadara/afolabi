@@ -14,7 +14,6 @@ function Hero() {
       ease: "elastic",
     });
   }, []);
-  const { hire, setHire } = useGlobal();
   return (
     <main className="sm:flex-center relative w-screen overflow-hidden">
       <div className="flex-center   flex-col ">
@@ -40,12 +39,6 @@ function Hero() {
             </div>
           </div>
         </Link>
-      </div>
-      <div
-        onClick={() => setHire(true)}
-        className="absolute -right-[120px] bottom-[120px] w-[200px] px-4 rounded-[15px] h-[70px] bg-black text-white sm:hidden flex items-center text-3xl stratosBold font-bold "
-      >
-        HIRE
       </div>
     </main>
   );

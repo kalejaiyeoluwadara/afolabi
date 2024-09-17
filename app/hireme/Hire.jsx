@@ -66,7 +66,7 @@ function Hire() {
             variants={contentVariants}
             className={` w-[80%] sm:w-[1000px] ${
               height <= 600 ? "sm:h-[98%]" : "sm:h-[78%]"
-            } bg-white rounded-[25px] px-4 sm:px-[31px] py-[31px]`}
+            } bg-white rounded-[25px] h-[90%] px-4 sm:px-[31px] py-[21px]`}
           >
             <nav className={`flex w-full items-start justify-between`}>
               <motion.section

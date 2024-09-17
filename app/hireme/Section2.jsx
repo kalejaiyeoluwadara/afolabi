@@ -59,10 +59,10 @@ function Sections2({ active, setActive, details, setDetails }) {
           ))}
         </div>
       </main>
-      <div className=" flex flex-col sm:grid grid-cols-3 sm:h-[80px] mt-[32px] gap-[23px]  ">
+      <div className=" flex flex-col sm:grid grid-cols-3 sm:h-[80px] mt-[32px] gap-4 sm:gap-[23px]  ">
         <button
           onClick={() => setActive(1)}
-          className=" h-[80px] sm:h-full w-auto flex-center border-2 border-dashed text-3xl fs gap-2 border-black rounded-[15px] "
+          className="  h-[60px]  sm:h-full w-auto flex-center border-2 border-dashed text-xl sm:text-3xl fs gap-2 border-black rounded-[15px] "
         >
           <Image height={32} width={32} src={icons.returnImg} alt="nav" />
           RETURN
@@ -70,11 +70,11 @@ function Sections2({ active, setActive, details, setDetails }) {
         <button
           disabled={!allFieldsFilled}
           onClick={() => allFieldsFilled && setActive(3)}
-          className={` h-[80px] sm:h-full ${
+          className={`  h-[60px] sm:mb-0 mb-6 sm:h-full ${
             !allFieldsFilled
               ? "cursor-not-allowed bg-black bg-opacity-[0.5]"
               : " bg-black"
-          } sm:col-span-2  text-white  rounded-[15px] fs text-3xl  w-auto flex-center `}
+          } sm:col-span-2  text-white rounded-[15px] fs text-xl sm:text-3xl  w-auto flex-center `}
         >
           NEXT
           <Image height={32} width={32} src={icons.right} alt="nav" />

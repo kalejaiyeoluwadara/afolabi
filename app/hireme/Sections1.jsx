@@ -47,12 +47,12 @@ function Sections1({ setActive, details, setDetails }) {
           What would you like to do?
         </p>
       </div>
-      <div className="sm:grid flex flex-col grid-cols-2 gap-4">
+      <div className="sm:grid h-[300px] overflow-y-scroll no-scrollbar flex flex-col grid-cols-2 gap-4">
         {projectTypes.map((project, id) => (
           <div
             key={id}
             onClick={() => handleProjectSelect(project)}
-            className={`w-auto flex gap-[22px] items-center h-[60px] px-[18px] py-[15px] cursor-pointer bg-[#F5F2E8]`}
+            className={`w-auto flex gap-[22px] items-center h-[60px] px-[18px] py-[15px] flex-shrink-0 cursor-pointer bg-[#F5F2E8]`}
           >
             <div
               className={`h-[20px] w-[20px] border-[1px] ${
@@ -70,7 +70,7 @@ function Sections1({ setActive, details, setDetails }) {
         onClick={handleNextClick}
         className={`mt-[27px] ${
           selectedProjects.length == 0 && "cursor-not-allowed"
-        } rounded-[15px] text-3xl h-[70px] w-full text-white font-bold stratosBold flex gap-2 justify-center items-center uppercase ${
+        } rounded-[15px] text-3xl h-[70px] w-full text-white font-bold stratosBold flex sm:mb-0 mb-6 gap-2 justify-center items-center uppercase ${
           selectedProjects.length > 0 ? "bg-black" : "bg-black bg-opacity-[0.5]"
         }`}
       >
