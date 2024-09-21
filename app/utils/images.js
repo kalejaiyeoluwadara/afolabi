@@ -26,7 +26,7 @@ import coursepage from "@/public/images/coursepage.png";
 import logo from "@/public/images/logo.png";
 import warp2 from "@/public/images/warp2.png";
 import warpImg from "@/public/images/warpImg.png";
-import champbg from "@/public/images/warpImg.png";
+import champbg from "@/public/images/champbg.png";
 
 module.exports = {
   slide,

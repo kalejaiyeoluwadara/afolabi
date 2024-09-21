@@ -19,7 +19,7 @@ function Page() {
             <NavBar white={true} />
           </div>
           <Image
-            src={images.warp}
+            src={images.champbg}
             alt="background image"
             className="h-full w-full object-cover z-10 absolute top-0  "
           />
@@ -27,8 +27,8 @@ function Page() {
             {/* bottom */}
             <div className="w-full  h-auto sm:h-[109px] flex sm:gap-0 gap-5 sm:flex-row flex-col sm:justify-between px-4 sm:px-8 items-start sm:py-0 py-7 sm:items-center text-white rounded-[15px] border-2 border-gray-400 border-dashed ">
               <div>
-                <p className="stratosBold font-bold text-3xl">
-                  WARP - VIRTUAL REALITY MOBILE APP DESIGN
+                <p className="stratosBold uppercase font-bold text-3xl">
+                  Champions Logistics
                 </p>
               </div>
               <div className=" flex items-center w-full sm:w-auto sm:flex-center justify-between gap-[10px]">
