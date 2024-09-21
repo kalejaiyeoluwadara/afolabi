@@ -88,7 +88,7 @@ function Projects() {
       {/* Unito and Log */}
       <section className="sm:grid flex flex-col grid-cols-2 gap-8 justify-between w-full">
         <div
-          ref={(el) => (sectionsRef.current[1] = el)}
+          onClick={() => router.push("/champions")}
           className="project_card group"
         >
           <div className="h-[404px] flex items-end justify-start w-full">
